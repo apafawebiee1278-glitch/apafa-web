@@ -9,6 +9,14 @@
       "categoria": "obligatorio"
     },
     {
+      "id": 3,
+      "nombre": "Saldo a favor",
+      "descripcion": "Pagos de conceptos eliminados",
+      "monto_limite": 999999.99,
+      "obligatorio": false,
+      "categoria": "opcional"
+    },
+    {
       "id": 4,
       "nombre": "Administrativo",
       "descripcion": "",
@@ -41,8 +49,7 @@
       "categoria": "opcional"
     }
   ],
-  "total_conceptos": 5,
+  "total_conceptos": 6,
   "conceptos_obligatorios": 2,
-  "conceptos_opcionales": 3,
-  "timestamp": "2026-01-21T10:30:00.000Z"
+  "conceptos_opcionales": 4
 }

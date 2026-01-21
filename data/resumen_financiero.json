@@ -1,10 +1,5 @@
 {
-  "meta_anual": 1200.0,
-  "total_recaudado": 510.0,
-  "recaudacion_esperada": 660.0,
-  "diferencia": 150.0,
-  "porcentaje_cumplimiento": 77.27272727272727,
-  "meta_alcanzada": false,
-  "padres_totales": 6,
-  "timestamp": "2026-01-21T10:30:00.000Z"
+  "monto_meta": 1200.0,
+  "total_recaudado": 810.0,
+  "porcentaje": 122.72727272727273
 }

@@ -2,94 +2,87 @@
   "miembros": [
     {
       "id": 1,
-      "nombre_completo": "María González López",
-      "cargo": "Presidenta",
+      "nombre_completo": "[Cargo por definir - Presidente]",
+      "cargo": "Presidente",
       "tipo": "directivo",
       "orden": 1
     },
     {
       "id": 2,
-      "nombre_completo": "Ana Martínez Rodríguez",
-      "cargo": "Vicepresidenta",
+      "nombre_completo": "[Cargo por definir - Vicepresidente]",
+      "cargo": "Vicepresidente",
       "tipo": "directivo",
       "orden": 2
     },
     {
       "id": 3,
-      "nombre_completo": "Carmen Pérez Sánchez",
-      "cargo": "Secretaria",
+      "nombre_completo": "[Cargo por definir - Tesorero]",
+      "cargo": "Tesorero",
       "tipo": "directivo",
       "orden": 3
     },
     {
       "id": 4,
-      "nombre_completo": "Isabel Ruiz Fernández",
-      "cargo": "Tesorera",
+      "nombre_completo": "[Cargo por definir - Secretario]",
+      "cargo": "Secretario",
       "tipo": "directivo",
       "orden": 4
     },
     {
       "id": 5,
-      "nombre_completo": "José Antonio Díaz Morales",
+      "nombre_completo": "[Cargo por definir - Vocal]",
+      "cargo": "Vocal",
+      "tipo": "vocal",
+      "orden": 5
+    },
+    {
+      "id": 7,
+      "nombre_completo": "[Cargo por definir - Vocal]",
       "cargo": "Vocal",
       "tipo": "vocal",
       "orden": 5
     },
     {
       "id": 6,
-      "nombre_completo": "María Jesús López García",
+      "nombre_completo": "[Cargo por definir - Vocal]",
       "cargo": "Vocal",
       "tipo": "vocal",
       "orden": 6
     },
     {
-      "id": 7,
-      "nombre_completo": "Francisco Javier Martín Torres",
-      "cargo": "Vocal",
-      "tipo": "vocal",
-      "orden": 7
-    },
-    {
       "id": 8,
-      "nombre_completo": "Dolores Sánchez Jiménez",
+      "nombre_completo": "[Cargo por definir - Vocal]",
       "cargo": "Vocal",
       "tipo": "vocal",
-      "orden": 8
-    },
-    {
-      "id": 9,
-      "nombre_completo": "Antonio Gómez Navarro",
-      "cargo": "Vocal",
-      "tipo": "vocal",
-      "orden": 9
+      "orden": 6
     }
   ],
   "directivos": [
     {
       "id": 1,
-      "nombre_completo": "María González López",
-      "cargo": "Presidenta",
+      "nombre_completo": "[Cargo por definir - Presidente]",
+      "cargo": "Presidente",
       "tipo": "directivo",
       "orden": 1
     },
     {
       "id": 2,
-      "nombre_completo": "Ana Martínez Rodríguez",
-      "cargo": "Vicepresidenta",
+      "nombre_completo": "[Cargo por definir - Vicepresidente]",
+      "cargo": "Vicepresidente",
       "tipo": "directivo",
       "orden": 2
     },
     {
       "id": 3,
-      "nombre_completo": "Carmen Pérez Sánchez",
-      "cargo": "Secretaria",
+      "nombre_completo": "[Cargo por definir - Tesorero]",
+      "cargo": "Tesorero",
       "tipo": "directivo",
       "orden": 3
     },
     {
       "id": 4,
-      "nombre_completo": "Isabel Ruiz Fernández",
-      "cargo": "Tesorera",
+      "nombre_completo": "[Cargo por definir - Secretario]",
+      "cargo": "Secretario",
       "tipo": "directivo",
       "orden": 4
     }
@@ -97,45 +90,36 @@
   "vocales": [
     {
       "id": 5,
-      "nombre_completo": "José Antonio Díaz Morales",
+      "nombre_completo": "[Cargo por definir - Vocal]",
+      "cargo": "Vocal",
+      "tipo": "vocal",
+      "orden": 5
+    },
+    {
+      "id": 7,
+      "nombre_completo": "[Cargo por definir - Vocal]",
       "cargo": "Vocal",
       "tipo": "vocal",
       "orden": 5
     },
     {
       "id": 6,
-      "nombre_completo": "María Jesús López García",
+      "nombre_completo": "[Cargo por definir - Vocal]",
       "cargo": "Vocal",
       "tipo": "vocal",
       "orden": 6
     },
     {
-      "id": 7,
-      "nombre_completo": "Francisco Javier Martín Torres",
-      "cargo": "Vocal",
-      "tipo": "vocal",
-      "orden": 7
-    },
-    {
       "id": 8,
-      "nombre_completo": "Dolores Sánchez Jiménez",
+      "nombre_completo": "[Cargo por definir - Vocal]",
       "cargo": "Vocal",
       "tipo": "vocal",
-      "orden": 8
-    },
-    {
-      "id": 9,
-      "nombre_completo": "Antonio Gómez Navarro",
-      "cargo": "Vocal",
-      "tipo": "vocal",
-      "orden": 9
+      "orden": 6
     }
   ],
   "colaboradores": [],
-  "total_miembros": 9,
+  "total_miembros": 8,
   "total_directivos": 4,
-  "total_vocales": 5,
-  "total_colaboradores": 0,
-  "anio": "2026-2027",
-  "timestamp": "2026-01-21T10:30:00.000Z"
+  "total_vocales": 4,
+  "total_colaboradores": 0
 }
