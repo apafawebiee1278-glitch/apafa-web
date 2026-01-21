@@ -1,0 +1,159 @@
+/* ===== APAFA WEB - SITIO ESTÁTICO ===== */
+/* Estilos principales para el sitio web estático de APAFA */
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* ===== COLORES INSTITUCIONALES APAFA ===== */
+
+/* Verde Militar - Color principal institucional */
+.bg-primary-institution {
+  background-color: #196828 !important;
+}
+
+.text-primary-institution {
+  color: #245320 !important;
+}
+
+.btn-primary-institution {
+  background-color: #205323;
+  border-color: #205323;
+  color: white;
+}
+
+.btn-primary-institution:hover {
+  background-color: #184220;
+  border-color: #184220;
+  color: white;
+}
+
+/* Verde Militar Oscuro - Para navegación */
+.bg-secondary-institution {
+  background-color: #194218 !important;
+}
+
+.text-secondary-institution {
+  color: #18421e !important;
+}
+
+/* Amarillo Institucional - Para acentos */
+.bg-accent-institution {
+  background-color: #FFD700 !important;
+}
+
+.text-accent-institution {
+  color: #FFD700 !important;
+}
+
+.btn-accent-institution {
+  background-color: #FFD700;
+  border-color: #FFD700;
+  color: #18421a;
+}
+
+.btn-accent-institution:hover {
+  background-color: #e6c200;
+  border-color: #e6c200;
+  color: #18421e;
+}
+
+/* Rojo Institucional - Para alertas/estados pendientes */
+.bg-alert-institution {
+  background-color: #B22222 !important;
+}
+
+.text-alert-institution {
+  color: #B22222 !important;
+}
+
+/* ===== ESTILOS MODERNOS ===== */
+
+/* Cards modernos */
+.card-modern {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.card-modern:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Botones modernos */
+.btn-modern {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+  transform: translateY(-1px);
+}
+
+/* Estados de pago */
+.status-pagado {
+  background-color: #28a745;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-pendiente {
+  background-color: #B22222;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Animaciones sutiles */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navegación activa */
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* Responsive utilities */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .bg-primary-institution .small {
+    font-size: 0.75rem;
+  }
+}

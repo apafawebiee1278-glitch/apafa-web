@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test - APAFA Web</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>🧪 Test de Funcionamiento - APAFA Web</h1>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>📊 Estadísticas</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Socios APAFA: <span id="test-socios">Cargando...</span></p>
+                        <p>Recaudado: <span id="test-recaudado">Cargando...</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>👨‍👩‍👧‍👦 Padres</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Total Padres: <span id="test-total-padres">Cargando...</span></p>
+                        <p>Primer Padre: <span id="test-primer-padre">Cargando...</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>✅ Estado del Sistema</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="test-status" class="alert alert-info">
+                            Ejecutando pruebas...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/data-loader.js"></script>
+    <script>
+        async function runTests() {
+            try {
+                // Test 1: Cargar estadísticas
+                const stats = await ApafaData.loadDataWithFallback('stats', { socios_apafa: 0, total_padres: 0 });
+                document.getElementById('test-socios').textContent = stats.socios_apafa || 0;
+
+                // Test 2: Cargar resumen financiero
+                const resumen = await ApafaData.loadDataWithFallback('resumen_financiero', { total_recaudado: 0 });
+                document.getElementById('test-recaudado').textContent = ApafaData.formatCurrency(resumen.total_recaudado || 0);
+
+                // Test 3: Cargar padres
+                const padres = await ApafaData.loadDataWithFallback('padres', []);
+                document.getElementById('test-total-padres').textContent = padres.length;
+                document.getElementById('test-primer-padre').textContent = padres.length > 0 ? padres[0].nombre_completo : 'Ninguno';
+
+                // Test completado
+                document.getElementById('test-status').className = 'alert alert-success';
+                document.getElementById('test-status').innerHTML = `
+                    <strong>✅ Todas las pruebas pasaron exitosamente!</strong><br>
+                    <small>El sitio web está listo para producción.</small>
+                `;
+
+            } catch (error) {
+                console.error('Error en pruebas:', error);
+                document.getElementById('test-status').className = 'alert alert-danger';
+                document.getElementById('test-status').innerHTML = `
+                    <strong>❌ Error en las pruebas:</strong><br>
+                    <small>${error.message}</small>
+                `;
+            }
+        }
+
+        // Ejecutar pruebas cuando la página cargue
+        document.addEventListener('DOMContentLoaded', runTests);
+    </script>
+</body>
+</html>

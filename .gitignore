@@ -1,0 +1,28 @@
+# APAFA Web - GitIgnore
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Backups locales
+*backup*
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js (por si acaso)
+node_modules/
+npm-debug.log*
+
+# Archivos locales de desarrollo
+local-*.json
+test-*.json
