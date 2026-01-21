@@ -3,18 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reuniones - APAFA I.E. Ex. Mixto "La Molina" 1278</title>
-
-    <!-- Bootstrap CSS -->
+    <title>Reuniones - I.E. Ex. Mixto "La Molina" 1278</title>
     <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
@@ -72,8 +64,7 @@
         </nav>
     </header>
 
-    <!-- Contenido principal -->
-    <main id="main-content" class="flex-grow-1">
+    <main>
         <section class="py-4">
             <div class="container">
                 <div class="row">
@@ -95,83 +86,54 @@
                     </div>
                 </div>
 
-                <!-- Estadísticas de reuniones -->
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <div class="card card-modern border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8">
-                                        <h5 class="fw-bold text-primary-institution mb-2">
-                                            <i class="bi bi-bar-chart me-2"></i>Estadísticas de Reuniones
-                                        </h5>
-                                        <p class="text-muted small mb-0">
-                                            Información general sobre las reuniones realizadas por el comité APAFA.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4 text-center">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="bg-primary-institution bg-opacity-10 p-3 rounded">
-                                                    <div class="h4 text-primary-institution mb-1" id="total-reuniones">0</div>
-                                                    <small class="text-muted">Total Reuniones</small>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="bg-success bg-opacity-10 p-3 rounded">
-                                                    <div class="h4 text-success mb-1" id="promedio-asistencia">0</div>
-                                                    <small class="text-muted">Promedio Asistencia</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        <!-- Estadísticas -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3 id="total-reuniones">Cargando...</h3>
+                                <p class="text-muted">Total Reuniones</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 id="promedio-asistencia">Cargando...</h3>
+                                <p class="text-muted">Promedio Asistencia</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 id="total-asistentes">Cargando...</h3>
+                                <p class="text-muted">Total Asistentes</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Lista de reuniones -->
-                <div class="row" id="lista-reuniones">
-                    <!-- Las reuniones se cargarán aquí dinámicamente -->
-                </div>
+        <!-- Lista de reuniones -->
+        <div class="row" id="lista-reuniones">
+            <!-- Las reuniones se cargarán aquí -->
+        </div>
 
-                <!-- Información adicional -->
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <div class="card card-modern border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h6 class="fw-bold text-primary-institution mb-3">
-                                            <i class="bi bi-info-circle me-2"></i>¿Cómo funcionan las reuniones?
-                                        </h6>
-                                        <ul class="list-unstyled">
-                                            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Reuniones programadas por el comité directivo</li>
-                                            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Asistencia registrada en la aplicación</li>
-                                            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Informes disponibles para todos los padres</li>
-                                            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Temas importantes del año escolar</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h6 class="fw-bold text-primary-institution mb-3">
-                                            <i class="bi bi-calendar-check me-2"></i>Próxima Reunión
-                                        </h6>
-                                        <div class="bg-light p-3 rounded">
-                                            <h6 class="text-primary-institution mb-2">Reunión General de Padres</h6>
-                                            <p class="small mb-1">
-                                                <strong>Fecha:</strong> Viernes 15 de enero, 2026<br>
-                                                <strong>Hora:</strong> 7:00 PM<br>
-                                                <strong>Lugar:</strong> Auditorio Principal
-                                            </p>
-                                            <small class="text-muted">Tema: Planificación del año escolar 2026-2027</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Próxima reunión -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>📅 Próxima Reunión</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 id="proxima-titulo">Cargando...</h6>
+                        <p id="proxima-detalles">Cargando detalles...</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="reuniones.html" class="btn btn-primary">← Volver a versión completa</a>
+            <a href="reuniones-simple.html" class="btn btn-secondary">← Ir a simple</a>
+        </div>
             </div>
         </section>
     </main>
@@ -204,7 +166,158 @@
     <!-- Data loader -->
     <script src="assets/js/data-loader.js"></script>
 
-    <!-- Página específica -->
-    <script src="assets/js/pages/reuniones.js"></script>
+    <!-- JavaScript simplificado -->
+    <script>
+        let datosReuniones = [];
+
+        // Función para renderizar estadísticas
+        function renderEstadisticas() {
+            const total = datosReuniones.length;
+            const totalAsistentes = datosReuniones.reduce((sum, r) => sum + r.asistentes, 0);
+            const promedio = total > 0 ? Math.round(totalAsistentes / total) : 0;
+
+            document.getElementById('total-reuniones').textContent = total;
+            document.getElementById('promedio-asistencia').textContent = promedio;
+            document.getElementById('total-asistentes').textContent = totalAsistentes;
+        }
+
+        // Función para renderizar lista de reuniones
+        function renderListaReuniones() {
+            if (!datosReuniones || datosReuniones.length === 0) {
+                document.getElementById('lista-reuniones').innerHTML = `
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-calendar-x text-muted" style="font-size: 3rem;"></i>
+                                <h5 class="text-muted mt-3">No hay reuniones programadas</h5>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = '';
+            datosReuniones.forEach(reunion => {
+                const fecha = new Date(reunion.fecha).toLocaleDateString('es-PE', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+
+                html += `
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="mb-0">${reunion.titulo}</h6>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>${fecha} - ${reunion.hora}
+                                </small>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">${reunion.motivo}</p>
+                                <div class="row text-center">
+                                    <div class="col-6">
+                                        <div class="bg-success bg-opacity-10 p-2 rounded">
+                                            <strong>${reunion.asistentes}</strong><br>
+                                            <small>Asistieron</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-info bg-opacity-10 p-2 rounded">
+                                            <strong>${reunion.total_padres}</strong><br>
+                                            <small>Total Padres</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('lista-reuniones').innerHTML = html;
+        }
+
+        // Función para renderizar próxima reunión
+        function renderProximaReunion() {
+            if (!datosReuniones || datosReuniones.length === 0) {
+                document.getElementById('proxima-titulo').textContent = 'No hay reuniones programadas';
+                document.getElementById('proxima-detalles').textContent = '';
+                return;
+            }
+
+            // Tomar la primera reunión como "próxima"
+            const proxima = datosReuniones[0];
+            const fecha = new Date(proxima.fecha).toLocaleDateString('es-PE', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            document.getElementById('proxima-titulo').textContent = proxima.titulo;
+            document.getElementById('proxima-detalles').innerHTML = `
+                <strong>Fecha:</strong> ${fecha}<br>
+                <strong>Hora:</strong> ${proxima.hora}<br>
+                <strong>Lugar:</strong> Auditorio Principal
+            `;
+        }
+
+        // Carga de datos
+        async function loadReunionesData() {
+            try {
+                const reuniones = await ApafaData.loadDataWithFallback('reuniones', [
+                    {
+                        id: 1,
+                        titulo: "Reunión General de Padres de Familia",
+                        fecha: "2026-01-15",
+                        hora: "19:00",
+                        motivo: "Reunión general programada para tratar temas importantes relacionados con el próximo año escolar, proyectos de mejora y actividades programadas.",
+                        asistentes: 25,
+                        total_padres: 6
+                    }
+                ]);
+                return { reuniones };
+            } catch (error) {
+                console.error('Error cargando reuniones:', error);
+                throw error;
+            }
+        }
+
+        // Función principal
+        async function cargarDatosReuniones() {
+            try {
+                console.log('Cargando datos de reuniones...');
+                const { reuniones } = await loadReunionesData();
+                datosReuniones = reuniones;
+
+                console.log('Datos cargados:', reuniones.length, 'reuniones');
+
+                // Renderizar todo
+                renderEstadisticas();
+                renderListaReuniones();
+                renderProximaReunion();
+
+                console.log('Reuniones renderizadas correctamente');
+
+            } catch (error) {
+                console.error('Error cargando reuniones:', error);
+
+                // Mostrar errores
+                document.getElementById('total-reuniones').textContent = 'Error';
+                document.getElementById('lista-reuniones').innerHTML = `
+                    <div class="col-12">
+                        <div class="alert alert-danger text-center">
+                            Error cargando reuniones: ${error.message}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarDatosReuniones);
+    </script>
 </body>
 </html>
