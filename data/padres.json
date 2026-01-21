@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": 1,
+    "dni_parcial": "****1470",
+    "nombre_completo": "Francisco Labarca",
+    "total_pagado": 80.0,
+    "estado_pago": "completo",
+    "faltante": 0,
+    "activo": true
+  }
+]
