@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnóstico - APAFA Web</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>🔍 DIAGNÓSTICO - APAFA Web</h1>
+        <div id="diagnostico-resultados"></div>
+    </div>
+
+    <script>
+        const resultados = document.getElementById('diagnostico-resultados');
+
+        function log(mensaje, tipo = 'info') {
+            const div = document.createElement('div');
+            div.className = `alert alert-${tipo === 'error' ? 'danger' : tipo === 'success' ? 'success' : 'info'}`;
+            div.innerHTML = `<strong>${tipo.toUpperCase()}:</strong> ${mensaje}`;
+            resultados.appendChild(div);
+            console.log(`${tipo}: ${mensaje}`);
+        }
+
+        async function diagnosticar() {
+            log('Iniciando diagnóstico de carga de datos...', 'info');
+
+            // 1. Verificar que los archivos existen
+            const archivos = ['stats', 'resumen_financiero', 'conceptos_pago', 'comite_apafa', 'avisos'];
+
+            for (const archivo of archivos) {
+                try {
+                    log(`Verificando ${archivo}.json...`, 'info');
+
+                    const response = await fetch(`data/${archivo}.json`, {
+                        method: 'GET',
+                        cache: 'no-cache'
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const data = await response.json();
+                    const campos = Object.keys(data).length;
+                    log(`✅ ${archivo}.json: ${campos} campos cargados`, 'success');
+
+                    // Mostrar algunos datos de ejemplo
+                    if (archivo === 'stats') {
+                        log(`📊 Socios APAFA: ${data.socios_apafa}, Total padres: ${data.total_padres}`, 'info');
+                    } else if (archivo === 'resumen_financiero') {
+                        log(`💰 Monto meta: S/ ${data.monto_meta}, Total recaudado: S/ ${data.total_recaudado}`, 'info');
+                    }
+
+                } catch (error) {
+                    log(`❌ Error cargando ${archivo}.json: ${error.message}`, 'error');
+                }
+            }
+
+            // 2. Verificar data-loader
+            try {
+                log('Verificando data-loader...', 'info');
+
+                // Simular carga con el data-loader
+                const testResponse = await fetch('assets/js/data-loader.js');
+                if (testResponse.ok) {
+                    log('✅ data-loader.js está accesible', 'success');
+                } else {
+                    throw new Error(`HTTP ${testResponse.status}`);
+                }
+
+            } catch (error) {
+                log(`❌ Error con data-loader: ${error.message}`, 'error');
+            }
+
+            // 3. Verificar index.js
+            try {
+                log('Verificando index.js...', 'info');
+
+                const testResponse = await fetch('assets/js/pages/index.js');
+                if (testResponse.ok) {
+                    log('✅ index.js está accesible', 'success');
+                } else {
+                    throw new Error(`HTTP ${testResponse.status}`);
+                }
+
+            } catch (error) {
+                log(`❌ Error con index.js: ${error.message}`, 'error');
+            }
+
+            log('Diagnóstico completado. Revisa los resultados arriba.', 'info');
+        }
+
+        // Ejecutar diagnóstico cuando la página cargue
+        window.addEventListener('load', diagnosticar);
+    </script>
+</body>
+</html>
