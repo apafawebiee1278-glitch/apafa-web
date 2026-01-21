@@ -94,17 +94,31 @@ async function initDashboard() {
     console.log('Iniciando dashboard step 1...');
 
     try {
-        ApafaData.showLoading('#main-content', 'Cargando datos...');
+        // Loading inicial
+        console.log('Mostrando loading inicial...');
 
         const data = await loadDashboardData();
-        await renderDashboard(data);
+        console.log('Datos obtenidos, renderizando...');
 
-        ApafaData.toggleElement('.loading-spinner', false);
-        console.log('Dashboard step 1 completado');
+        await renderDashboard(data);
+        console.log('Renderizado completado');
+
+        // Limpiar cualquier loading restante
+        const mainContent = document.querySelector('#main-content');
+        if (mainContent && mainContent.innerHTML.includes('Cargando')) {
+            mainContent.innerHTML = '';
+        }
+
+        console.log('Dashboard step 1 completado exitosamente');
 
     } catch (error) {
         console.error('Error en initDashboard:', error);
-        ApafaData.showError('#main-content', 'Error al cargar el dashboard');
+
+        // Mostrar error en un lugar visible
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'alert alert-danger mt-3';
+        errorDiv.innerHTML = `<strong>Error:</strong> ${error.message}`;
+        document.querySelector('.container').appendChild(errorDiv);
     }
 }
 
