@@ -1,6 +1,15 @@
 {
-  "conceptos": [],
-  "total_conceptos": 0,
-  "conceptos_obligatorios": 0,
+  "conceptos": [
+    {
+      "id": 1,
+      "nombre": "APAFA",
+      "descripcion": "Pago Anual de APAFA 2026",
+      "monto_limite": 80.0,
+      "obligatorio": true,
+      "categoria": "obligatorio"
+    }
+  ],
+  "total_conceptos": 1,
+  "conceptos_obligatorios": 1,
   "conceptos_opcionales": 0
 }

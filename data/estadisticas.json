@@ -1,7 +1,7 @@
 {
-  "verde": 0,
+  "verde": 1,
   "amarillo": 0,
   "rojo": 0,
-  "total_padres": 0,
-  "socios_apafa": 0
+  "total_padres": 1,
+  "socios_apafa": 1
 }
