@@ -195,7 +195,9 @@ function renderComiteApafa(data) {
 /**
  * Renderiza toda la página de inicio
  */
-async function renderDashboard(data, container) {
+async function renderDashboard(data) {
+  console.log('Renderizando dashboard completo...');
+
   try {
     // Renderizar todas las secciones
     renderEstadisticasRapidas(data);
@@ -203,12 +205,11 @@ async function renderDashboard(data, container) {
     renderContribucionesAdicionales(data);
     renderComiteApafa(data);
 
-    // Ocultar cualquier mensaje de carga
-    ApafaData.toggleElement('.loading-spinner', false);
+    console.log('Todas las secciones renderizadas correctamente');
 
   } catch (error) {
     console.error('Error renderizando dashboard:', error);
-    ApafaData.showError('#main-content', 'Error al cargar el dashboard');
+    throw error; // Re-throw para que initDashboard lo maneje
   }
 }
 
@@ -216,11 +217,39 @@ async function renderDashboard(data, container) {
  * Inicializa la página de inicio
  */
 async function initDashboard() {
-  await ApafaData.initializePage(
-    loadDashboardData,
-    renderDashboard,
-    '#main-content'
-  );
+  console.log('Iniciando dashboard principal...');
+
+  try {
+    // Cargar datos directamente (sin initializePage para evitar conflictos de loading)
+    const data = await loadDashboardData();
+    console.log('Datos obtenidos, renderizando...');
+
+    // Renderizar sin contenedor (renderDashboard ya no necesita container)
+    await renderDashboard(data);
+
+    // Limpiar cualquier loading restante
+    const mainContent = document.querySelector('#main-content');
+    if (mainContent && mainContent.innerHTML.includes('Cargando')) {
+      mainContent.innerHTML = '';
+    }
+
+    console.log('Dashboard principal completado exitosamente');
+
+  } catch (error) {
+    console.error('Error en initDashboard:', error);
+
+    // Mostrar error en el main content
+    const mainContent = document.querySelector('#main-content');
+    if (mainContent) {
+      mainContent.innerHTML = `
+        <div class="alert alert-danger text-center mt-4" role="alert">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>
+          <strong>Error al cargar la página</strong><br>
+          <small>Por favor, recarga la página o contacta al administrador</small>
+        </div>
+      `;
+    }
+  }
 }
 
 // Inicializar cuando el DOM esté listo
