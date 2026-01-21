@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reuniones APAFA Medio - APAFA</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>📅 Reuniones APAFA - Versión Media</h1>
+        <p>Con funcionalidad completa pero diseño simplificado</p>
+
+        <!-- Estadísticas -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3 id="total-reuniones">Cargando...</h3>
+                                <p class="text-muted">Total Reuniones</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 id="promedio-asistencia">Cargando...</h3>
+                                <p class="text-muted">Promedio Asistencia</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 id="total-asistentes">Cargando...</h3>
+                                <p class="text-muted">Total Asistentes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de reuniones -->
+        <div class="row" id="lista-reuniones">
+            <!-- Las reuniones se cargarán aquí -->
+        </div>
+
+        <!-- Próxima reunión -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>📅 Próxima Reunión</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 id="proxima-titulo">Cargando...</h6>
+                        <p id="proxima-detalles">Cargando detalles...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="reuniones.html" class="btn btn-primary">← Volver a versión completa</a>
+            <a href="reuniones-simple.html" class="btn btn-secondary">← Ir a simple</a>
+        </div>
+    </div>
+
+    <!-- Data loader -->
+    <script src="assets/js/data-loader.js"></script>
+
+    <!-- JavaScript simplificado -->
+    <script>
+        let datosReuniones = [];
+
+        // Función para renderizar estadísticas
+        function renderEstadisticas() {
+            const total = datosReuniones.length;
+            const totalAsistentes = datosReuniones.reduce((sum, r) => sum + r.asistentes, 0);
+            const promedio = total > 0 ? Math.round(totalAsistentes / total) : 0;
+
+            document.getElementById('total-reuniones').textContent = total;
+            document.getElementById('promedio-asistencia').textContent = promedio;
+            document.getElementById('total-asistentes').textContent = totalAsistentes;
+        }
+
+        // Función para renderizar lista de reuniones
+        function renderListaReuniones() {
+            if (!datosReuniones || datosReuniones.length === 0) {
+                document.getElementById('lista-reuniones').innerHTML = `
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-calendar-x text-muted" style="font-size: 3rem;"></i>
+                                <h5 class="text-muted mt-3">No hay reuniones programadas</h5>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = '';
+            datosReuniones.forEach(reunion => {
+                const fecha = new Date(reunion.fecha).toLocaleDateString('es-PE', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+
+                html += `
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="mb-0">${reunion.titulo}</h6>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>${fecha} - ${reunion.hora}
+                                </small>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">${reunion.motivo}</p>
+                                <div class="row text-center">
+                                    <div class="col-6">
+                                        <div class="bg-success bg-opacity-10 p-2 rounded">
+                                            <strong>${reunion.asistentes}</strong><br>
+                                            <small>Asistieron</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-info bg-opacity-10 p-2 rounded">
+                                            <strong>${reunion.total_padres}</strong><br>
+                                            <small>Total Padres</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('lista-reuniones').innerHTML = html;
+        }
+
+        // Función para renderizar próxima reunión
+        function renderProximaReunion() {
+            if (!datosReuniones || datosReuniones.length === 0) {
+                document.getElementById('proxima-titulo').textContent = 'No hay reuniones programadas';
+                document.getElementById('proxima-detalles').textContent = '';
+                return;
+            }
+
+            // Tomar la primera reunión como "próxima"
+            const proxima = datosReuniones[0];
+            const fecha = new Date(proxima.fecha).toLocaleDateString('es-PE', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            document.getElementById('proxima-titulo').textContent = proxima.titulo;
+            document.getElementById('proxima-detalles').innerHTML = `
+                <strong>Fecha:</strong> ${fecha}<br>
+                <strong>Hora:</strong> ${proxima.hora}<br>
+                <strong>Lugar:</strong> Auditorio Principal
+            `;
+        }
+
+        // Carga de datos
+        async function loadReunionesData() {
+            try {
+                const reuniones = await ApafaData.loadDataWithFallback('reuniones', [
+                    {
+                        id: 1,
+                        titulo: "Reunión General de Padres de Familia",
+                        fecha: "2026-01-15",
+                        hora: "19:00",
+                        motivo: "Reunión general programada para tratar temas importantes relacionados con el próximo año escolar, proyectos de mejora y actividades programadas.",
+                        asistentes: 25,
+                        total_padres: 6
+                    }
+                ]);
+                return { reuniones };
+            } catch (error) {
+                console.error('Error cargando reuniones:', error);
+                throw error;
+            }
+        }
+
+        // Función principal
+        async function cargarDatosReuniones() {
+            try {
+                console.log('Cargando datos de reuniones...');
+                const { reuniones } = await loadReunionesData();
+                datosReuniones = reuniones;
+
+                console.log('Datos cargados:', reuniones.length, 'reuniones');
+
+                // Renderizar todo
+                renderEstadisticas();
+                renderListaReuniones();
+                renderProximaReunion();
+
+                console.log('Reuniones renderizadas correctamente');
+
+            } catch (error) {
+                console.error('Error cargando reuniones:', error);
+
+                // Mostrar errores
+                document.getElementById('total-reuniones').textContent = 'Error';
+                document.getElementById('lista-reuniones').innerHTML = `
+                    <div class="col-12">
+                        <div class="alert alert-danger text-center">
+                            Error cargando reuniones: ${error.message}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarDatosReuniones);
+    </script>
+</body>
+</html>

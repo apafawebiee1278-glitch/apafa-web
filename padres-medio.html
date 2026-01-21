@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socios APAFA Medio - APAFA</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>👨‍👩‍👧‍👦 Socios APAFA - Versión Media</h1>
+        <p>Con funcionalidad completa pero HTML simplificado</p>
+
+        <!-- Información General -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h5>Información sobre Contribuciones</h5>
+                                <p>Meta Anual: <strong id="meta-anual">S/ 1,200.00</strong></p>
+                                <p>Última actualización: <span id="ultima-actualizacion">Cargando...</span></p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row text-center">
+                                    <div class="col-6">
+                                        <div class="bg-success bg-opacity-10 p-2 rounded">
+                                            <div class="h5 text-success" id="porcentaje-completado">0.0%</div>
+                                            <small>Completado</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-warning bg-opacity-10 p-2 rounded">
+                                            <div class="h5 text-warning" id="porcentaje-pendiente">0.0%</div>
+                                            <small>Pendiente</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones simples en lugar de pestañas -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="btn-group w-100" role="group">
+                    <button type="button" class="btn btn-success" onclick="mostrarCompletos()">
+                        ✅ Contribuciones Completas (<span id="conteo-completos">0</span>)
+                    </button>
+                    <button type="button" class="btn btn-warning" onclick="mostrarProceso()">
+                        ⏳ Contribuciones en Proceso (<span id="conteo-proceso">0</span>)
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido (sin pestañas complejas) -->
+        <div id="contenido-completos" class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h6 class="mb-0">✅ Padres con Contribuciones Completas</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Monto</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabla-completos">
+                                    <tr><td colspan="3" class="text-center">Cargando...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contenido-proceso" class="row" style="display: none;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        <h6 class="mb-0">⏳ Padres con Contribuciones en Proceso</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Monto Pagado</th>
+                                        <th>Pendiente</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabla-proceso">
+                                    <tr><td colspan="4" class="text-center">Cargando...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="padres.html" class="btn btn-primary">← Volver a versión completa</a>
+            <a href="padres-simple.html" class="btn btn-secondary">← Ir a simple</a>
+        </div>
+    </div>
+
+    <!-- Data loader -->
+    <script src="assets/js/data-loader.js"></script>
+
+    <!-- JavaScript simplificado -->
+    <script>
+        let datosPadres = [];
+        let datosResumen = {};
+
+        // Funciones para cambiar vistas
+        function mostrarCompletos() {
+            document.getElementById('contenido-completos').style.display = 'block';
+            document.getElementById('contenido-proceso').style.display = 'none';
+        }
+
+        function mostrarProceso() {
+            document.getElementById('contenido-completos').style.display = 'none';
+            document.getElementById('contenido-proceso').style.display = 'block';
+        }
+
+        // Funciones de renderizado (simplificadas)
+        function renderInformacionGeneral() {
+            document.getElementById('meta-anual').textContent = ApafaData.formatCurrency(datosResumen.meta_anual || 1200);
+            document.getElementById('porcentaje-completado').textContent = ApafaData.formatPercentage(datosResumen.porcentaje_cumplimiento || 0);
+            document.getElementById('porcentaje-pendiente').textContent = ApafaData.formatPercentage(100 - (datosResumen.porcentaje_cumplimiento || 0));
+            document.getElementById('ultima-actualizacion').textContent = new Date().toLocaleString('es-PE');
+        }
+
+        function renderContadores() {
+            const completos = datosPadres.filter(p => p.estado_pago === 'completo').length;
+            const proceso = datosPadres.filter(p => p.estado_pago !== 'completo').length;
+
+            document.getElementById('conteo-completos').textContent = completos;
+            document.getElementById('conteo-proceso').textContent = proceso;
+        }
+
+        function renderTablaCompletos() {
+            const completos = datosPadres.filter(p => p.estado_pago === 'completo');
+
+            if (completos.length === 0) {
+                document.getElementById('tabla-completos').innerHTML = '<tr><td colspan="3" class="text-center">No hay contribuciones completas</td></tr>';
+                return;
+            }
+
+            let html = '';
+            completos.forEach(padre => {
+                html += `
+                    <tr>
+                        <td>${padre.nombre_completo}<br><small class="text-muted">${padre.dni_parcial}</small></td>
+                        <td class="fw-bold text-success">${ApafaData.formatCurrency(padre.total_pagado)}</td>
+                        <td><span class="badge bg-success">Completo</span></td>
+                    </tr>
+                `;
+            });
+
+            document.getElementById('tabla-completos').innerHTML = html;
+        }
+
+        function renderTablaProceso() {
+            const proceso = datosPadres.filter(p => p.estado_pago !== 'completo');
+
+            if (proceso.length === 0) {
+                document.getElementById('tabla-proceso').innerHTML = '<tr><td colspan="4" class="text-center">No hay contribuciones en proceso</td></tr>';
+                return;
+            }
+
+            let html = '';
+            proceso.forEach(padre => {
+                const estadoClass = padre.estado_pago === 'pendiente' ? 'danger' : 'warning';
+                const estadoTexto = padre.estado_pago === 'pendiente' ? 'Pendiente' : 'En Progreso';
+
+                html += `
+                    <tr>
+                        <td>${padre.nombre_completo}<br><small class="text-muted">${padre.dni_parcial}</small></td>
+                        <td class="fw-bold text-warning">${ApafaData.formatCurrency(padre.total_pagado)}</td>
+                        <td class="fw-bold text-danger">${ApafaData.formatCurrency(padre.faltante)}</td>
+                        <td><span class="badge bg-${estadoClass}">${estadoTexto}</span></td>
+                    </tr>
+                `;
+            });
+
+            document.getElementById('tabla-proceso').innerHTML = html;
+        }
+
+        // Carga de datos
+        async function cargarDatos() {
+            try {
+                console.log('Cargando datos de padres...');
+                [datosPadres, , datosResumen] = await Promise.all([
+                    ApafaData.loadData('padres'),
+                    ApafaData.loadData('conceptos_pago'),
+                    ApafaData.loadData('resumen_financiero')
+                ]);
+
+                console.log('Datos cargados:', datosPadres.length, 'padres');
+
+                // Renderizar todo
+                renderInformacionGeneral();
+                renderContadores();
+                renderTablaCompletos();
+                renderTablaProceso();
+
+                console.log('Padres renderizados correctamente');
+
+            } catch (error) {
+                console.error('Error cargando padres:', error);
+                // Mostrar errores en las tablas
+                document.getElementById('tabla-completos').innerHTML = `<tr><td colspan="3" class="text-center text-danger">Error: ${error.message}</td></tr>`;
+                document.getElementById('tabla-proceso').innerHTML = `<tr><td colspan="4" class="text-center text-danger">Error: ${error.message}</td></tr>`;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarDatos);
+    </script>
+</body>
+</html>
