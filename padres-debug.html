@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debug Padres - APAFA</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>🐛 DEBUG - Socios APAFA</h1>
+        <div id="debug-output" class="mt-4"></div>
+
+        <div id="main-content" class="mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Contenido de la página</h5>
+                    <div id="padres-info">Cargando...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="padres.html" class="btn btn-primary">← Volver a Socios APAFA</a>
+            <a href="diagnostico.html" class="btn btn-info">🔍 Ir a diagnóstico general</a>
+        </div>
+    </div>
+
+    <script>
+        const debugOutput = document.getElementById('debug-output');
+
+        function debug(msg, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `alert alert-${type === 'error' ? 'danger' : type === 'success' ? 'success' : 'info'}`;
+            div.innerHTML = `<small><strong>${new Date().toLocaleTimeString()}:</strong> ${msg}</small>`;
+            debugOutput.appendChild(div);
+            console.log(`${type}: ${msg}`);
+        }
+
+        // Test básico de datos de padres
+        debug('Iniciando debug de datos de padres...');
+
+        // Verificar que podemos cargar datos de padres
+        fetch('data/padres.json')
+            .then(response => {
+                debug(`Fetch padres response status: ${response.status}`, response.ok ? 'success' : 'error');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(padres => {
+                debug(`Datos de padres cargados: ${padres.length} registros`, 'success');
+
+                // Mostrar info básica
+                const infoDiv = document.getElementById('padres-info');
+                infoDiv.innerHTML = `
+                    <p><strong>Total de padres:</strong> ${padres.length}</p>
+                    <p><strong>Primer padre:</strong> ${padres[0]?.nombre_completo || 'N/A'}</p>
+                    <p><strong>Completos:</strong> ${padres.filter(p => p.estado_pago === 'completo').length}</p>
+                    <p><strong>Pendientes:</strong> ${padres.filter(p => p.estado_pago !== 'completo').length}</p>
+                `;
+
+                debug('Info de padres mostrada correctamente', 'success');
+            })
+            .catch(error => {
+                debug(`Error cargando datos de padres: ${error.message}`, 'error');
+            });
+
+        // Verificar que ApafaData funciona
+        setTimeout(() => {
+            debug('Verificando ApafaData para padres...');
+            if (typeof ApafaData !== 'undefined') {
+                debug('✅ ApafaData disponible', 'success');
+
+                ApafaData.loadData('padres')
+                    .then(padres => {
+                        debug(`ApafaData.loadData funcionó: ${padres.length} registros`, 'success');
+                    })
+                    .catch(error => {
+                        debug(`ApafaData.loadData falló: ${error.message}`, 'error');
+                    });
+            } else {
+                debug('❌ ApafaData no disponible', 'error');
+            }
+        }, 1000);
+
+        debug('Debug de padres configurado');
+    </script>
+
+    <!-- Data loader -->
+    <script src="assets/js/data-loader.js"></script>
+</body>
+</html>

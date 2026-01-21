@@ -7,20 +7,28 @@
  * Carga todos los datos necesarios para la página de reuniones
  */
 async function loadReunionesData() {
-  // Por ahora datos mock ya que no hay reuniones en el sistema actual
-  const reuniones = [
-    {
-      id: 1,
-      titulo: "Reunión General de Padres de Familia",
-      fecha: "2026-01-15",
-      hora: "19:00",
-      motivo: "Reunión general programada para tratar temas importantes relacionados con el próximo año escolar, proyectos de mejora y actividades programadas.",
-      asistentes: 25,
-      total_padres: 6
-    }
-  ];
+  console.log('Cargando datos de reuniones...');
 
-  return { reuniones };
+  try {
+    // Cargar datos desde el archivo JSON (o usar fallback si no existe)
+    const reuniones = await ApafaData.loadDataWithFallback('reuniones', [
+      {
+        id: 1,
+        titulo: "Reunión General de Padres de Familia",
+        fecha: "2026-01-15",
+        hora: "19:00",
+        motivo: "Reunión general programada para tratar temas importantes relacionados con el próximo año escolar, proyectos de mejora y actividades programadas.",
+        asistentes: 25,
+        total_padres: 6
+      }
+    ]);
+
+    console.log(`Datos de reuniones cargados: ${reuniones.length} reuniones`);
+    return { reuniones };
+  } catch (error) {
+    console.error('Error cargando datos de reuniones:', error);
+    throw error;
+  }
 }
 
 /**
