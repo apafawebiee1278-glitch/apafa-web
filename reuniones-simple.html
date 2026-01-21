@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reuniones APAFA Simple - APAFA</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>📅 Reuniones APAFA - Versión Simple</h1>
+        <p>Prueba básica de carga de datos</p>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 id="total-reuniones">Cargando...</h2>
+                        <p>Total de Reuniones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Lista de Reuniones</h5>
+                    </div>
+                    <div class="card-body" id="lista-reuniones">
+                        Cargando reuniones...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="reuniones.html" class="btn btn-primary">← Volver a versión completa</a>
+            <a href="reuniones-debug.html" class="btn btn-info">🔍 Ir a debug</a>
+        </div>
+    </div>
+
+    <!-- Data loader -->
+    <script src="assets/js/data-loader.js"></script>
+
+    <!-- Script simplificado -->
+    <script>
+        console.log('Iniciando carga simple de reuniones...');
+
+        async function cargarDatosReuniones() {
+            try {
+                console.log('Cargando datos de reuniones...');
+                const { reuniones } = await loadReunionesData();
+
+                console.log('Datos cargados:', reuniones.length, 'reuniones');
+
+                // Actualizar contador
+                document.getElementById('total-reuniones').textContent = reuniones.length;
+
+                // Mostrar lista
+                let html = '<div class="row">';
+                reuniones.forEach(reunion => {
+                    html += `
+                        <div class="col-md-6 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">${reunion.titulo}</h6>
+                                    <p class="card-text small">${reunion.fecha} - ${reunion.hora}</p>
+                                    <p class="card-text">${reunion.motivo}</p>
+                                    <div class="row text-center">
+                                        <div class="col-6">
+                                            <strong>${reunion.asistentes}</strong><br><small>Asistieron</small>
+                                        </div>
+                                        <div class="col-6">
+                                            <strong>${reunion.total_padres}</strong><br><small>Total Padres</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+
+                document.getElementById('lista-reuniones').innerHTML = html;
+
+                console.log('Reuniones mostradas correctamente');
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('total-reuniones').textContent = 'Error';
+                document.getElementById('lista-reuniones').innerHTML = `<div class="alert alert-danger">Error: ${error.message}</div>`;
+            }
+        }
+
+        // Función loadReunionesData (igual que en reuniones.js)
+        async function loadReunionesData() {
+            try {
+                const reuniones = await ApafaData.loadDataWithFallback('reuniones', [
+                    {
+                        id: 1,
+                        titulo: "Reunión General de Padres de Familia",
+                        fecha: "2026-01-15",
+                        hora: "19:00",
+                        motivo: "Reunión general programada para tratar temas importantes relacionados con el próximo año escolar, proyectos de mejora y actividades programadas.",
+                        asistentes: 25,
+                        total_padres: 6
+                    }
+                ]);
+                return { reuniones };
+            } catch (error) {
+                console.error('Error cargando reuniones:', error);
+                throw error;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarDatosReuniones);
+    </script>
+</body>
+</html>

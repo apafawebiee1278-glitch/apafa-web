@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socios APAFA Simple - APAFA</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>👨‍👩‍👧‍👦 Socios APAFA - Versión Simple</h1>
+        <p>Prueba básica de carga de datos</p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 id="conteo-completos">Cargando...</h2>
+                        <p>Padres Completos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 id="conteo-proceso">Cargando...</h2>
+                        <p>Padres en Proceso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Lista Básica de Padres</h5>
+                    </div>
+                    <div class="card-body" id="lista-padres">
+                        Cargando lista...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="padres.html" class="btn btn-primary">← Volver a versión completa</a>
+            <a href="padres-debug.html" class="btn btn-info">🔍 Ir a debug</a>
+        </div>
+    </div>
+
+    <!-- Data loader -->
+    <script src="assets/js/data-loader.js"></script>
+
+    <!-- Script simplificado -->
+    <script>
+        console.log('Iniciando carga simple de padres...');
+
+        async function cargarDatosPadres() {
+            try {
+                console.log('Cargando datos...');
+                const [padres, stats] = await Promise.all([
+                    ApafaData.loadData('padres'),
+                    ApafaData.loadData('stats')
+                ]);
+
+                console.log('Datos cargados:', padres.length, 'padres,', stats);
+
+                // Actualizar contadores
+                const completos = padres.filter(p => p.estado_pago === 'completo').length;
+                const proceso = padres.filter(p => p.estado_pago !== 'completo').length;
+
+                document.getElementById('conteo-completos').textContent = completos;
+                document.getElementById('conteo-proceso').textContent = proceso;
+
+                // Mostrar lista básica
+                let html = '<ul class="list-group">';
+                padres.slice(0, 5).forEach(padre => {
+                    const estadoClass = padre.estado_pago === 'completo' ? 'success' : 'warning';
+                    html += `
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            ${padre.nombre_completo}
+                            <span class="badge bg-${estadoClass}">${padre.estado_pago}</span>
+                        </li>
+                    `;
+                });
+                html += '</ul>';
+
+                document.getElementById('lista-padres').innerHTML = html;
+
+                console.log('Datos mostrados correctamente');
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('conteo-completos').textContent = 'Error';
+                document.getElementById('conteo-proceso').textContent = 'Error';
+                document.getElementById('lista-padres').innerHTML = `<div class="alert alert-danger">Error: ${error.message}</div>`;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarDatosPadres);
+    </script>
+</body>
+</html>
