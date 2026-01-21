@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Step 3 - APAFA</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>🏠 APAFA - Página de Inicio (Step 3)</h1>
+        <p>Prueba: Agregando renderComiteApafa (la última función compleja)</p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 id="socios-apafa-count">Cargando...</h2>
+                        <p>Socios APAFA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 id="total-recaudado">Cargando...</h2>
+                        <p>Total Recaudado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de cuotas -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>💰 Información de Cuotas</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="cuota-obligatoria">Cargando cuota...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de contribuciones adicionales -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>➕ Contribuciones Adicionales</h5>
+                    </div>
+                    <div class="card-body" id="contribuciones-adicionales">
+                        Cargando contribuciones...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección del comité APAFA (nueva en este step) -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>👥 Comité APAFA</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="fw-bold text-primary-institution mb-3">Junta Directiva</h6>
+                                <ul class="list-unstyled" id="comite-directivos">
+                                    <li>Cargando directivos...</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bold text-primary-institution mb-3">Vocales</h6>
+                                <ul class="list-unstyled" id="comite-vocales">
+                                    <li>Cargando vocales...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4" id="main-content">
+            <!-- Espacio para mensajes de error -->
+        </div>
+
+        <div class="mt-4">
+            <a href="index-step2.html" class="btn btn-secondary">← Volver a Step 2</a>
+            <a href="index.html" class="btn btn-success">→ Probar versión completa</a>
+            <a href="diagnostico.html" class="btn btn-info">🔍 Ir a diagnóstico</a>
+        </div>
+    </div>
+
+    <!-- Data loader -->
+    <script src="assets/js/data-loader.js"></script>
+
+    <!-- Página step 3 -->
+    <script src="assets/js/pages/index-step3.js"></script>
+</body>
+</html>
