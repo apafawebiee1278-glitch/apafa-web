@@ -176,7 +176,9 @@ function renderContribucionesProceso(padresPendientes, recaudacionEsperada) {
 /**
  * Renderiza toda la página de padres
  */
-async function renderPadres(data, container) {
+async function renderPadres(data) {
+  console.log('Renderizando página de padres completa...');
+
   try {
     const { padres, resumenFinanciero, stats } = data;
 
@@ -192,12 +194,11 @@ async function renderPadres(data, container) {
     renderContribucionesCompletas(padresCompletos);
     renderContribucionesProceso(padresPendientes, resumenFinanciero.recaudacion_esperada);
 
-    // Ocultar cualquier mensaje de carga
-    ApafaData.toggleElement('.loading-spinner', false);
+    console.log('Página de padres renderizada correctamente');
 
   } catch (error) {
     console.error('Error renderizando página de padres:', error);
-    ApafaData.showError('#main-content', 'Error al cargar la información de socios');
+    throw error; // Re-throw para que initPadres lo maneje
   }
 }
 
@@ -205,11 +206,39 @@ async function renderPadres(data, container) {
  * Inicializa la página de padres
  */
 async function initPadres() {
-  await ApafaData.initializePage(
-    loadPadresData,
-    renderPadres,
-    '#main-content'
-  );
+  console.log('Iniciando página de padres...');
+
+  try {
+    // Cargar datos directamente (sin initializePage para evitar conflictos de loading)
+    const data = await loadPadresData();
+    console.log('Datos de padres obtenidos, renderizando...');
+
+    // Renderizar sin contenedor (renderPadres ya no necesita container)
+    await renderPadres(data);
+
+    // Limpiar cualquier loading restante
+    const mainContent = document.querySelector('#main-content');
+    if (mainContent && mainContent.innerHTML.includes('Cargando')) {
+      mainContent.innerHTML = '';
+    }
+
+    console.log('Página de padres completada exitosamente');
+
+  } catch (error) {
+    console.error('Error en initPadres:', error);
+
+    // Mostrar error en el main content
+    const mainContent = document.querySelector('#main-content');
+    if (mainContent) {
+      mainContent.innerHTML = `
+        <div class="alert alert-danger text-center mt-4" role="alert">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>
+          <strong>Error al cargar la información de socios</strong><br>
+          <small>Por favor, recarga la página o contacta al administrador</small>
+        </div>
+      `;
+    }
+  }
 }
 
 // Inicializar cuando el DOM esté listo

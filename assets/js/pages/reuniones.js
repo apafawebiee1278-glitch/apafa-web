@@ -108,7 +108,9 @@ function renderEstadisticasReuniones(reuniones) {
 /**
  * Renderiza toda la página de reuniones
  */
-async function renderReunionesPage(data, container) {
+async function renderReunionesPage(data) {
+  console.log('Renderizando página de reuniones completa...');
+
   try {
     const { reuniones } = data;
 
@@ -118,12 +120,11 @@ async function renderReunionesPage(data, container) {
     // Renderizar lista de reuniones
     renderReuniones(reuniones);
 
-    // Ocultar cualquier mensaje de carga
-    ApafaData.toggleElement('.loading-spinner', false);
+    console.log('Página de reuniones renderizada correctamente');
 
   } catch (error) {
     console.error('Error renderizando página de reuniones:', error);
-    ApafaData.showError('#main-content', 'Error al cargar la información de reuniones');
+    throw error; // Re-throw para que initReuniones lo maneje
   }
 }
 
@@ -131,11 +132,39 @@ async function renderReunionesPage(data, container) {
  * Inicializa la página de reuniones
  */
 async function initReuniones() {
-  await ApafaData.initializePage(
-    loadReunionesData,
-    renderReunionesPage,
-    '#main-content'
-  );
+  console.log('Iniciando página de reuniones...');
+
+  try {
+    // Cargar datos directamente (sin initializePage para evitar conflictos de loading)
+    const data = await loadReunionesData();
+    console.log('Datos de reuniones obtenidos, renderizando...');
+
+    // Renderizar sin contenedor (renderReunionesPage ya no necesita container)
+    await renderReunionesPage(data);
+
+    // Limpiar cualquier loading restante
+    const mainContent = document.querySelector('#main-content');
+    if (mainContent && mainContent.innerHTML.includes('Cargando')) {
+      mainContent.innerHTML = '';
+    }
+
+    console.log('Página de reuniones completada exitosamente');
+
+  } catch (error) {
+    console.error('Error en initReuniones:', error);
+
+    // Mostrar error en el main content
+    const mainContent = document.querySelector('#main-content');
+    if (mainContent) {
+      mainContent.innerHTML = `
+        <div class="alert alert-danger text-center mt-4" role="alert">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>
+          <strong>Error al cargar la información de reuniones</strong><br>
+          <small>Por favor, recarga la página o contacta al administrador</small>
+        </div>
+      `;
+    }
+  }
 }
 
 // Inicializar cuando el DOM esté listo
