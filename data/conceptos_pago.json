@@ -1,55 +1,6 @@
 {
-  "conceptos": [
-    {
-      "id": 1,
-      "nombre": "APAFA",
-      "descripcion": "",
-      "monto_limite": 80.0,
-      "obligatorio": true,
-      "categoria": "obligatorio"
-    },
-    {
-      "id": 3,
-      "nombre": "Saldo a favor",
-      "descripcion": "Pagos de conceptos eliminados",
-      "monto_limite": 999999.99,
-      "obligatorio": false,
-      "categoria": "opcional"
-    },
-    {
-      "id": 4,
-      "nombre": "Administrativo",
-      "descripcion": "",
-      "monto_limite": 30.0,
-      "obligatorio": true,
-      "categoria": "obligatorio"
-    },
-    {
-      "id": 5,
-      "nombre": "Cuota APAFA",
-      "descripcion": "Cuota mensual de la Asociación de Padres",
-      "monto_limite": 200.0,
-      "obligatorio": false,
-      "categoria": "opcional"
-    },
-    {
-      "id": 6,
-      "nombre": "Materiales",
-      "descripcion": "Compra de materiales escolares",
-      "monto_limite": 500.0,
-      "obligatorio": false,
-      "categoria": "opcional"
-    },
-    {
-      "id": 7,
-      "nombre": "Evento deportivo",
-      "descripcion": "Campeonato deportivo de padres",
-      "monto_limite": 150.0,
-      "obligatorio": false,
-      "categoria": "opcional"
-    }
-  ],
-  "total_conceptos": 6,
-  "conceptos_obligatorios": 2,
-  "conceptos_opcionales": 4
+  "conceptos": [],
+  "total_conceptos": 0,
+  "conceptos_obligatorios": 0,
+  "conceptos_opcionales": 0
 }
