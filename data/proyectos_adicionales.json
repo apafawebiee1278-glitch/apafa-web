@@ -1,0 +1,21 @@
+{
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Proyecto Biblioteca",
+      "descripcion": "Para renovacion de material educativo",
+      "monto": 25.0,
+      "obligatorio": false,
+      "orden": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Proyecto Biblioteca",
+      "descripcion": "Para renovacion de material educativo",
+      "monto": 25.0,
+      "obligatorio": false,
+      "orden": 0
+    }
+  ],
+  "total_proyectos": 2
+}
