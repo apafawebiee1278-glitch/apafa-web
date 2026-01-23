@@ -190,7 +190,7 @@ function renderListaNotificaciones(notificaciones) {
         `;
     }).join('');
 
-    console.log('HTML generado:', html.substring(0, 200) + '...');
+    console.log('HTML generado completo:', html);
     console.log('Insertando HTML en contenedor...');
     console.log('Contenedor antes de inserción - display:', window.getComputedStyle(container).display);
     console.log('Contenedor antes de inserción - visibility:', window.getComputedStyle(container).visibility);
@@ -208,6 +208,34 @@ function renderListaNotificaciones(notificaciones) {
     if (container.children.length > 0) {
         console.log('Primer elemento hijo - display:', window.getComputedStyle(container.children[0]).display);
         console.log('Primer elemento hijo - visibility:', window.getComputedStyle(container.children[0]).visibility);
+        console.log('Primer elemento hijo - opacity:', window.getComputedStyle(container.children[0]).opacity);
+        console.log('Primer elemento hijo - position:', window.getComputedStyle(container.children[0]).position);
+        console.log('Primer elemento hijo - z-index:', window.getComputedStyle(container.children[0]).zIndex);
+    }
+
+    // Verificar contenedor padre
+    const parent = container.parentElement;
+    if (parent) {
+        console.log('Contenedor padre - display:', window.getComputedStyle(parent).display);
+        console.log('Contenedor padre - visibility:', window.getComputedStyle(parent).visibility);
+        console.log('Contenedor padre - overflow:', window.getComputedStyle(parent).overflow);
+        console.log('Contenedor padre - position:', window.getComputedStyle(parent).position);
+    }
+
+    // Verificar si hay algún estilo global que pueda estar ocultando
+    console.log('Verificando posibles problemas de CSS...');
+    const body = document.body;
+    console.log('Body - display:', window.getComputedStyle(body).display);
+    console.log('Body - visibility:', window.getComputedStyle(body).visibility);
+
+    // Intentar forzar visibilidad
+    console.log('Intentando forzar visibilidad...');
+    container.style.display = 'block';
+    container.style.visibility = 'visible';
+    if (container.children.length > 0) {
+        container.children[0].style.display = 'block';
+        container.children[0].style.visibility = 'visible';
+        console.log('Visibilidad forzada aplicada');
     }
 }
 
