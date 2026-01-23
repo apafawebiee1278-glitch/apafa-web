@@ -75,26 +75,6 @@
     <!-- Contenido principal -->
     <main class="flex-grow-1 py-5">
         <div class="container">
-            <!-- Loading -->
-            <div id="loading-notificaciones" class="text-center py-5">
-                <div class="spinner-border text-primary-institution" role="status">
-                    <span class="visually-hidden">Cargando notificaciones...</span>
-                </div>
-                <p class="mt-3 text-muted">Cargando notificaciones...</p>
-            </div>
-
-            <!-- Error -->
-            <div id="error-notificaciones" class="alert alert-danger d-none" role="alert">
-                <i class="bi bi-exclamation-triangle me-2"></i>
-                <strong>Error al cargar notificaciones</strong>
-                <p class="mb-0" id="error-message-notificaciones">No se pudieron cargar las notificaciones.</p>
-                <button class="btn btn-sm btn-outline-danger mt-2" onclick="location.reload()">
-                    <i class="bi bi-arrow-clockwise me-1"></i>Reintentar
-                </button>
-            </div>
-
-            <!-- Contenido -->
-            <div id="contenido-notificaciones" class="d-none">
                 <div class="text-center mb-5">
                     <h1 class="fw-bold text-primary-institution">
                         <i class="bi bi-bell-fill me-3"></i>Notificaciones APAFA
@@ -184,21 +164,168 @@
     <!-- Data Loader -->
     <script src="assets/js/data-loader.js"></script>
 
-    <!-- Notificaciones JS -->
-    <script src="assets/js/pages/notificaciones.js"></script>
-
-    <!-- Inicialización -->
     <script>
-        console.log('Notificaciones HTML loaded - v1.2 - FORCE REFRESH');
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM loaded, calling initNotificaciones directly');
-            // Verificar que los elementos existen antes de llamar a init
-            setTimeout(() => {
-                const totalElement = document.getElementById('total-notificaciones');
-                console.log('Elemento total-notificaciones encontrado:', !!totalElement);
-                initNotificaciones();
-            }, 100);
-        });
+        // Funciones auxiliares
+        function formatDate(dateString) {
+            try {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('es-ES', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+            } catch (error) {
+                return dateString;
+            }
+        }
+
+        // Carga de datos
+        async function cargarNotificaciones() {
+            try {
+                console.log('Cargando datos de notificaciones...');
+                const notificacionesData = await ApafaData.loadDataWithFallback('notificaciones', { notificaciones: [], total_notificaciones: 0 });
+
+                console.log('Datos cargados:', notificacionesData.notificaciones.length, 'notificaciones');
+
+                // Renderizar todo
+                renderEstadisticas(notificacionesData);
+                renderListaNotificaciones(notificacionesData.notificaciones);
+
+                console.log('Notificaciones renderizadas correctamente');
+
+            } catch (error) {
+                console.error('Error cargando notificaciones:', error);
+                // Mostrar error en la lista
+                document.getElementById('lista-notificaciones').innerHTML = `<div class="alert alert-danger text-center"><i class="bi bi-exclamation-triangle me-2"></i>Error: ${error.message}</div>`;
+            }
+        }
+
+        function renderEstadisticas(data) {
+            const notificaciones = data.notificaciones || [];
+            const total = data.total_notificaciones || notificaciones.length;
+
+            // Contar eventos vs generales
+            const eventosCount = notificaciones.filter(n => n.fecha_evento && n.lugar_evento && n.lugar_evento.trim() !== '').length;
+            const generalesCount = notificaciones.filter(n => !n.fecha_evento || !n.lugar_evento || n.lugar_evento.trim() === '').length;
+
+            // Actualizar estadísticas
+            document.getElementById('total-notificaciones').textContent = total;
+            document.getElementById('notificaciones-eventos').textContent = eventosCount;
+            document.getElementById('notificaciones-generales').textContent = generalesCount;
+        }
+
+        function renderListaNotificaciones(notificaciones) {
+            const container = document.getElementById('lista-notificaciones');
+
+            if (!notificaciones || notificaciones.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-5">
+                        <i class="bi bi-bell-slash text-muted fs-1 mb-3"></i>
+                        <h5 class="text-muted">No hay notificaciones disponibles</h5>
+                        <p class="text-muted">Las notificaciones aparecerán aquí cuando sean publicadas por el comité APAFA.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Ordenar notificaciones por fecha de publicación (más recientes primero)
+            const notificacionesOrdenadas = [...notificaciones].sort((a, b) =>
+                new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion)
+            );
+
+            const html = notificacionesOrdenadas.map(notificacion => {
+                const fechaPublicacion = formatDate(notificacion.fecha_publicacion);
+                const fechaEvento = notificacion.fecha_evento ? formatDate(notificacion.fecha_evento) : null;
+                const horaEvento = notificacion.hora_evento || '';
+                const lugarEvento = notificacion.lugar_evento || '';
+                const organizador = notificacion.organizador || 'Comité APAFA';
+
+                // Determinar el tipo de badge
+                let badgeClass = 'bg-secondary';
+                let badgeText = 'General';
+
+                switch (notificacion.tipo) {
+                    case 'financiero':
+                        badgeClass = 'bg-success';
+                        badgeText = 'Financiero';
+                        break;
+                    case 'reunion':
+                        badgeClass = 'bg-primary';
+                        badgeText = 'Reunión';
+                        break;
+                    case 'urgente':
+                        badgeClass = 'bg-danger';
+                        badgeText = 'Urgente';
+                        break;
+                    case 'evento':
+                        badgeClass = 'bg-info';
+                        badgeText = 'Evento';
+                        break;
+                    default:
+                        badgeClass = 'bg-secondary';
+                        badgeText = 'General';
+                }
+
+                return `
+                    <div class="notificacion-item mb-4 p-4 border rounded bg-light">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="flex-grow-1">
+                                <h5 class="fw-bold text-primary-institution mb-2">
+                                    <i class="bi bi-bell me-2"></i>${notificacion.titulo}
+                                </h5>
+                                <div class="mb-2">
+                                    <span class="badge ${badgeClass} me-2">${badgeText}</span>
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar-event me-1"></i>Publicado: ${fechaPublicacion}
+                                    </small>
+                                    <small class="text-muted ms-3">
+                                        <i class="bi bi-person me-1"></i>${organizador}
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notificacion-contenido mb-3">
+                            <p class="mb-3">${notificacion.contenido}</p>
+
+                            ${fechaEvento ? `
+                                <div class="evento-info p-3 bg-white rounded border-start border-primary">
+                                    <h6 class="text-primary mb-2">
+                                        <i class="bi bi-calendar-check me-2"></i>Información del Evento
+                                    </h6>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="mb-1">
+                                                <i class="bi bi-calendar-date me-2"></i>
+                                                <strong>Fecha:</strong> ${fechaEvento}
+                                            </p>
+                                            ${horaEvento ? `
+                                                <p class="mb-1">
+                                                    <i class="bi bi-clock me-2"></i>
+                                                    <strong>Hora:</strong> ${horaEvento}
+                                                </p>
+                                            ` : ''}
+                                        </div>
+                                        <div class="col-md-6">
+                                            ${lugarEvento ? `
+                                                <p class="mb-0">
+                                                    <i class="bi bi-geo-alt me-2"></i>
+                                                    <strong>Lugar:</strong> ${lugarEvento}
+                                                </p>
+                                            ` : ''}
+                                        </div>
+                                    </div>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = html;
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarNotificaciones);
     </script>
 </body>
 </html>
