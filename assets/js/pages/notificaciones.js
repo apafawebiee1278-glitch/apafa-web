@@ -45,9 +45,14 @@ function renderNotificaciones(data) {
 
         // Actualizar estadísticas inmediatamente después de mostrar el contenido
         console.log('Actualizando estadísticas...');
+        const eventosCount = notificaciones.filter(n => n.fecha_evento && n.lugar_evento && n.lugar_evento.trim() !== '').length;
+        const generalesCount = notificaciones.filter(n => !n.fecha_evento || !n.lugar_evento || n.lugar_evento.trim() === '').length;
+
+        console.log(`Conteo: Total=${total}, Eventos=${eventosCount}, Generales=${generalesCount}`);
+
         ApafaData.updateText('#total-notificaciones', total.toString());
-        ApafaData.updateText('#notificaciones-eventos', notificaciones.filter(n => n.fecha_evento).length.toString());
-        ApafaData.updateText('#notificaciones-generales', notificaciones.filter(n => !n.fecha_evento).length.toString());
+        ApafaData.updateText('#notificaciones-eventos', eventosCount.toString());
+        ApafaData.updateText('#notificaciones-generales', generalesCount.toString());
 
         // Renderizar lista de notificaciones
         renderListaNotificaciones(notificaciones);
@@ -60,6 +65,7 @@ function renderNotificaciones(data) {
 
 function renderListaNotificaciones(notificaciones) {
     console.log('Renderizando lista de notificaciones:', notificaciones);
+    console.log('Número de notificaciones a renderizar:', notificaciones.length);
     const container = document.getElementById('lista-notificaciones');
 
     if (!container) {
@@ -73,6 +79,8 @@ function renderListaNotificaciones(notificaciones) {
         });
         throw new Error('Elemento lista-notificaciones no encontrado en el DOM');
     }
+
+    console.log('Contenedor encontrado, procediendo a generar HTML...');
 
     if (!notificaciones || notificaciones.length === 0) {
         console.log('No hay notificaciones para mostrar');
@@ -180,7 +188,11 @@ function renderListaNotificaciones(notificaciones) {
         `;
     }).join('');
 
+    console.log('HTML generado:', html.substring(0, 200) + '...');
+    console.log('Insertando HTML en contenedor...');
     container.innerHTML = html;
+    console.log('HTML insertado correctamente en contenedor');
+    console.log('Contenedor después de inserción:', container.innerHTML.substring(0, 100) + '...');
 }
 
 function formatDate(dateString) {
