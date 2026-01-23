@@ -133,7 +133,15 @@ function updateElement(selector, content, fallback = 'N/A') {
  * @param {string} fallback - Texto alternativo si falla
  */
 function updateText(selector, text, fallback = 'N/A') {
-  const element = document.querySelector(selector);
+  let element;
+
+  // Si el selector comienza con #, usar getElementById para mejor rendimiento
+  if (selector.startsWith('#')) {
+    element = document.getElementById(selector.substring(1));
+  } else {
+    element = document.querySelector(selector);
+  }
+
   if (element) {
     element.textContent = text || fallback;
     console.log(`Elemento ${selector} actualizado con: ${text || fallback}`);

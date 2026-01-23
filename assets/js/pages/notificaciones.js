@@ -32,23 +32,14 @@ function renderNotificaciones(data) {
 
         console.log(`Procesando ${notificaciones.length} notificaciones, total: ${total}`);
 
-        // Verificar elementos antes de actualizar
-        console.log('Verificando elementos antes de actualizar:');
-        console.log('- total-notificaciones:', !!document.getElementById('total-notificaciones'));
-        console.log('- notificaciones-eventos:', !!document.getElementById('notificaciones-eventos'));
-        console.log('- notificaciones-generales:', !!document.getElementById('notificaciones-generales'));
+        // Actualizar estadísticas inmediatamente después de mostrar el contenido
+        console.log('Actualizando estadísticas...');
+        ApafaData.updateText('#total-notificaciones', total.toString());
+        ApafaData.updateText('#notificaciones-eventos', notificaciones.filter(n => n.fecha_evento).length.toString());
+        ApafaData.updateText('#notificaciones-generales', notificaciones.filter(n => !n.fecha_evento).length.toString());
 
-        // Esperar un poco más para asegurar que el DOM esté actualizado
-        setTimeout(() => {
-            console.log('Actualizando estadísticas después de timeout...');
-            // Actualizar estadísticas
-            ApafaData.updateText('total-notificaciones', total.toString());
-            ApafaData.updateText('notificaciones-eventos', notificaciones.filter(n => n.fecha_evento).length.toString());
-            ApafaData.updateText('notificaciones-generales', notificaciones.filter(n => !n.fecha_evento).length.toString());
-
-            // Renderizar lista de notificaciones
-            renderListaNotificaciones(notificaciones);
-        }, 50);
+        // Renderizar lista de notificaciones
+        renderListaNotificaciones(notificaciones);
 
     } catch (error) {
         console.error('Error renderizando notificaciones:', error);
@@ -62,6 +53,13 @@ function renderListaNotificaciones(notificaciones) {
 
     if (!container) {
         console.error('Contenedor lista-notificaciones no encontrado');
+        console.log('Elementos disponibles en el documento:');
+        const allElements = document.querySelectorAll('[id]');
+        allElements.forEach(el => {
+            if (el.id.includes('lista')) {
+                console.log(`- ${el.id}: ${el.tagName}`);
+            }
+        });
         throw new Error('Elemento lista-notificaciones no encontrado en el DOM');
     }
 
