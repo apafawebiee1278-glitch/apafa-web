@@ -183,13 +183,16 @@
 
         // Función para renderizar lista de reuniones
         function renderListaReuniones() {
+            console.log('Renderizando lista de reuniones:', datosReuniones);
             if (!datosReuniones || datosReuniones.length === 0) {
+                console.log('No hay reuniones para mostrar');
                 document.getElementById('lista-reuniones').innerHTML = `
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body text-center">
                                 <i class="bi bi-calendar-x text-muted" style="font-size: 3rem;"></i>
                                 <h5 class="text-muted mt-3">No hay reuniones programadas</h5>
+                                <p class="text-muted">Las reuniones aparecerán aquí cuando sean programadas por el comité.</p>
                             </div>
                         </div>
                     </div>
@@ -197,6 +200,7 @@
                 return;
             }
 
+            console.log(`Generando HTML para ${datosReuniones.length} reuniones`);
             let html = '';
             datosReuniones.forEach(reunion => {
                 const fecha = new Date(reunion.fecha).toLocaleDateString('es-PE', {
@@ -206,27 +210,39 @@
                     day: 'numeric'
                 });
 
+                // Valores por defecto para campos que no existen en el JSON de eventos
+                const asistentes = reunion.asistentes || 0;
+                const totalPadres = reunion.total_padres || 6;
+
                 html += `
                     <div class="col-md-6 mb-4">
                         <div class="card">
-                            <div class="card-header">
-                                <h6 class="mb-0">${reunion.titulo}</h6>
-                                <small class="text-muted">
-                                    <i class="bi bi-calendar me-1"></i>${fecha} - ${reunion.hora}
-                                </small>
+                            <div class="card-header bg-primary text-white">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-white bg-opacity-20 rounded-circle p-2 me-3">
+                                        <i class="bi bi-calendar-event-fill fs-5"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">${reunion.titulo}</h6>
+                                        <small class="opacity-75">
+                                            <i class="bi bi-clock me-1"></i>${fecha} - ${reunion.hora}
+                                        </small>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">${reunion.motivo}</p>
+                                <p class="card-text text-muted mb-3">${reunion.descripcion || 'Reunión programada por el comité APAFA'}</p>
+
                                 <div class="row text-center">
                                     <div class="col-6">
                                         <div class="bg-success bg-opacity-10 p-2 rounded">
-                                            <strong>${reunion.asistentes}</strong><br>
+                                            <strong>${asistentes}</strong><br>
                                             <small>Asistieron</small>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="bg-info bg-opacity-10 p-2 rounded">
-                                            <strong>${reunion.total_padres}</strong><br>
+                                            <strong>${totalPadres}</strong><br>
                                             <small>Total Padres</small>
                                         </div>
                                     </div>
@@ -237,12 +253,15 @@
                 `;
             });
 
+            console.log('Insertando HTML en lista-reuniones');
             document.getElementById('lista-reuniones').innerHTML = html;
         }
 
         // Función para renderizar próxima reunión
         function renderProximaReunion() {
+            console.log('Renderizando próxima reunión');
             if (!datosReuniones || datosReuniones.length === 0) {
+                console.log('No hay reuniones para mostrar como próxima');
                 document.getElementById('proxima-titulo').textContent = 'No hay reuniones programadas';
                 document.getElementById('proxima-detalles').textContent = '';
                 return;
@@ -257,28 +276,28 @@
                 day: 'numeric'
             });
 
+            const lugar = proxima.lugar || 'Auditorio Principal';
+
+            console.log('Mostrando próxima reunión:', proxima.titulo);
             document.getElementById('proxima-titulo').textContent = proxima.titulo;
             document.getElementById('proxima-detalles').innerHTML = `
                 <strong>Fecha:</strong> ${fecha}<br>
                 <strong>Hora:</strong> ${proxima.hora}<br>
-                <strong>Lugar:</strong> Auditorio Principal
+                <strong>Lugar:</strong> ${lugar}
             `;
         }
 
         // Carga de datos
         async function loadReunionesData() {
             try {
-                const reuniones = await ApafaData.loadDataWithFallback('reuniones', [
-                    {
-                        id: 1,
-                        titulo: "Reunión General de Padres de Familia",
-                        fecha: "2026-01-15",
-                        hora: "19:00",
-                        motivo: "Reunión general programada para tratar temas importantes relacionados con el próximo año escolar, proyectos de mejora y actividades programadas.",
-                        asistentes: 25,
-                        total_padres: 6
-                    }
-                ]);
+                console.log('Cargando datos de eventos para filtrar reuniones...');
+                const eventosData = await ApafaData.loadDataWithFallback('eventos', { eventos: [] });
+                console.log('Datos de eventos cargados:', eventosData);
+
+                const reuniones = eventosData.eventos.filter(evento => evento.tipo === 'reunion');
+                console.log('Eventos filtrados por tipo "reunion":', reuniones);
+                console.log(`Total de reuniones encontradas: ${reuniones.length}`);
+
                 return { reuniones };
             } catch (error) {
                 console.error('Error cargando reuniones:', error);
