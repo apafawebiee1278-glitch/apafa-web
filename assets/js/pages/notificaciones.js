@@ -10,6 +10,8 @@ async function initNotificaciones() {
         console.error('Error inicializando notificaciones:', error);
         showErrorNotificaciones('Error al cargar las notificaciones: ' + error.message);
     }
+
+    console.log('Función initNotificaciones completada');
 }
 
 function renderNotificaciones(data) {
@@ -190,9 +192,23 @@ function renderListaNotificaciones(notificaciones) {
 
     console.log('HTML generado:', html.substring(0, 200) + '...');
     console.log('Insertando HTML en contenedor...');
+    console.log('Contenedor antes de inserción - display:', window.getComputedStyle(container).display);
+    console.log('Contenedor antes de inserción - visibility:', window.getComputedStyle(container).visibility);
+    console.log('Contenedor antes de inserción - innerHTML length:', container.innerHTML.length);
+
     container.innerHTML = html;
+
     console.log('HTML insertado correctamente en contenedor');
-    console.log('Contenedor después de inserción:', container.innerHTML.substring(0, 100) + '...');
+    console.log('Contenedor después de inserción - display:', window.getComputedStyle(container).display);
+    console.log('Contenedor después de inserción - visibility:', window.getComputedStyle(container).visibility);
+    console.log('Contenedor después de inserción - innerHTML length:', container.innerHTML.length);
+    console.log('Contenedor después de inserción - childElementCount:', container.childElementCount);
+
+    // Verificar si los elementos hijos son visibles
+    if (container.children.length > 0) {
+        console.log('Primer elemento hijo - display:', window.getComputedStyle(container.children[0]).display);
+        console.log('Primer elemento hijo - visibility:', window.getComputedStyle(container.children[0]).visibility);
+    }
 }
 
 function formatDate(dateString) {
