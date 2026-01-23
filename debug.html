@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debug - APAFA Web</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Debug de carga de datos</h1>
+        <div id="debug-output" class="mt-4">
+            <div class="alert alert-info">Iniciando pruebas de carga de datos...</div>
+        </div>
+    </div>
+
+    <script src="assets/js/data-loader.js"></script>
+    <script>
+        async function runDebugTests() {
+            const output = document.getElementById('debug-output');
+            let html = '<div class="alert alert-info">Iniciando pruebas...</div>';
+
+            try {
+                // Test 1: Cargar stats
+                html += '<h4>Test 1: Cargando stats.json</h4>';
+                console.log('Test 1: Cargando stats...');
+                const stats = await ApafaData.loadData('stats');
+                console.log('Stats cargados:', stats);
+                html += `<div class="alert alert-success">✓ Stats OK: ${JSON.stringify(stats)}</div>`;
+
+                // Test 2: Cargar resumen_financiero
+                html += '<h4>Test 2: Cargando resumen_financiero.json</h4>';
+                console.log('Test 2: Cargando resumen financiero...');
+                const resumen = await ApafaData.loadData('resumen_financiero');
+                console.log('Resumen financiero cargado:', resumen);
+                html += `<div class="alert alert-success">✓ Resumen OK: ${JSON.stringify(resumen)}</div>`;
+
+                // Test 3: Cargar conceptos_pago
+                html += '<h4>Test 3: Cargando conceptos_pago.json</h4>';
+                console.log('Test 3: Cargando conceptos de pago...');
+                const conceptos = await ApafaData.loadData('conceptos_pago');
+                console.log('Conceptos cargados:', conceptos);
+                html += `<div class="alert alert-success">✓ Conceptos OK: ${JSON.stringify(conceptos)}</div>`;
+
+                // Test 4: Cargar comite_apafa
+                html += '<h4>Test 4: Cargando comite_apafa.json</h4>';
+                console.log('Test 4: Cargando comité APAFA...');
+                const comite = await ApafaData.loadData('comite_apafa');
+                console.log('Comité cargado:', comite);
+                html += `<div class="alert alert-success">✓ Comité OK: ${JSON.stringify(comite)}</div>`;
+
+                // Test 5: Cargar eventos
+                html += '<h4>Test 5: Cargando eventos.json</h4>';
+                console.log('Test 5: Cargando eventos...');
+                const eventos = await ApafaData.loadData('eventos');
+                console.log('Eventos cargados:', eventos);
+                html += `<div class="alert alert-success">✓ Eventos OK: ${JSON.stringify(eventos)}</div>`;
+
+                html += '<div class="alert alert-success mt-3"><h4>¡Todas las pruebas pasaron exitosamente!</h4></div>';
+
+            } catch (error) {
+                console.error('Error en debug:', error);
+                html += `<div class="alert alert-danger"><h4>Error encontrado:</h4><p>${error.message}</p><pre>${error.stack}</pre></div>`;
+            }
+
+            output.innerHTML = html;
+        }
+
+        // Ejecutar pruebas cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', runDebugTests);
+    </script>
+</body>
+</html>

@@ -44,19 +44,24 @@ async function loadDashboardData() {
  * Renderiza la sección de estadísticas rápidas
  */
 function renderEstadisticasRapidas(data) {
+  console.log('Renderizando estadísticas rápidas con datos:', data);
   const { estadisticas, resumenFinanciero } = data;
 
   // Socios APAFA
+  console.log('Actualizando socios APAFA:', estadisticas.socios_apafa);
   ApafaData.updateText('#socios-apafa-count', estadisticas.socios_apafa || 0);
 
   // Total recaudado
+  console.log('Actualizando total recaudado:', resumenFinanciero.total_recaudado);
   ApafaData.updateText('#total-recaudado', ApafaData.formatCurrency(resumenFinanciero.total_recaudado || 0));
 
   // Comunicados activos (hardcoded por ahora)
+  console.log('Actualizando comunicados activos');
   ApafaData.updateText('#comunicados-activos', '12');
 
   // Pendiente (calculado)
   const pendiente = (resumenFinanciero.recaudacion_esperada || 0) - (resumenFinanciero.total_recaudado || 0);
+  console.log('Actualizando monto pendiente:', pendiente);
   ApafaData.updateText('#monto-pendiente', ApafaData.formatCurrency(Math.max(0, pendiente)));
 }
 
@@ -197,18 +202,27 @@ function renderComiteApafa(data) {
  */
 async function renderDashboard(data) {
   console.log('Renderizando dashboard completo...');
+  console.log('Datos recibidos:', data);
 
   try {
     // Renderizar todas las secciones
+    console.log('Renderizando estadísticas rápidas...');
     renderEstadisticasRapidas(data);
+
+    console.log('Renderizando cuotas...');
     renderCuotas(data);
+
+    console.log('Renderizando contribuciones adicionales...');
     renderContribucionesAdicionales(data);
+
+    console.log('Renderizando comité APAFA...');
     renderComiteApafa(data);
 
     console.log('Todas las secciones renderizadas correctamente');
 
   } catch (error) {
     console.error('Error renderizando dashboard:', error);
+    console.error('Error stack:', error.stack);
     throw error; // Re-throw para que initDashboard lo maneje
   }
 }
@@ -220,9 +234,12 @@ async function initDashboard() {
   console.log('Iniciando dashboard principal...');
 
   try {
+    // Mostrar que estamos cargando
+    console.log('Cargando datos del dashboard...');
+
     // Cargar datos directamente (sin initializePage para evitar conflictos de loading)
     const data = await loadDashboardData();
-    console.log('Datos obtenidos, renderizando...');
+    console.log('Datos obtenidos:', data);
 
     // Renderizar sin contenedor (renderDashboard ya no necesita container)
     await renderDashboard(data);
@@ -234,6 +251,7 @@ async function initDashboard() {
 
   } catch (error) {
     console.error('Error en initDashboard:', error);
+    console.error('Stack trace:', error.stack);
 
     // Mostrar error en el main content
     const mainContent = document.querySelector('#main-content');
@@ -242,6 +260,7 @@ async function initDashboard() {
         <div class="alert alert-danger text-center mt-4" role="alert">
           <i class="bi bi-exclamation-triangle-fill me-2"></i>
           <strong>Error al cargar la página</strong><br>
+          <small>${error.message}</small><br>
           <small>Por favor, recarga la página o contacta al administrador</small>
         </div>
       `;

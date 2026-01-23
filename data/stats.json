@@ -1,8 +1,8 @@
 {
-  "socios_apafa": 0,
-  "total_padres": 0,
+  "socios_apafa": 2,
+  "total_padres": 6,
   "verde": 0,
-  "amarillo": 0,
-  "rojo": 0,
-  "timestamp": "2026-01-21T10:30:00.000Z"
+  "amarillo": 3,
+  "rojo": 3,
+  "timestamp": "2026-01-22T10:30:00.000Z"
 }

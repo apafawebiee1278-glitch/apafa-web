@@ -1,5 +1,6 @@
 {
-  "monto_meta": 0.0,
   "total_recaudado": 80.0,
-  "porcentaje": 0
+  "recaudacion_esperada": 660.0,
+  "diferencia": 580.0,
+  "porcentaje_cumplimiento": 12.12
 }
