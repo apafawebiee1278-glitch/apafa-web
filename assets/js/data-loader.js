@@ -118,9 +118,18 @@ function formatPercentage(percentage) {
  * @param {string} fallback - Contenido alternativo si falla
  */
 function updateElement(selector, content, fallback = 'N/A') {
-  const element = document.querySelector(selector);
+  let element;
+
+  // Si el selector comienza con #, usar getElementById para mejor rendimiento
+  if (selector.startsWith('#')) {
+    element = document.getElementById(selector.substring(1));
+  } else {
+    element = document.querySelector(selector);
+  }
+
   if (element) {
     element.innerHTML = content || fallback;
+    console.log(`Elemento ${selector} HTML actualizado`);
   } else {
     console.warn(`Elemento no encontrado: ${selector}`);
   }
@@ -163,9 +172,20 @@ function updateText(selector, text, fallback = 'N/A') {
  * @param {boolean} show - Si mostrar o ocultar
  */
 function toggleElement(selector, show) {
-  const element = document.querySelector(selector);
+  let element;
+
+  // Si el selector comienza con #, usar getElementById para mejor rendimiento
+  if (selector.startsWith('#')) {
+    element = document.getElementById(selector.substring(1));
+  } else {
+    element = document.querySelector(selector);
+  }
+
   if (element) {
     element.style.display = show ? '' : 'none';
+    console.log(`Elemento ${selector} visibility cambiado a: ${show ? 'visible' : 'hidden'}`);
+  } else {
+    console.warn(`Elemento no encontrado para toggle: ${selector}`);
   }
 }
 

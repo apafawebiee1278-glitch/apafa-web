@@ -22,10 +22,21 @@ function renderNotificaciones(data) {
         }
 
         console.log('Ocultando loading y mostrando contenido...');
+
+        // Verificar estado inicial de los elementos
+        console.log('Estado inicial de elementos:');
+        console.log('- loading-notificaciones visible:', document.getElementById('loading-notificaciones')?.style.display !== 'none');
+        console.log('- contenido-notificaciones visible:', document.getElementById('contenido-notificaciones')?.style.display !== 'none');
+
         // Ocultar loading y mostrar contenido
-        ApafaData.toggleElement('loading-notificaciones', false);
-        ApafaData.toggleElement('error-notificaciones', false);
-        ApafaData.toggleElement('contenido-notificaciones', true);
+        ApafaData.toggleElement('#loading-notificaciones', false);
+        ApafaData.toggleElement('#error-notificaciones', false);
+        ApafaData.toggleElement('#contenido-notificaciones', true);
+
+        // Verificar estado final
+        console.log('Estado final de elementos:');
+        console.log('- loading-notificaciones visible:', document.getElementById('loading-notificaciones')?.style.display !== 'none');
+        console.log('- contenido-notificaciones visible:', document.getElementById('contenido-notificaciones')?.style.display !== 'none');
 
         const notificaciones = data.notificaciones || [];
         const total = data.total_notificaciones || notificaciones.length;
