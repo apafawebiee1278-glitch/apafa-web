@@ -5,7 +5,7 @@
 
 // Configuración base
 const CONFIG = {
-  basePath: '/apafa-web/data/',
+  basePath: 'data/',
   timeout: 5000, // 5 segundos de timeout
   retries: 2     // Número de reintentos
 };
