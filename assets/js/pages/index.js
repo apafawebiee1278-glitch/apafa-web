@@ -287,9 +287,9 @@ async function loadProximosEventos() {
 function renderProximosEventos(data) {
   try {
     // Ocultar loading y error
-    ApafaData.toggleElement('proximos-eventos-loading', false);
-    ApafaData.toggleElement('proximos-eventos-error', false);
-    ApafaData.toggleElement('proximos-eventos-content', true);
+    ApafaData.toggleElement('#proximos-eventos-loading', false);
+    ApafaData.toggleElement('#proximos-eventos-error', false);
+    ApafaData.toggleElement('#proximos-eventos-content', true);
 
     const eventos = data.eventos || [];
 
@@ -405,9 +405,9 @@ function renderListaProximosEventos(eventos) {
  * Muestra error en la sección de próximos eventos
  */
 function showErrorProximosEventos(message) {
-  ApafaData.toggleElement('proximos-eventos-loading', false);
-  ApafaData.toggleElement('proximos-eventos-content', false);
-  ApafaData.toggleElement('proximos-eventos-error', true);
+  ApafaData.toggleElement('#proximos-eventos-loading', false);
+  ApafaData.toggleElement('#proximos-eventos-content', false);
+  ApafaData.toggleElement('#proximos-eventos-error', true);
 
   const errorElement = document.getElementById('proximos-eventos-error');
   if (errorElement) {
