@@ -227,11 +227,8 @@ async function initDashboard() {
     // Renderizar sin contenedor (renderDashboard ya no necesita container)
     await renderDashboard(data);
 
-    // Limpiar cualquier loading restante
-    const mainContent = document.querySelector('#main-content');
-    if (mainContent && mainContent.innerHTML.includes('Cargando')) {
-      mainContent.innerHTML = '';
-    }
+    // No limpiar el contenido ya renderizado
+    // El contenido estático del HTML debe mantenerse
 
     console.log('Dashboard principal completado exitosamente');
 
