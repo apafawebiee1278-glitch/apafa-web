@@ -13,10 +13,21 @@ async function loadReunionesData() {
     // Cargar datos de eventos y filtrar solo las reuniones
     const eventosData = await ApafaData.loadDataWithFallback('eventos', { eventos: [] });
     console.log('Datos de eventos cargados:', eventosData);
+    console.log('Tipo de eventosData:', typeof eventosData);
+    console.log('eventosData.eventos:', eventosData.eventos);
 
-    const reuniones = eventosData.eventos.filter(evento => evento.tipo === 'reunion');
-    console.log('Eventos filtrados por tipo "reunion":', reuniones);
-    console.log(`Datos de reuniones cargados: ${reuniones.length} reuniones`);
+    if (eventosData.eventos && Array.isArray(eventosData.eventos)) {
+        console.log('Procesando array de eventos, longitud:', eventosData.eventos.length);
+        eventosData.eventos.forEach((evento, index) => {
+            console.log(`Evento ${index}: tipo="${evento.tipo}", titulo="${evento.titulo}"`);
+        });
+
+        const reuniones = eventosData.eventos.filter(evento => evento.tipo === 'reunion');
+        console.log('Eventos filtrados por tipo "reunion":', reuniones);
+        console.log(`Datos de reuniones cargados: ${reuniones.length} reuniones`);
+    } else {
+        console.error('eventosData.eventos no es un array válido');
+    }
 
     return { reuniones };
   } catch (error) {

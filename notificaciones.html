@@ -189,10 +189,15 @@
 
     <!-- Inicialización -->
     <script>
-        console.log('Notificaciones HTML loaded - v1.1');
+        console.log('Notificaciones HTML loaded - v1.2 - FORCE REFRESH');
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM loaded, calling initNotificaciones');
-            initNotificaciones();
+            console.log('DOM loaded, calling initNotificaciones directly');
+            // Verificar que los elementos existen antes de llamar a init
+            setTimeout(() => {
+                const totalElement = document.getElementById('total-notificaciones');
+                console.log('Elemento total-notificaciones encontrado:', !!totalElement);
+                initNotificaciones();
+            }, 100);
         });
     </script>
 </body>
