@@ -12,9 +12,12 @@ async function loadReunionesData() {
   try {
     // Cargar datos de eventos y filtrar solo las reuniones
     const eventosData = await ApafaData.loadDataWithFallback('eventos', { eventos: [] });
-    const reuniones = eventosData.eventos.filter(evento => evento.tipo === 'reunion');
+    console.log('Datos de eventos cargados:', eventosData);
 
+    const reuniones = eventosData.eventos.filter(evento => evento.tipo === 'reunion');
+    console.log('Eventos filtrados por tipo "reunion":', reuniones);
     console.log(`Datos de reuniones cargados: ${reuniones.length} reuniones`);
+
     return { reuniones };
   } catch (error) {
     console.error('Error cargando datos de reuniones:', error);

@@ -2,7 +2,9 @@
 
 async function initNotificaciones() {
     try {
+        console.log('Iniciando carga de notificaciones...');
         const notificacionesData = await ApafaData.loadDataWithFallback('notificaciones', { notificaciones: [], total_notificaciones: 0 });
+        console.log('Datos de notificaciones cargados:', notificacionesData);
         renderNotificaciones(notificacionesData);
     } catch (error) {
         console.error('Error inicializando notificaciones:', error);
@@ -12,6 +14,13 @@ async function initNotificaciones() {
 
 function renderNotificaciones(data) {
     try {
+        console.log('Renderizando notificaciones con data:', data);
+
+        // Verificar que data existe
+        if (!data) {
+            throw new Error('Datos de notificaciones no disponibles');
+        }
+
         // Ocultar loading y mostrar contenido
         ApafaData.toggleElement('loading-notificaciones', false);
         ApafaData.toggleElement('error-notificaciones', false);
@@ -19,6 +28,8 @@ function renderNotificaciones(data) {
 
         const notificaciones = data.notificaciones || [];
         const total = data.total_notificaciones || notificaciones.length;
+
+        console.log(`Procesando ${notificaciones.length} notificaciones, total: ${total}`);
 
         // Actualizar estadísticas
         ApafaData.updateText('total-notificaciones', total.toString());
@@ -35,9 +46,16 @@ function renderNotificaciones(data) {
 }
 
 function renderListaNotificaciones(notificaciones) {
+    console.log('Renderizando lista de notificaciones:', notificaciones);
     const container = document.getElementById('lista-notificaciones');
 
+    if (!container) {
+        console.error('Contenedor lista-notificaciones no encontrado');
+        throw new Error('Elemento lista-notificaciones no encontrado en el DOM');
+    }
+
     if (!notificaciones || notificaciones.length === 0) {
+        console.log('No hay notificaciones para mostrar');
         container.innerHTML = `
             <div class="text-center py-5">
                 <i class="bi bi-bell-slash text-muted fs-1 mb-3"></i>
