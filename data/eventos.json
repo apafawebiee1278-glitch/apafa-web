@@ -1,4 +1,27 @@
 {
-  "eventos": [],
-  "total_eventos": 0
+  "eventos": [
+    {
+      "id": 1,
+      "titulo": "Reunion General de Padres",
+      "descripcion": "Auditorio principal - 7:00 PM",
+      "fecha": "2026-01-15",
+      "hora": "19:00",
+      "lugar": "Auditorio Principal",
+      "tipo": "reunion",
+      "importante": true,
+      "orden": 0
+    },
+    {
+      "id": 2,
+      "titulo": "Reunion HOY",
+      "descripcion": "Reunion para informes",
+      "fecha": "2026-01-22",
+      "hora": "19:00",
+      "lugar": "",
+      "tipo": "general",
+      "importante": true,
+      "orden": 0
+    }
+  ],
+  "total_eventos": 2
 }

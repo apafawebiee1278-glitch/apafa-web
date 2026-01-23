@@ -11,7 +11,19 @@
       "organizador": "Comité APAFA",
       "tipo": "reunion",
       "orden": 0
+    },
+    {
+      "id": 2,
+      "titulo": "Postergado pago APAFA hasta Reconocimiento oficial",
+      "contenido": "Se posterga hasta reconocimiento activo por la UGEL.",
+      "fecha_publicacion": "2026-01-22",
+      "fecha_evento": "2026-01-22",
+      "hora_evento": "19:00",
+      "lugar_evento": "",
+      "organizador": "Comité APAFA",
+      "tipo": "general",
+      "orden": 0
     }
   ],
-  "total_notificaciones": 1
+  "total_notificaciones": 2
 }
