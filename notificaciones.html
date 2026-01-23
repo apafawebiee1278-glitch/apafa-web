@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notificaciones - APAFA I.E. Ex. Mixto "La Molina" 1278</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Header institucional -->
+    <header>
+        <!-- Barra superior con colores institucionales -->
+        <div class="bg-primary-institution text-white py-2">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <small><i class="bi bi-geo-alt-fill me-2"></i>I.E. Ex. Mixto "La Molina" 1278 - APAFA 2026-2027</small>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <small><i class="bi bi-telephone-fill me-2"></i>Contacto | <i class="bi bi-envelope-fill me-2"></i>Email</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación principal -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary-institution shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                    <span>I.E. Ex. Mixto "La Molina" 1278</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="bi bi-house-door me-1"></i>Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="notificaciones.html">
+                                <i class="bi bi-bell me-1"></i>Notificaciones
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="padres.html">
+                                <i class="bi bi-people me-1"></i>Socios APAFA
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reuniones.html">
+                                <i class="bi bi-calendar-event me-1"></i>Reuniones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <!-- Loading -->
+            <div id="loading-notificaciones" class="text-center py-5">
+                <div class="spinner-border text-primary-institution" role="status">
+                    <span class="visually-hidden">Cargando notificaciones...</span>
+                </div>
+                <p class="mt-3 text-muted">Cargando notificaciones...</p>
+            </div>
+
+            <!-- Error -->
+            <div id="error-notificaciones" class="alert alert-danger d-none" role="alert">
+                <i class="bi bi-exclamation-triangle me-2"></i>
+                <strong>Error al cargar notificaciones</strong>
+                <p class="mb-0" id="error-message-notificaciones">No se pudieron cargar las notificaciones.</p>
+                <button class="btn btn-sm btn-outline-danger mt-2" onclick="location.reload()">
+                    <i class="bi bi-arrow-clockwise me-1"></i>Reintentar
+                </button>
+            </div>
+
+            <!-- Contenido -->
+            <div id="contenido-notificaciones" class="d-none">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold text-primary-institution">
+                        <i class="bi bi-bell-fill me-3"></i>Notificaciones APAFA
+                    </h1>
+                    <p class="text-muted lead">Información importante y anuncios de la Asociación de Padres</p>
+                </div>
+
+                <!-- Estadísticas -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card card-modern border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="bi bi-bell text-primary-institution fs-1 mb-2"></i>
+                                <h3 class="text-primary-institution fw-bold" id="total-notificaciones">0</h3>
+                                <p class="text-muted mb-0">Total de Notificaciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-modern border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="bi bi-calendar-event text-accent-institution fs-1 mb-2"></i>
+                                <h3 class="text-accent-institution fw-bold" id="notificaciones-eventos">0</h3>
+                                <p class="text-muted mb-0">Con Eventos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-modern border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="bi bi-info-circle text-secondary-institution fs-1 mb-2"></i>
+                                <h3 class="text-secondary-institution fw-bold" id="notificaciones-generales">0</h3>
+                                <p class="text-muted mb-0">Generales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lista de notificaciones -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-modern border-0 shadow-sm">
+                            <div class="card-header bg-primary-institution text-white">
+                                <h5 class="mb-0">
+                                    <i class="bi bi-list-ul me-2"></i>Todas las Notificaciones
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="lista-notificaciones">
+                                    <!-- Las notificaciones se cargarán aquí dinámicamente -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-institution text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold">I.E. Ex. Mixto "La Molina" 1278</h6>
+                    <p class="mb-0 small">Asociación de Padres de Familia - APAFA</p>
+                    <p class="mb-0 small">Educación de calidad para el desarrollo integral de nuestros estudiantes</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-1 small">
+                        <i class="bi bi-telephone me-2"></i>Contacto: (01) 123-4567
+                    </p>
+                    <p class="mb-1 small">
+                        <i class="bi bi-envelope me-2"></i>Email: contacto@apafa-lamolina.edu.pe
+                    </p>
+                    <p class="mb-0 small">
+                        <i class="bi bi-c-circle me-2"></i>2026 - Todos los derechos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Data Loader -->
+    <script src="assets/js/data-loader.js"></script>
+
+    <!-- Notificaciones JS -->
+    <script src="assets/js/pages/notificaciones.js"></script>
+
+    <!-- Inicialización -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            ApafaData.initializePage(initNotificaciones, renderNotificaciones);
+        });
+    </script>
+</body>
+</html>

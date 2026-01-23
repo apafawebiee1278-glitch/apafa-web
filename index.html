@@ -371,48 +371,22 @@
                     </h2>
                     <p class="text-muted">Actividades y eventos importantes de la institución</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card card-modern border-0 shadow-sm h-100">
-                            <div class="card-header bg-accent-institution text-secondary-institution">
-                                <h6 class="mb-0">
-                                    <i class="bi bi-calendar-check me-2"></i>15 de Enero, 2026
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <h6 class="card-title">Reunión General de Padres</h6>
-                                <p class="card-text small text-muted">Auditorio principal - 7:00 PM</p>
-                                <span class="badge bg-primary-institution">Importante</span>
-                            </div>
-                        </div>
+                <div id="proximos-eventos-loading" class="text-center py-4">
+                    <div class="spinner-border text-primary-institution" role="status">
+                        <span class="visually-hidden">Cargando eventos...</span>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card card-modern border-0 shadow-sm h-100">
-                            <div class="card-header bg-primary-institution text-white">
-                                <h6 class="mb-0">
-                                    <i class="bi bi-calendar-check me-2"></i>22 de Enero, 2026
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <h6 class="card-title">Feria Educativa</h6>
-                                <p class="card-text small text-muted">Patio central - Todo el día</p>
-                                <span class="badge bg-accent-institution text-secondary-institution">Familiar</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-modern border-0 shadow-sm h-100">
-                            <div class="card-header bg-success text-white">
-                                <h6 class="mb-0">
-                                    <i class="bi bi-calendar-check me-2"></i>30 de Enero, 2026
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <h6 class="card-title">Pago de Cuota Anual</h6>
-                                <p class="card-text small text-muted">Fecha límite de pago</p>
-                                <span class="badge bg-alert-institution">Recordatorio</span>
-                            </div>
-                        </div>
+                    <p class="mt-2 text-muted">Cargando próximos eventos...</p>
+                </div>
+
+                <div id="proximos-eventos-error" class="alert alert-warning d-none" role="alert">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    <strong>No se pudieron cargar los eventos</strong>
+                    <p class="mb-0">Los eventos aparecerán aquí cuando sean programados.</p>
+                </div>
+
+                <div id="proximos-eventos-content" class="d-none">
+                    <div class="row g-4" id="proximos-eventos-list">
+                        <!-- Los eventos se cargarán aquí dinámicamente -->
                     </div>
                 </div>
             </div>

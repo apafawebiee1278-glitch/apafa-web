@@ -252,5 +252,155 @@ async function initDashboard() {
   }
 }
 
+/**
+ * Carga los próximos eventos
+ */
+async function loadProximosEventos() {
+  try {
+    const eventosData = await ApafaData.loadDataWithFallback('eventos', { eventos: [], total_eventos: 0 });
+    renderProximosEventos(eventosData);
+  } catch (error) {
+    console.error('Error cargando próximos eventos:', error);
+    showErrorProximosEventos('Error al cargar los próximos eventos: ' + error.message);
+  }
+}
+
+/**
+ * Renderiza la sección de próximos eventos
+ */
+function renderProximosEventos(data) {
+  try {
+    // Ocultar loading y error
+    ApafaData.toggleElement('proximos-eventos-loading', false);
+    ApafaData.toggleElement('proximos-eventos-error', false);
+    ApafaData.toggleElement('proximos-eventos-content', true);
+
+    const eventos = data.eventos || [];
+
+    // Filtrar eventos futuros (o de hoy) y ordenar por fecha
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+
+    const eventosFuturos = eventos
+      .filter(evento => {
+        const fechaEvento = new Date(evento.fecha);
+        return fechaEvento >= hoy;
+      })
+      .sort((a, b) => new Date(a.fecha) - new Date(b.fecha))
+      .slice(0, 3); // Mostrar máximo 3 eventos
+
+    renderListaProximosEventos(eventosFuturos);
+
+  } catch (error) {
+    console.error('Error renderizando próximos eventos:', error);
+    showErrorProximosEventos('Error al mostrar los próximos eventos: ' + error.message);
+  }
+}
+
+/**
+ * Renderiza la lista de próximos eventos
+ */
+function renderListaProximosEventos(eventos) {
+  const container = document.getElementById('proximos-eventos-list');
+
+  if (!eventos || eventos.length === 0) {
+    container.innerHTML = `
+      <div class="col-12">
+        <div class="text-center py-5">
+          <i class="bi bi-calendar-x text-muted fs-1 mb-3"></i>
+          <h5 class="text-muted">No hay eventos próximos</h5>
+          <p class="text-muted">Los próximos eventos aparecerán aquí cuando sean programados.</p>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const html = eventos.map(evento => {
+    const fecha = new Date(evento.fecha);
+    const fechaFormateada = fecha.toLocaleDateString('es-ES', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+
+    // Determinar color del header basado en importancia
+    const headerClass = evento.importante ?
+      'bg-accent-institution text-secondary-institution' :
+      'bg-primary-institution text-white';
+
+    // Determinar badge basado en el tipo
+    let badgeClass = 'bg-secondary';
+    let badgeText = 'General';
+
+    switch (evento.tipo) {
+      case 'reunion':
+        badgeClass = 'bg-primary';
+        badgeText = 'Reunión';
+        break;
+      case 'deportivo':
+        badgeClass = 'bg-success';
+        badgeText = 'Deportivo';
+        break;
+      case 'cultural':
+        badgeClass = 'bg-info';
+        badgeText = 'Cultural';
+        break;
+      case 'academico':
+        badgeClass = 'bg-warning text-dark';
+        badgeText = 'Académico';
+        break;
+      default:
+        badgeClass = 'bg-secondary';
+        badgeText = 'General';
+    }
+
+    const descripcion = evento.descripcion || '';
+    const lugar = evento.lugar || '';
+    const hora = evento.hora || '';
+
+    let detalleEvento = '';
+    if (hora) detalleEvento += ` ${hora}`;
+    if (lugar) detalleEvento += ` - ${lugar}`;
+
+    return `
+      <div class="col-md-4">
+        <div class="card card-modern border-0 shadow-sm h-100">
+          <div class="card-header ${headerClass}">
+            <h6 class="mb-0">
+              <i class="bi bi-calendar-check me-2"></i>${fechaFormateada}
+            </h6>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">${evento.titulo}</h6>
+            ${descripcion ? `<p class="card-text small text-muted">${descripcion}</p>` : ''}
+            ${detalleEvento ? `<p class="card-text small text-muted">${detalleEvento.trim()}</p>` : ''}
+            <span class="badge ${badgeClass}">${badgeText}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = html;
+}
+
+/**
+ * Muestra error en la sección de próximos eventos
+ */
+function showErrorProximosEventos(message) {
+  ApafaData.toggleElement('proximos-eventos-loading', false);
+  ApafaData.toggleElement('proximos-eventos-content', false);
+  ApafaData.toggleElement('proximos-eventos-error', true);
+
+  const errorElement = document.getElementById('proximos-eventos-error');
+  if (errorElement) {
+    errorElement.querySelector('p').textContent = message;
+  }
+}
+
 // Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', initDashboard);
+document.addEventListener('DOMContentLoaded', function() {
+  initDashboard();
+  loadProximosEventos();
+});

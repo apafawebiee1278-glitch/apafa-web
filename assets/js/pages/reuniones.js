@@ -10,18 +10,9 @@ async function loadReunionesData() {
   console.log('Cargando datos de reuniones...');
 
   try {
-    // Cargar datos desde el archivo JSON (o usar fallback si no existe)
-    const reuniones = await ApafaData.loadDataWithFallback('reuniones', [
-      {
-        id: 1,
-        titulo: "Reunión General de Padres de Familia",
-        fecha: "2026-01-15",
-        hora: "19:00",
-        motivo: "Reunión general programada para tratar temas importantes relacionados con el próximo año escolar, proyectos de mejora y actividades programadas.",
-        asistentes: 25,
-        total_padres: 6
-      }
-    ]);
+    // Cargar datos de eventos y filtrar solo las reuniones
+    const eventosData = await ApafaData.loadDataWithFallback('eventos', { eventos: [] });
+    const reuniones = eventosData.eventos.filter(evento => evento.tipo === 'reunion');
 
     console.log(`Datos de reuniones cargados: ${reuniones.length} reuniones`);
     return { reuniones };
