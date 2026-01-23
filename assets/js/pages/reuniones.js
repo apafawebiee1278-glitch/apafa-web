@@ -50,6 +50,10 @@ function renderReuniones(reuniones) {
       day: 'numeric'
     });
 
+    // Datos por defecto para asistencia (hasta que se implemente en la app)
+    const asistentes = reunion.asistentes || 0;
+    const totalPadres = reunion.total_padres || 6; // Valor por defecto basado en estadísticas
+
     html += `
       <div class="col-md-6 mb-4">
         <div class="card card-modern border-0 shadow-sm h-100">
@@ -67,18 +71,18 @@ function renderReuniones(reuniones) {
             </div>
           </div>
           <div class="card-body">
-            <p class="card-text text-muted mb-3">${reunion.motivo}</p>
+            <p class="card-text text-muted mb-3">${reunion.descripcion || 'Reunión programada por el comité APAFA'}</p>
 
             <div class="row text-center">
               <div class="col-6">
                 <div class="bg-success bg-opacity-10 p-2 rounded">
-                  <div class="h5 text-success mb-0">${reunion.asistentes}</div>
+                  <div class="h5 text-success mb-0">${asistentes}</div>
                   <small class="text-muted">Asistieron</small>
                 </div>
               </div>
               <div class="col-6">
                 <div class="bg-info bg-opacity-10 p-2 rounded">
-                  <div class="h5 text-info mb-0">${reunion.total_padres}</div>
+                  <div class="h5 text-info mb-0">${totalPadres}</div>
                   <small class="text-muted">Total Padres</small>
                 </div>
               </div>
@@ -97,7 +101,7 @@ function renderReuniones(reuniones) {
  */
 function renderEstadisticasReuniones(reuniones) {
   const totalReuniones = reuniones.length;
-  const totalAsistentes = reuniones.reduce((sum, r) => sum + r.asistentes, 0);
+  const totalAsistentes = reuniones.reduce((sum, r) => sum + (r.asistentes || 0), 0);
   const promedioAsistencia = totalReuniones > 0 ? Math.round(totalAsistentes / totalReuniones) : 0;
 
   ApafaData.updateText('#total-reuniones', totalReuniones);
