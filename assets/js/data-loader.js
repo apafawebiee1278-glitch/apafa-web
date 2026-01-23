@@ -136,8 +136,16 @@ function updateText(selector, text, fallback = 'N/A') {
   const element = document.querySelector(selector);
   if (element) {
     element.textContent = text || fallback;
+    console.log(`Elemento ${selector} actualizado con: ${text || fallback}`);
   } else {
     console.warn(`Elemento no encontrado: ${selector}`);
+    console.log('Elementos disponibles en el documento:');
+    const allElements = document.querySelectorAll('[id]');
+    allElements.forEach(el => {
+      if (el.id.includes('notificaciones') || el.id.includes('total')) {
+        console.log(`- ${el.id}: ${el.tagName}`);
+      }
+    });
   }
 }
 

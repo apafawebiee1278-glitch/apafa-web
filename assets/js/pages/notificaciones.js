@@ -21,6 +21,7 @@ function renderNotificaciones(data) {
             throw new Error('Datos de notificaciones no disponibles');
         }
 
+        console.log('Ocultando loading y mostrando contenido...');
         // Ocultar loading y mostrar contenido
         ApafaData.toggleElement('loading-notificaciones', false);
         ApafaData.toggleElement('error-notificaciones', false);
@@ -31,13 +32,23 @@ function renderNotificaciones(data) {
 
         console.log(`Procesando ${notificaciones.length} notificaciones, total: ${total}`);
 
-        // Actualizar estadísticas
-        ApafaData.updateText('total-notificaciones', total.toString());
-        ApafaData.updateText('notificaciones-eventos', notificaciones.filter(n => n.fecha_evento).length.toString());
-        ApafaData.updateText('notificaciones-generales', notificaciones.filter(n => !n.fecha_evento).length.toString());
+        // Verificar elementos antes de actualizar
+        console.log('Verificando elementos antes de actualizar:');
+        console.log('- total-notificaciones:', !!document.getElementById('total-notificaciones'));
+        console.log('- notificaciones-eventos:', !!document.getElementById('notificaciones-eventos'));
+        console.log('- notificaciones-generales:', !!document.getElementById('notificaciones-generales'));
 
-        // Renderizar lista de notificaciones
-        renderListaNotificaciones(notificaciones);
+        // Esperar un poco más para asegurar que el DOM esté actualizado
+        setTimeout(() => {
+            console.log('Actualizando estadísticas después de timeout...');
+            // Actualizar estadísticas
+            ApafaData.updateText('total-notificaciones', total.toString());
+            ApafaData.updateText('notificaciones-eventos', notificaciones.filter(n => n.fecha_evento).length.toString());
+            ApafaData.updateText('notificaciones-generales', notificaciones.filter(n => !n.fecha_evento).length.toString());
+
+            // Renderizar lista de notificaciones
+            renderListaNotificaciones(notificaciones);
+        }, 50);
 
     } catch (error) {
         console.error('Error renderizando notificaciones:', error);
