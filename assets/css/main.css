@@ -192,6 +192,49 @@ body {
   text-align: center;
 }
 
+.notification-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.notification-card {
+  overflow: hidden;
+}
+
+.notification-content {
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.notification-badge {
+  align-self: flex-start;
+  padding: 0.35rem 0.7rem;
+  color: #fff;
+  background: #65726a;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.notification-badge.type-financiero {
+  background: #187445;
+}
+
+.notification-badge.type-reunion,
+.notification-badge.type-evento {
+  background: #1f6786;
+}
+
+.notification-badge.type-urgente {
+  background: #a52d2d;
+}
+
+.notification-event {
+  background: #f4f8f5;
+  border-left: 0.3rem solid var(--apafa-green);
+  border-radius: 0.6rem;
+}
+
 footer {
   margin-top: auto;
 }

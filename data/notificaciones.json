@@ -1,29 +1,7 @@
 {
-  "notificaciones": [
-    {
-      "id": 1,
-      "titulo": "Reunion General de Padres de Familia",
-      "contenido": "Se convoca a todos los padres de familia a la reunion general programada para el proximo viernes 15 de enero en el auditorio principal a las 7:00 PM.",
-      "fecha_publicacion": "2026-01-22",
-      "fecha_evento": "2026-01-15",
-      "hora_evento": "19:00",
-      "lugar_evento": "Auditorio Principal",
-      "organizador": "Comité APAFA",
-      "tipo": "reunion",
-      "orden": 0
-    },
-    {
-      "id": 2,
-      "titulo": "Postergado pago APAFA hasta Reconocimiento oficial",
-      "contenido": "Se posterga hasta reconocimiento activo por la UGEL.",
-      "fecha_publicacion": "2026-01-22",
-      "fecha_evento": "2026-01-22",
-      "hora_evento": "19:00",
-      "lugar_evento": "",
-      "organizador": "Comité APAFA",
-      "tipo": "general",
-      "orden": 0
-    }
-  ],
-  "total_notificaciones": 2
+  "schema_version": 1,
+  "publicado_en": "",
+  "notificaciones": [],
+  "total_notificaciones": 0,
+  "fingerprint": ""
 }

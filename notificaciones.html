@@ -1,319 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex,nofollow,noarchive" />
-    <title>Notificaciones - APAFA I.E. Ex. Mixto "La Molina" 1278</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Notificaciones · APAFA</title>
+  <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="d-flex flex-column min-vh-100 bg-light">
-
-    <!-- Header institucional -->
-    <header>
-        <!-- Barra superior con colores institucionales -->
-        <div class="bg-primary-institution text-white py-2">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <small><i class="bi bi-geo-alt-fill me-2"></i>I.E. Ex. Mixto "La Molina" 1278 - APAFA 2026-2027</small>
-                    </div>
-                </div>
-            </div>
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <div class="topline py-2">
+      <div class="container d-flex justify-content-between gap-3">
+        <small>Comunicados públicos de APAFA</small>
+        <small>Solo lectura</small>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary-institution">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">I.E Mixto La Molina 1278</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="notificaciones.html">Notificaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="padres.html">Estado por aulas</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <!-- Navegación principal -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary-institution shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-                    <span>I.E. Ex. Mixto "La Molina" 1278</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                <i class="bi bi-house-door me-1"></i>Inicio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="notificaciones.html">
-                                <i class="bi bi-bell me-1"></i>Notificaciones
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="padres.html">
-                                <i class="bi bi-people me-1"></i>Estado por aulas
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <main class="flex-grow-1">
+    <section class="container py-4 py-lg-5">
+      <div class="mb-4">
+        <p class="eyebrow mb-1">Avisos vigentes</p>
+        <h1 class="display-6 fw-bold text-primary-institution">Notificaciones APAFA</h1>
+        <p class="text-muted mb-0">Publicadas desde la aplicación de escritorio.</p>
+      </div>
 
-    <!-- Contenido principal -->
-    <main class="flex-grow-1 py-5">
-        <div class="container">
-                <div class="text-center mb-5">
-                    <h1 class="fw-bold text-primary-institution">
-                        <i class="bi bi-bell-fill me-3"></i>Notificaciones APAFA
-                    </h1>
-                    <p class="text-muted lead">Información importante y anuncios de la Asociación de Padres</p>
-                </div>
-
-                <!-- Estadísticas -->
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <div class="card card-modern border-0 shadow-sm">
-                            <div class="card-body text-center">
-                                <i class="bi bi-bell text-primary-institution fs-1 mb-2"></i>
-                                <h3 class="text-primary-institution fw-bold" id="total-notificaciones">0</h3>
-                                <p class="text-muted mb-0">Total de Notificaciones</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-modern border-0 shadow-sm">
-                            <div class="card-body text-center">
-                                <i class="bi bi-calendar-event text-accent-institution fs-1 mb-2"></i>
-                                <h3 class="text-accent-institution fw-bold" id="notificaciones-eventos">0</h3>
-                                <p class="text-muted mb-0">Con Eventos</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-modern border-0 shadow-sm">
-                            <div class="card-body text-center">
-                                <i class="bi bi-info-circle text-secondary-institution fs-1 mb-2"></i>
-                                <h3 class="text-secondary-institution fw-bold" id="notificaciones-generales">0</h3>
-                                <p class="text-muted mb-0">Generales</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lista de notificaciones -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card card-modern border-0 shadow-sm">
-                            <div class="card-header bg-primary-institution text-white">
-                                <h5 class="mb-0">
-                                    <i class="bi bi-list-ul me-2"></i>Todas las Notificaciones
-                                </h5>
-                            </div>
-                            <div class="card-body">
-                                <div id="lista-notificaciones">
-                                    <!-- Las notificaciones se cargarán aquí dinámicamente -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row g-3 mb-4">
+        <div class="col-6 col-lg-4">
+          <div class="summary-card">
+            <span class="summary-number" id="notification-total">0</span>
+            <span>Notificaciones</span>
+          </div>
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-secondary-institution text-white py-4 mt-auto">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6 class="fw-bold">I.E. Ex. Mixto "La Molina" 1278</h6>
-                    <p class="mb-0 small">Asociación de Padres de Familia - APAFA</p>
-                    <p class="mb-0 small">Educación de calidad para el desarrollo integral de nuestros estudiantes</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <p class="mb-1 small">
-                        <i class="bi bi-info-circle me-2"></i>Use el canal institucional de APAFA
-                    </p>
-                    <p class="mb-0 small">
-                        <i class="bi bi-c-circle me-2"></i>2026 - Todos los derechos reservados
-                    </p>
-                </div>
-            </div>
+        <div class="col-6 col-lg-4">
+          <div class="summary-card pending">
+            <span class="summary-number" id="notification-urgent">0</span>
+            <span>Urgentes</span>
+          </div>
         </div>
-    </footer>
+        <div class="col-6 col-lg-4">
+          <div class="summary-card partial">
+            <span class="summary-number" id="notification-events">0</span>
+            <span>Con fecha de evento</span>
+          </div>
+        </div>
+      </div>
 
-    <!-- Bootstrap JS -->
-    <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <div id="notification-status" class="surface loading-box">
+        Cargando notificaciones...
+      </div>
+      <div id="notification-list" class="notification-list d-none" aria-live="polite"></div>
+    </section>
+  </main>
 
-    <!-- Data Loader -->
-    <script src="assets/js/data-loader.js"></script>
+  <footer class="bg-secondary-institution text-white py-4">
+    <div class="container text-center">
+      <small>APAFA · Información pública de solo lectura</small>
+    </div>
+  </footer>
 
-    <script>
-        // Funciones auxiliares
-        function formatDate(dateString) {
-            try {
-                const date = new Date(dateString);
-                return date.toLocaleDateString('es-ES', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                });
-            } catch (error) {
-                return dateString;
-            }
-        }
-
-        // Carga de datos
-        async function cargarNotificaciones() {
-            try {
-                console.log('Cargando datos de notificaciones...');
-                const notificacionesData = await ApafaData.loadDataWithFallback('notificaciones', { notificaciones: [], total_notificaciones: 0 });
-
-                console.log('Datos cargados:', notificacionesData.notificaciones.length, 'notificaciones');
-
-                // Renderizar todo
-                renderEstadisticas(notificacionesData);
-                renderListaNotificaciones(notificacionesData.notificaciones);
-
-                console.log('Notificaciones renderizadas correctamente');
-
-            } catch (error) {
-                console.error('Error cargando notificaciones:', error);
-                // Mostrar error en la lista
-                document.getElementById('lista-notificaciones').innerHTML = `<div class="alert alert-danger text-center"><i class="bi bi-exclamation-triangle me-2"></i>Error: ${error.message}</div>`;
-            }
-        }
-
-        function renderEstadisticas(data) {
-            const notificaciones = data.notificaciones || [];
-            const total = data.total_notificaciones || notificaciones.length;
-
-            // Contar eventos vs generales
-            const eventosCount = notificaciones.filter(n => n.fecha_evento && n.lugar_evento && n.lugar_evento.trim() !== '').length;
-            const generalesCount = notificaciones.filter(n => !n.fecha_evento || !n.lugar_evento || n.lugar_evento.trim() === '').length;
-
-            // Actualizar estadísticas
-            document.getElementById('total-notificaciones').textContent = total;
-            document.getElementById('notificaciones-eventos').textContent = eventosCount;
-            document.getElementById('notificaciones-generales').textContent = generalesCount;
-        }
-
-        function renderListaNotificaciones(notificaciones) {
-            const container = document.getElementById('lista-notificaciones');
-
-            if (!notificaciones || notificaciones.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center py-5">
-                        <i class="bi bi-bell-slash text-muted fs-1 mb-3"></i>
-                        <h5 class="text-muted">No hay notificaciones disponibles</h5>
-                        <p class="text-muted">Las notificaciones aparecerán aquí cuando sean publicadas por el comité APAFA.</p>
-                    </div>
-                `;
-                return;
-            }
-
-            // Ordenar notificaciones por fecha de publicación (más recientes primero)
-            const notificacionesOrdenadas = [...notificaciones].sort((a, b) =>
-                new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion)
-            );
-
-            const html = notificacionesOrdenadas.map(notificacion => {
-                const fechaPublicacion = formatDate(notificacion.fecha_publicacion);
-                const fechaEvento = notificacion.fecha_evento ? formatDate(notificacion.fecha_evento) : null;
-                const horaEvento = notificacion.hora_evento || '';
-                const lugarEvento = notificacion.lugar_evento || '';
-                const organizador = notificacion.organizador || 'Comité APAFA';
-
-                // Determinar el tipo de badge
-                let badgeClass = 'bg-secondary';
-                let badgeText = 'General';
-
-                switch (notificacion.tipo) {
-                    case 'financiero':
-                        badgeClass = 'bg-success';
-                        badgeText = 'Financiero';
-                        break;
-                    case 'reunion':
-                        badgeClass = 'bg-primary';
-                        badgeText = 'Reunión';
-                        break;
-                    case 'urgente':
-                        badgeClass = 'bg-danger';
-                        badgeText = 'Urgente';
-                        break;
-                    case 'evento':
-                        badgeClass = 'bg-info';
-                        badgeText = 'Evento';
-                        break;
-                    default:
-                        badgeClass = 'bg-secondary';
-                        badgeText = 'General';
-                }
-
-                return `
-                    <div class="notificacion-item mb-4 p-4 border rounded bg-light">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <div class="flex-grow-1">
-                                <h5 class="fw-bold text-primary-institution mb-2">
-                                    <i class="bi bi-bell me-2"></i>${notificacion.titulo}
-                                </h5>
-                                <div class="mb-2">
-                                    <span class="badge ${badgeClass} me-2">${badgeText}</span>
-                                    <small class="text-muted">
-                                        <i class="bi bi-calendar-event me-1"></i>Publicado: ${fechaPublicacion}
-                                    </small>
-                                    <small class="text-muted ms-3">
-                                        <i class="bi bi-person me-1"></i>${organizador}
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="notificacion-contenido mb-3">
-                            <p class="mb-3">${notificacion.contenido}</p>
-
-                            ${fechaEvento ? `
-                                <div class="evento-info p-3 bg-white rounded border-start border-primary">
-                                    <h6 class="text-primary mb-2">
-                                        <i class="bi bi-calendar-check me-2"></i>Información del Evento
-                                    </h6>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p class="mb-1">
-                                                <i class="bi bi-calendar-date me-2"></i>
-                                                <strong>Fecha:</strong> ${fechaEvento}
-                                            </p>
-                                            ${horaEvento ? `
-                                                <p class="mb-1">
-                                                    <i class="bi bi-clock me-2"></i>
-                                                    <strong>Hora:</strong> ${horaEvento}
-                                                </p>
-                                            ` : ''}
-                                        </div>
-                                        <div class="col-md-6">
-                                            ${lugarEvento ? `
-                                                <p class="mb-0">
-                                                    <i class="bi bi-geo-alt me-2"></i>
-                                                    <strong>Lugar:</strong> ${lugarEvento}
-                                                </p>
-                                            ` : ''}
-                                        </div>
-                                    </div>
-                                </div>
-                            ` : ''}
-                        </div>
-                    </div>
-                `;
-            }).join('');
-
-            container.innerHTML = html;
-        }
-
-        document.addEventListener('DOMContentLoaded', cargarNotificaciones);
-    </script>
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data-loader.js"></script>
+  <script src="assets/js/pages/notificaciones.js"></script>
 </body>
 </html>

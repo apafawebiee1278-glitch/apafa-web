@@ -6,6 +6,7 @@ Sitio estático público de la APAFA de la I.E. Ex. Mixto “La Molina” 1278.
 
 - `main` contiene únicamente la plantilla y datos vacíos.
 - La aplicación de escritorio genera un corte validado con el estado familiar por aula.
+- La aplicación de escritorio genera también `data/notificaciones.json` con los avisos activos.
 - El corte vigente se publica en la rama `gh-pages`, reemplazando el anterior.
 - GitHub Pages sirve `gh-pages` desde la raíz.
 
