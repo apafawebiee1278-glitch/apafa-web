@@ -14,11 +14,12 @@ Sitio estático público de la APAFA de la I.E. Ex. Mixto “La Molina” 1278.
 El archivo `data/estado_aulas.json` solo puede contener:
 
 - nombre del apoderado;
+- si falta un apoderado confirmado, un solo apellido del alumno seguido de `***`;
 - estado `al_dia`, `parcial` o `pendiente`;
 - nivel, grado y sección;
 - fecha, año escolar, resumen y contacto institucional de corrección.
 
-No se admiten DNI, teléfonos de familias, estudiantes, montos, identificadores internos,
+No se admiten DNI, teléfonos de familias, nombres completos de alumnos, montos, identificadores internos,
 bases de datos, recibos, respaldos ni adjuntos.
 
 ## Desarrollo local
