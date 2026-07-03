@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "institucion": "APAFA",
+  "anio_escolar": "2026",
+  "publicado_en": "",
+  "contacto_correccion": {
+    "email": "",
+    "telefono": ""
+  },
+  "resumen": {
+    "aulas": 0,
+    "familias": 0,
+    "al_dia": 0,
+    "parcial": 0,
+    "pendiente": 0
+  },
+  "aulas": [],
+  "fingerprint": ""
+}

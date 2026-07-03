@@ -1,245 +1,227 @@
-/**
- * APAFA Web - Página de Socios APAFA
- * Lista de padres con estado de contribuciones
- */
+(() => {
+  "use strict";
 
-/**
- * Carga todos los datos necesarios para la página de padres
- */
-async function loadPadresData() {
-  // Cargar datos principales
-  const [padres, resumenFinanciero, stats] = await Promise.all([
-    ApafaData.loadDataWithFallback('padres', []),
-    ApafaData.loadDataWithFallback('resumen_financiero', {
-      recaudacion_esperada: 660,
-      total_recaudado: 0,
-      porcentaje_cumplimiento: 0,
-      meta_anual: 1200
-    }),
-    ApafaData.loadDataWithFallback('stats', {
-      verde: 0,
-      amarillo: 0,
-      rojo: 0
-    })
-  ]);
+  let publicData = null;
+  let selectedClassroom = null;
 
-  return {
-    padres,
-    resumenFinanciero,
-    stats
+  const stateLabels = {
+    al_dia: "Al día",
+    parcial: "Pago parcial",
+    pendiente: "Pendiente"
   };
-}
 
-/**
- * Renderiza la información general de contribuciones
- */
-function renderInformacionGeneral(data) {
-  const { resumenFinanciero } = data;
-
-  // Meta anual
-  ApafaData.updateText('#meta-anual', ApafaData.formatCurrency(resumenFinanciero.meta_anual || 1200));
-
-  // Porcentaje completado
-  ApafaData.updateText('#porcentaje-completado', ApafaData.formatPercentage(resumenFinanciero.porcentaje_cumplimiento || 0));
-
-  // Porcentaje pendiente
-  const pendiente = 100 - (resumenFinanciero.porcentaje_cumplimiento || 0);
-  ApafaData.updateText('#porcentaje-pendiente', ApafaData.formatPercentage(pendiente));
-
-  // Timestamp de última actualización
-  const now = new Date().toLocaleString('es-PE');
-  ApafaData.updateText('#ultima-actualizacion', now);
-}
-
-/**
- * Renderiza las pestañas con conteos
- */
-function renderPestanas(data) {
-  const { stats } = data;
-
-  // Contribuciones completas
-  ApafaData.updateText('#conteo-completos', stats.verde || 0);
-
-  // Contribuciones en proceso
-  const enProceso = (stats.amarillo || 0) + (stats.rojo || 0);
-  ApafaData.updateText('#conteo-proceso', enProceso);
-}
-
-/**
- * Renderiza la tabla de contribuciones completas
- */
-function renderContribucionesCompletas(padresCompletos) {
-  if (!padresCompletos || padresCompletos.length === 0) {
-    ApafaData.updateElement('#tabla-completos', `
-      <tr>
-        <td colspan="4" class="text-center text-muted py-4">
-          <i class="bi bi-info-circle me-2"></i>
-          No hay contribuciones completas registradas
-        </td>
-      </tr>
-    `);
-    return;
+  function element(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
   }
 
-  let html = '';
-  padresCompletos.slice(0, 10).forEach(padre => { // Limitar a 10
-    html += `
-      <tr>
-        <td>
-          <div class="d-flex align-items-center">
-            <div class="bg-success bg-opacity-20 text-success rounded-circle p-2 me-3">
-              <i class="bi bi-person-fill"></i>
-            </div>
-            <div>
-              <strong>${padre.nombre_completo}</strong><br>
-              <small class="text-muted">ID: ${padre.dni_parcial}</small>
-            </div>
-          </div>
-        </td>
-        <td class="text-center">
-          <div class="progress" style="height: 8px; width: 80px; margin: 0 auto;">
-            <div class="progress-bar bg-success" style="width: 100%"></div>
-          </div>
-        </td>
-        <td class="text-center fw-bold text-success">${ApafaData.formatCurrency(padre.total_pagado)}</td>
-        <td class="text-center">
-          <span class="badge bg-success">
-            <i class="bi bi-check-circle me-1"></i>Completo
-          </span>
-        </td>
-      </tr>
-    `;
-  });
-
-  ApafaData.updateElement('#tabla-completos', html);
-}
-
-/**
- * Renderiza la tabla de contribuciones en proceso
- */
-function renderContribucionesProceso(padresPendientes, recaudacionEsperada) {
-  if (!padresPendientes || padresPendientes.length === 0) {
-    ApafaData.updateElement('#tabla-proceso', `
-      <tr>
-        <td colspan="5" class="text-center text-muted py-4">
-          <i class="bi bi-info-circle me-2"></i>
-          No hay contribuciones pendientes registradas
-        </td>
-      </tr>
-    `);
-    return;
+  function unique(values) {
+    return [...new Set(values)];
   }
 
-  let html = '';
-  padresPendientes
-    .sort((a, b) => b.total_pagado - a.total_pagado) // Más pagado primero
-    .slice(0, 10) // Limitar a 10
-    .forEach(padre => {
-      const porcentaje = recaudacionEsperada > 0 ? (padre.total_pagado / recaudacionEsperada) * 100 : 0;
-      const badgeClass = padre.estado_pago === 'pendiente' ? 'bg-danger text-white' : 'bg-warning text-dark';
-      const iconClass = padre.estado_pago === 'pendiente' ? 'bi-x-circle' : 'bi-clock';
-      const estadoTexto = padre.estado_pago === 'pendiente' ? 'Pendiente' : 'En Progreso';
-
-      html += `
-        <tr>
-          <td>
-            <div class="d-flex align-items-center">
-              <div class="bg-warning bg-opacity-20 text-warning rounded-circle p-2 me-3">
-                <i class="bi bi-person-fill"></i>
-              </div>
-              <div>
-                <strong>${padre.nombre_completo}</strong><br>
-                <small class="text-muted">ID: ${padre.dni_parcial}</small>
-              </div>
-            </div>
-          </td>
-          <td class="text-center">
-            <div class="progress" style="height: 8px; width: 80px; margin: 0 auto;">
-              <div class="progress-bar bg-warning" style="width: ${Math.min(porcentaje, 100)}%"></div>
-            </div>
-            <small class="text-muted">${porcentaje.toFixed(0)}%</small>
-          </td>
-          <td class="text-center fw-bold text-warning">${ApafaData.formatCurrency(padre.total_pagado)}</td>
-          <td class="text-center fw-bold text-alert-institution">${ApafaData.formatCurrency(padre.faltante)}</td>
-          <td class="text-center">
-            <span class="badge ${badgeClass}">
-              <i class="bi ${iconClass} me-1"></i>${estadoTexto}
-            </span>
-          </td>
-        </tr>
-      `;
+  function fillSelect(select, values, preferred) {
+    const previous = preferred || select.value;
+    select.replaceChildren();
+    values.forEach((value) => {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = value;
+      select.appendChild(option);
     });
-
-  ApafaData.updateElement('#tabla-proceso', html);
-}
-
-/**
- * Renderiza toda la página de padres
- */
-async function renderPadres(data) {
-  console.log('Renderizando página de padres completa...');
-
-  try {
-    const { padres, resumenFinanciero, stats } = data;
-
-    // Renderizar información general
-    renderInformacionGeneral(data);
-    renderPestanas(data);
-
-    // Filtrar padres por estado
-    const padresCompletos = padres.filter(p => p.estado_pago === 'completo');
-    const padresPendientes = padres.filter(p => p.estado_pago !== 'completo');
-
-    // Renderizar tablas
-    renderContribucionesCompletas(padresCompletos);
-    renderContribucionesProceso(padresPendientes, resumenFinanciero.recaudacion_esperada);
-
-    console.log('Página de padres renderizada correctamente');
-
-  } catch (error) {
-    console.error('Error renderizando página de padres:', error);
-    throw error; // Re-throw para que initPadres lo maneje
+    if (values.includes(previous)) select.value = previous;
   }
-}
 
-/**
- * Inicializa la página de padres
- */
-async function initPadres() {
-  console.log('Iniciando página de padres...');
+  function classroomsFor(level, grade) {
+    return (publicData?.aulas || []).filter(
+      (classroom) =>
+        (!level || classroom.nivel === level) &&
+        (!grade || classroom.grado === grade)
+    );
+  }
 
-  try {
-    // Cargar datos directamente (sin initializePage para evitar conflictos de loading)
-    const data = await loadPadresData();
-    console.log('Datos de padres obtenidos, renderizando...');
+  function updateFilters(preferred = {}) {
+    const levelSelect = document.getElementById("filter-level");
+    const gradeSelect = document.getElementById("filter-grade");
+    const sectionSelect = document.getElementById("filter-section");
+    const classrooms = publicData?.aulas || [];
 
-    // Renderizar sin contenedor (renderPadres ya no necesita container)
-    await renderPadres(data);
+    fillSelect(
+      levelSelect,
+      unique(classrooms.map((classroom) => classroom.nivel)),
+      preferred.nivel
+    );
+    const byLevel = classroomsFor(levelSelect.value);
+    fillSelect(
+      gradeSelect,
+      unique(byLevel.map((classroom) => classroom.grado)),
+      preferred.grado
+    );
+    const byGrade = classroomsFor(levelSelect.value, gradeSelect.value);
+    fillSelect(
+      sectionSelect,
+      unique(byGrade.map((classroom) => classroom.seccion)),
+      preferred.seccion
+    );
+    selectCurrentClassroom();
+  }
 
-    // Limpiar cualquier loading restante
-    const mainContent = document.querySelector('#main-content');
-    if (mainContent && mainContent.innerHTML.includes('Cargando')) {
-      mainContent.innerHTML = '';
+  function selectCurrentClassroom() {
+    const level = document.getElementById("filter-level").value;
+    const grade = document.getElementById("filter-grade").value;
+    const section = document.getElementById("filter-section").value;
+    selectedClassroom = (publicData?.aulas || []).find(
+      (classroom) =>
+        classroom.nivel === level &&
+        classroom.grado === grade &&
+        classroom.seccion === section
+    );
+    renderClassroom();
+  }
+
+  function renderFamilyList(containerId, state, query) {
+    const container = document.getElementById(containerId);
+    container.replaceChildren();
+    const families = (selectedClassroom?.familias || []).filter(
+      (family) =>
+        family.estado === state &&
+        family.nombre.toLocaleLowerCase("es-PE").includes(query)
+    );
+    if (!families.length) {
+      container.appendChild(
+        element("li", "status-empty", "No hay familias en este estado.")
+      );
+      return;
     }
+    families.forEach((family) => {
+      const item = element("li", "status-person");
+      item.appendChild(element("span", "person-dot", "•"));
+      item.appendChild(element("span", "", family.nombre));
+      container.appendChild(item);
+    });
+  }
 
-    console.log('Página de padres completada exitosamente');
+  function renderClassroom() {
+    if (!selectedClassroom) return;
+    const query = document
+      .getElementById("filter-name")
+      .value.trim()
+      .toLocaleLowerCase("es-PE");
+    const totals = selectedClassroom.totales || {};
 
-  } catch (error) {
-    console.error('Error en initPadres:', error);
+    ApafaData.setText(
+      "classroom-title",
+      `${selectedClassroom.nivel} ${selectedClassroom.grado} ${selectedClassroom.seccion}`
+    );
+    ApafaData.setText("classroom-total", totals.familias || 0);
+    ApafaData.setText("classroom-paid", totals.al_dia || 0);
+    ApafaData.setText("classroom-partial", totals.parcial || 0);
+    ApafaData.setText("classroom-pending", totals.pendiente || 0);
+    ApafaData.setText("paid-count", totals.al_dia || 0);
+    ApafaData.setText("partial-count", totals.parcial || 0);
+    ApafaData.setText("pending-count", totals.pendiente || 0);
 
-    // Mostrar error en el main content
-    const mainContent = document.querySelector('#main-content');
-    if (mainContent) {
-      mainContent.innerHTML = `
-        <div class="alert alert-danger text-center mt-4" role="alert">
-          <i class="bi bi-exclamation-triangle-fill me-2"></i>
-          <strong>Error al cargar la información de socios</strong><br>
-          <small>Por favor, recarga la página o contacta al administrador</small>
-        </div>
-      `;
+    renderFamilyList("paid-list", "al_dia", query);
+    renderFamilyList("partial-list", "parcial", query);
+    renderFamilyList("pending-list", "pendiente", query);
+
+    const params = new URLSearchParams();
+    params.set("aula", selectedClassroom.slug);
+    history.replaceState(null, "", `#${params.toString()}`);
+  }
+
+  function renderContact(contact) {
+    const container = document.getElementById("correction-contact");
+    container.replaceChildren();
+    const values = [];
+    if (contact?.email) {
+      const email = element("a", "", contact.email);
+      email.href = `mailto:${contact.email}`;
+      values.push(email);
+    }
+    if (contact?.telefono) {
+      const phone = element("a", "", contact.telefono);
+      phone.href = `tel:${contact.telefono.replace(/\s+/g, "")}`;
+      values.push(phone);
+    }
+    if (!values.length) {
+      container.textContent = "Canal institucional de APAFA";
+      return;
+    }
+    values.forEach((value, index) => {
+      if (index) container.appendChild(document.createTextNode(" · "));
+      container.appendChild(value);
+    });
+  }
+
+  async function copyClassroomLink() {
+    const button = document.getElementById("copy-link");
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      button.textContent = "Enlace copiado";
+    } catch {
+      button.textContent = "Copia la dirección del navegador";
+    }
+    window.setTimeout(() => {
+      button.textContent = "Copiar enlace del aula";
+    }, 2200);
+  }
+
+  async function init() {
+    const loading = document.getElementById("loading-state");
+    const content = document.getElementById("classroom-content");
+    const error = document.getElementById("error-state");
+    try {
+      publicData = await ApafaData.loadData("estado_aulas");
+      if (!Array.isArray(publicData.aulas) || !publicData.aulas.length) {
+        throw new Error("No existe un corte de aulas publicado.");
+      }
+
+      ApafaData.setText("institution-name", publicData.institucion || "APAFA");
+      ApafaData.setText("school-year", publicData.anio_escolar || "");
+      ApafaData.setText("last-update", ApafaData.formatDate(publicData.publicado_en));
+      const summary = publicData.resumen || {};
+      ApafaData.setText("summary-classrooms", summary.aulas || 0);
+      ApafaData.setText("summary-families", summary.familias || 0);
+      ApafaData.setText("summary-paid", summary.al_dia || 0);
+      ApafaData.setText("summary-partial", summary.parcial || 0);
+      ApafaData.setText("summary-pending", summary.pendiente || 0);
+      renderContact(publicData.contacto_correccion);
+
+      const hash = new URLSearchParams(window.location.hash.slice(1));
+      const requested = (publicData.aulas || []).find(
+        (classroom) => classroom.slug === hash.get("aula")
+      );
+      updateFilters(requested || {});
+
+      document.getElementById("filter-level").addEventListener("change", () => {
+        updateFilters({ nivel: document.getElementById("filter-level").value });
+      });
+      document.getElementById("filter-grade").addEventListener("change", () => {
+        const level = document.getElementById("filter-level").value;
+        updateFilters({
+          nivel: level,
+          grado: document.getElementById("filter-grade").value
+        });
+      });
+      document
+        .getElementById("filter-section")
+        .addEventListener("change", selectCurrentClassroom);
+      document
+        .getElementById("filter-name")
+        .addEventListener("input", renderClassroom);
+      document.getElementById("copy-link").addEventListener("click", copyClassroomLink);
+
+      loading.hidden = true;
+      content.hidden = false;
+    } catch (loadError) {
+      loading.hidden = true;
+      error.hidden = false;
+      error.querySelector("p").textContent =
+        loadError.message || "No se pudo cargar el corte vigente.";
     }
   }
-}
 
-// Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', initPadres);
+  document.addEventListener("DOMContentLoaded", init);
+})();

@@ -1,159 +1,214 @@
-/* ===== APAFA WEB - SITIO ESTÁTICO ===== */
-/* Estilos principales para el sitio web estático de APAFA */
-
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+:root {
+  --apafa-green: #185b32;
+  --apafa-green-dark: #103d24;
+  --apafa-gold: #e7b930;
+  --apafa-cream: #f5f3ec;
+  --apafa-ink: #1b2920;
+  --paid: #198754;
+  --partial: #d89b16;
+  --pending: #b63b3b;
 }
 
 html {
-  position: relative;
+  font-size: 16px;
   min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+  color: var(--apafa-ink);
+  background: var(--apafa-cream);
 }
 
-/* ===== COLORES INSTITUCIONALES APAFA ===== */
-
-/* Verde Militar - Color principal institucional */
 .bg-primary-institution {
-  background-color: #196828 !important;
+  background-color: var(--apafa-green) !important;
+}
+
+.bg-secondary-institution {
+  background-color: var(--apafa-green-dark) !important;
 }
 
 .text-primary-institution {
-  color: #245320 !important;
+  color: var(--apafa-green) !important;
 }
 
 .btn-primary-institution {
-  background-color: #205323;
-  border-color: #205323;
-  color: white;
+  color: #fff;
+  background: var(--apafa-green);
+  border-color: var(--apafa-green);
 }
 
-.btn-primary-institution:hover {
-  background-color: #184220;
-  border-color: #184220;
-  color: white;
+.btn-primary-institution:hover,
+.btn-primary-institution:focus {
+  color: #fff;
+  background: var(--apafa-green-dark);
+  border-color: var(--apafa-green-dark);
 }
 
-/* Verde Militar Oscuro - Para navegación */
-.bg-secondary-institution {
-  background-color: #194218 !important;
-}
-
-.text-secondary-institution {
-  color: #18421e !important;
-}
-
-/* Amarillo Institucional - Para acentos */
-.bg-accent-institution {
-  background-color: #FFD700 !important;
-}
-
-.text-accent-institution {
-  color: #FFD700 !important;
-}
-
-.btn-accent-institution {
-  background-color: #FFD700;
-  border-color: #FFD700;
-  color: #18421a;
-}
-
-.btn-accent-institution:hover {
-  background-color: #e6c200;
-  border-color: #e6c200;
-  color: #18421e;
-}
-
-/* Rojo Institucional - Para alertas/estados pendientes */
-.bg-alert-institution {
-  background-color: #B22222 !important;
-}
-
-.text-alert-institution {
-  color: #B22222 !important;
-}
-
-/* ===== ESTILOS MODERNOS ===== */
-
-/* Cards modernos */
-.card-modern {
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
-  transition: all 0.3s ease;
-}
-
-.card-modern:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-/* Botones modernos */
-.btn-modern {
-  border-radius: 8px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn-modern:hover {
-  transform: translateY(-1px);
-}
-
-/* Estados de pago */
-.status-pagado {
-  background-color: #28a745;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.status-pendiente {
-  background-color: #B22222;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-/* Animaciones sutiles */
-.fade-in {
-  animation: fadeIn 0.5s ease-in;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Navegación activa */
 .navbar-nav .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 0.55rem;
 }
 
-/* Responsive utilities */
+.topline {
+  background: var(--apafa-green);
+  color: #fff;
+}
+
+.hero {
+  color: #fff;
+  background:
+    radial-gradient(circle at 84% 20%, rgba(231, 185, 48, 0.26), transparent 32%),
+    linear-gradient(135deg, var(--apafa-green-dark), var(--apafa-green));
+  border-radius: 0 0 2rem 2rem;
+}
+
+.eyebrow {
+  color: var(--apafa-gold);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.surface {
+  background: #fff;
+  border: 1px solid rgba(24, 91, 50, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 0.55rem 1.6rem rgba(16, 61, 36, 0.08);
+}
+
+.summary-card {
+  height: 100%;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border-left: 0.35rem solid var(--apafa-green);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.35rem 1rem rgba(16, 61, 36, 0.07);
+}
+
+.summary-card.paid {
+  border-left-color: var(--paid);
+}
+
+.summary-card.partial {
+  border-left-color: var(--partial);
+}
+
+.summary-card.pending {
+  border-left-color: var(--pending);
+}
+
+.summary-number {
+  display: block;
+  font-size: clamp(1.65rem, 4vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.filter-panel label {
+  margin-bottom: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #486253;
+}
+
+.classroom-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-column {
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e3e8e4;
+  border-radius: 0.9rem;
+}
+
+.status-column header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  font-weight: 800;
+}
+
+.status-column.paid header {
+  color: #0f5e39;
+  background: #e1f3e9;
+}
+
+.status-column.partial header {
+  color: #74500b;
+  background: #fff1cc;
+}
+
+.status-column.pending header {
+  color: #7f2525;
+  background: #f9dfdf;
+}
+
+.status-list {
+  min-height: 8rem;
+  max-height: 30rem;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  list-style: none;
+}
+
+.status-person,
+.status-empty {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.72rem 1rem;
+  border-top: 1px solid #edf0ed;
+}
+
+.status-person {
+  font-weight: 600;
+}
+
+.status-empty {
+  color: #66736a;
+  font-style: italic;
+}
+
+.person-dot {
+  color: var(--apafa-green);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.privacy-note {
+  border-left: 0.32rem solid var(--apafa-gold);
+  background: #fff8de;
+}
+
+.loading-box {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+}
+
 @media (max-width: 767.98px) {
   .navbar-brand {
-    font-size: 1.1rem;
+    max-width: 75%;
+    white-space: normal;
+    font-size: 1rem;
   }
 
-  .bg-primary-institution .small {
-    font-size: 0.75rem;
+  .hero {
+    border-radius: 0 0 1.25rem 1.25rem;
+  }
+
+  .classroom-heading {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
