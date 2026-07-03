@@ -131,30 +131,6 @@
     history.replaceState(null, "", `#${params.toString()}`);
   }
 
-  function renderContact(contact) {
-    const container = document.getElementById("correction-contact");
-    container.replaceChildren();
-    const values = [];
-    if (contact?.email) {
-      const email = element("a", "", contact.email);
-      email.href = `mailto:${contact.email}`;
-      values.push(email);
-    }
-    if (contact?.telefono) {
-      const phone = element("a", "", contact.telefono);
-      phone.href = `tel:${contact.telefono.replace(/\s+/g, "")}`;
-      values.push(phone);
-    }
-    if (!values.length) {
-      container.textContent = "Canal institucional de APAFA";
-      return;
-    }
-    values.forEach((value, index) => {
-      if (index) container.appendChild(document.createTextNode(" · "));
-      container.appendChild(value);
-    });
-  }
-
   async function copyClassroomLink() {
     const button = document.getElementById("copy-link");
     try {
@@ -187,7 +163,6 @@
       ApafaData.setText("summary-paid", summary.al_dia || 0);
       ApafaData.setText("summary-partial", summary.parcial || 0);
       ApafaData.setText("summary-pending", summary.pendiente || 0);
-      renderContact(publicData.contacto_correccion);
 
       const hash = new URLSearchParams(window.location.hash.slice(1));
       const requested = (publicData.aulas || []).find(

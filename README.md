@@ -17,7 +17,7 @@ El archivo `data/estado_aulas.json` solo puede contener:
 - si falta un apoderado confirmado, un solo apellido del alumno seguido de `***`;
 - estado `al_dia`, `parcial` o `pendiente`;
 - nivel, grado y sección;
-- fecha, año escolar, resumen y contacto institucional de corrección.
+- fecha, año escolar y resumen.
 
 No se admiten DNI, teléfonos de familias, nombres completos de alumnos, montos, identificadores internos,
 bases de datos, recibos, respaldos ni adjuntos.
