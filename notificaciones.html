@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Notificaciones · APAFA</title>
+  <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <div class="topline py-2">
+      <div class="container d-flex justify-content-between gap-3">
+        <small>Comunicados públicos de APAFA</small>
+        <small>Solo lectura</small>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary-institution">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">I.E Mixto La Molina 1278</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="notificaciones.html">Notificaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="padres.html">Estado por aulas</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1">
+    <section class="container py-4 py-lg-5">
+      <div class="mb-4">
+        <p class="eyebrow mb-1">Avisos vigentes</p>
+        <h1 class="display-6 fw-bold text-primary-institution">Notificaciones APAFA</h1>
+        <p class="text-muted mb-0">Publicadas desde la aplicación de escritorio.</p>
+      </div>
+
+      <div class="row g-3 mb-4">
+        <div class="col-6 col-lg-4">
+          <div class="summary-card">
+            <span class="summary-number" id="notification-total">0</span>
+            <span>Notificaciones</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="summary-card pending">
+            <span class="summary-number" id="notification-urgent">0</span>
+            <span>Urgentes</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="summary-card partial">
+            <span class="summary-number" id="notification-events">0</span>
+            <span>Con fecha de evento</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="notification-status" class="surface loading-box">
+        Cargando notificaciones...
+      </div>
+      <div id="notification-list" class="notification-list d-none" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="bg-secondary-institution text-white py-4">
+    <div class="container text-center">
+      <small>APAFA · Información pública de solo lectura</small>
+    </div>
+  </footer>
+
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data-loader.js"></script>
+  <script src="assets/js/pages/notificaciones.js"></script>
+</body>
+</html>

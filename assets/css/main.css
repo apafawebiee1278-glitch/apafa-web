@@ -1,0 +1,257 @@
+:root {
+  --apafa-green: #185b32;
+  --apafa-green-dark: #103d24;
+  --apafa-gold: #e7b930;
+  --apafa-cream: #f5f3ec;
+  --apafa-ink: #1b2920;
+  --paid: #198754;
+  --partial: #d89b16;
+  --pending: #b63b3b;
+}
+
+html {
+  font-size: 16px;
+  min-height: 100%;
+}
+
+body {
+  color: var(--apafa-ink);
+  background: var(--apafa-cream);
+}
+
+.bg-primary-institution {
+  background-color: var(--apafa-green) !important;
+}
+
+.bg-secondary-institution {
+  background-color: var(--apafa-green-dark) !important;
+}
+
+.text-primary-institution {
+  color: var(--apafa-green) !important;
+}
+
+.btn-primary-institution {
+  color: #fff;
+  background: var(--apafa-green);
+  border-color: var(--apafa-green);
+}
+
+.btn-primary-institution:hover,
+.btn-primary-institution:focus {
+  color: #fff;
+  background: var(--apafa-green-dark);
+  border-color: var(--apafa-green-dark);
+}
+
+.navbar-nav .nav-link.active {
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 0.55rem;
+}
+
+.topline {
+  background: var(--apafa-green);
+  color: #fff;
+}
+
+.hero {
+  color: #fff;
+  background:
+    radial-gradient(circle at 84% 20%, rgba(231, 185, 48, 0.26), transparent 32%),
+    linear-gradient(135deg, var(--apafa-green-dark), var(--apafa-green));
+  border-radius: 0 0 2rem 2rem;
+}
+
+.eyebrow {
+  color: var(--apafa-gold);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.surface {
+  background: #fff;
+  border: 1px solid rgba(24, 91, 50, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 0.55rem 1.6rem rgba(16, 61, 36, 0.08);
+}
+
+.summary-card {
+  height: 100%;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border-left: 0.35rem solid var(--apafa-green);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.35rem 1rem rgba(16, 61, 36, 0.07);
+}
+
+.summary-card.paid {
+  border-left-color: var(--paid);
+}
+
+.summary-card.partial {
+  border-left-color: var(--partial);
+}
+
+.summary-card.pending {
+  border-left-color: var(--pending);
+}
+
+.summary-number {
+  display: block;
+  font-size: clamp(1.65rem, 4vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.filter-panel label {
+  margin-bottom: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #486253;
+}
+
+.classroom-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-column {
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e3e8e4;
+  border-radius: 0.9rem;
+}
+
+.status-column header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  font-weight: 800;
+}
+
+.status-column.paid header {
+  color: #0f5e39;
+  background: #e1f3e9;
+}
+
+.status-column.partial header {
+  color: #74500b;
+  background: #fff1cc;
+}
+
+.status-column.pending header {
+  color: #7f2525;
+  background: #f9dfdf;
+}
+
+.status-list {
+  min-height: 8rem;
+  max-height: 30rem;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  list-style: none;
+}
+
+.status-person,
+.status-empty {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.72rem 1rem;
+  border-top: 1px solid #edf0ed;
+}
+
+.status-person {
+  font-weight: 600;
+}
+
+.status-empty {
+  color: #66736a;
+  font-style: italic;
+}
+
+.person-dot {
+  color: var(--apafa-green);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.privacy-note {
+  border-left: 0.32rem solid var(--apafa-gold);
+  background: #fff8de;
+}
+
+.loading-box {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.notification-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.notification-card {
+  overflow: hidden;
+}
+
+.notification-content {
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.notification-badge {
+  align-self: flex-start;
+  padding: 0.35rem 0.7rem;
+  color: #fff;
+  background: #65726a;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.notification-badge.type-financiero {
+  background: #187445;
+}
+
+.notification-badge.type-reunion,
+.notification-badge.type-evento {
+  background: #1f6786;
+}
+
+.notification-badge.type-urgente {
+  background: #a52d2d;
+}
+
+.notification-event {
+  background: #f4f8f5;
+  border-left: 0.3rem solid var(--apafa-green);
+  border-radius: 0.6rem;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    max-width: 75%;
+    white-space: normal;
+    font-size: 1rem;
+  }
+
+  .hero {
+    border-radius: 0 0 1.25rem 1.25rem;
+  }
+
+  .classroom-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

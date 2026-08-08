@@ -1,0 +1,7060 @@
+{
+  "schema_version": 1,
+  "institucion": "I.E Mixto La Molina 1278",
+  "anio_escolar": "2026",
+  "publicado_en": "2026-08-08T18:06:58-05:00",
+  "resumen": {
+    "aulas": 52,
+    "familias": 1240,
+    "al_dia": 508,
+    "parcial": 224,
+    "pendiente": 508
+  },
+  "aulas": [
+    {
+      "slug": "primaria-1ro-a",
+      "nivel": "Primaria",
+      "grado": "1ro",
+      "seccion": "A",
+      "totales": {
+        "familias": 26,
+        "al_dia": 4,
+        "parcial": 12,
+        "pendiente": 10
+      },
+      "familias": [
+        {
+          "nombre": "ABAD ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ABIGAIL CUSCAYA COCHATOMA CÁRDENAS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ARROSPIDE USHIÑAHUA CHRISTIAN JONATHAN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BEGAZO BEGAZO FLOR ROSARIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CAHUANA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CECILIA MARIANGELA YAUMIO ROCHA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "COCHACHEZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DEYSI JARAMILLO HOYOS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "EDITH CCORIMANYA OSCO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FLORES ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FRANCISCA FLORES SONCCO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HINOSTROZA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JAZMIN JENIFER RIVERA MALLMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LUZ TERESA LEDEZMA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MALDONADO ATALAYA CINTHYA YESENIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARIA DEL CAMEN CHAMBILLO MARTINEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MURGA PEREZ ARNOLD JONATHAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NANCY ROJAS CALDERON",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PARIA CHAUCA LIZ MERCEDES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PEREZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROSARIO DE FATIMA QUISPE CHALLCO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROSMERY CHAVEZ PALMA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "Roy Villanueva Pozo",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SALINAS ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VARILLAS ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "YANNINA PASCUALA PARHUANA GASPAR",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-1ro-b",
+      "nivel": "Primaria",
+      "grado": "1ro",
+      "seccion": "B",
+      "totales": {
+        "familias": 23,
+        "al_dia": 5,
+        "parcial": 10,
+        "pendiente": 8
+      },
+      "familias": [
+        {
+          "nombre": "ARMAS JANAMPA SOLEIL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "AVALOS LEVANO LUCILA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BEGLYS VANESSA CASTRO GÓMEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CARDENAS RUIZ CAROLY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DAMAS ZACARIAS MILAGROS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DELGADO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESTRADA GARCIA GABRIELA RUTH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GLORIA GONZALEZ MONDRAGON",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HILARIO VERDI LUZ MARIBEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUAYTA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JUDITH VALDIVIA ROJAS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LESLY HERRERA ALPELINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LIZ ZEVALLOS CONDESO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MAMANI APAZA LUISA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARILEIDY VASQUEZ JARAMILLO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MIKHAIL ALEXANDER CHINGA MARTINEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NELLY BUJAICO SALAS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "OLORTEGUI ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROSALES ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROXANA MARIBEL CABALLERO LEON",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TONI SANGAMA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VILCAPOMA ***",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-1ro-c",
+      "nivel": "Primaria",
+      "grado": "1ro",
+      "seccion": "C",
+      "totales": {
+        "familias": 32,
+        "al_dia": 9,
+        "parcial": 15,
+        "pendiente": 8
+      },
+      "familias": [
+        {
+          "nombre": "ALEZ DAVID VELASQUEZ HUARHUA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ARROYO QUISPE JANET BRENDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARTURO TRINIDAD GARCIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BUSTAMANTE ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHINCHAY OJEDA LUZ MARIXA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "COLINÓ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DENISIS ASTO MARTINEZ /PAUL DEIVIS SULLCA FLOPRES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DIANA GUERRA PALOMINO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "EVELYN MAYURI VILLARREAL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FLORES ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GISELA YULY NUÑEZ CARHUARIERA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "INDIRA ROSIO CARRASCO HUARCA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ISIDRO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JHULYANA MARIA MARTINEZ PACHERRES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JOSELYN CINTHYA YANGE POMPILLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JOYCE ELIZABETH PALOMINO ASTOQUILLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULIO CESAR DIAZ SOLIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JUREIMA DEL CARMEN GARCIA GUERRERO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "KEVIN MONTOYA GUERRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOURDES FABIOLA MENDEZ PAICO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LUISA ANABEL FLORES PAVIRAN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MIRIAM MOLLESCA LLANOS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MONROY SAYRA NANCY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "QUILIANO ZAVALA JHADYRA MAYLIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROMERO ANGELES CLAUDIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RUBEN ANGEL MAURTUA GADEA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RUBI HUAMAN JIMENEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SOTO PEÑA PAOLA MEDALHY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VILMA URBANO DURAND",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "WILBER VIDAL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ZENAIDA ISABEL QUISPE ESCOBAR",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-1ro-d",
+      "nivel": "Primaria",
+      "grado": "1ro",
+      "seccion": "D",
+      "totales": {
+        "familias": 26,
+        "al_dia": 9,
+        "parcial": 12,
+        "pendiente": 5
+      },
+      "familias": [
+        {
+          "nombre": "CAJACURI SALAZAR ASAHIN JOSHUA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CUSICAHUA FERNANDEZ REBECA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DIAZ POZO JUAN CARLOS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "EDITH ROCIO VEGA TICONA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ELALUF ISUIZA SANY PRISCILA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUGO AIRA QUISPE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JHOMIRA FARFAN NAVARRO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JUANA ISIDORA SACCSARA QUINTO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LLULIANA PINEDO AJON",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LUZ SMIT FLORES JULIAN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARIBEL FARFAN ONCEBAY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARILYN GRISEL YGUIA MANDUJANO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARITZA GUEVARA GUEVARA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARYORIE LISETH ARRASCUE PAUCAR",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "NANCY RUEDA ALBECCONANCY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ORDINOLA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RUTH FLORES TAPIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANCHEZ JAIMES NOIMA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SAUL CORDOVA PORTERO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TOSSY ELIDA GAVILAN CÁCERES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VALENTIN SACARI MARMOLEJO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "Vanesa Linares Falcón",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VILLALOBOS PACHECO LYNE DANAI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZACARIAS QUISPE JANETT CRISTINA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-2do-a",
+      "nivel": "Primaria",
+      "grado": "2do",
+      "seccion": "A",
+      "totales": {
+        "familias": 26,
+        "al_dia": 12,
+        "parcial": 5,
+        "pendiente": 9
+      },
+      "familias": [
+        {
+          "nombre": "ALVA CHACON ROLANDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BENITES GUTIERREZ DEMETRIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAJACURI ESPINOZA CRISTHIAN CESAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARLA ADELA MARTINEZ GROSS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CHAUCA MENDOZA ELI MARCOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "COLOS ENCISO GUISELA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORNELIO LOZANO HAROLD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CRIOLLO ROJAS TEODORA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HINOJOSA HUAYHUAMESA YUBAL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "INGRID ANAHIKA PEREZ VILLEGAS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "IVAN CHUCOS ROMAN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JULON TAFUR ADELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MAURICIO MAMANCHURA VERONICA JUDITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ORTIZ VILLANUEVA EDWIN ARMANDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PATTY SALINAS VILCA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PRADO CAMACHO ROGEL DOMINGO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUINTANA VERANO CHIANG SHIRLEY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RALEYSA MENDOZA AYME",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RODRIGUEZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROJAS CASTRO JULIO CESAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANDOVAL LOPEZ LUZ MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOSA RIQUELME ELISEO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SOTO ROJAS JACKELIN NOEMI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "STEFANY LORA VASQUEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "URBINA HUAMANI WALTER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VENTOCILLA CALDERON JOSE MIGUEL",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-2do-b",
+      "nivel": "Primaria",
+      "grado": "2do",
+      "seccion": "B",
+      "totales": {
+        "familias": 23,
+        "al_dia": 6,
+        "parcial": 3,
+        "pendiente": 14
+      },
+      "familias": [
+        {
+          "nombre": "ANGELES SILVA PATRICIA ANGELICA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CATHERINE GIULIANA LUNA CARDICH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAÑOTE DURAND SARA GEIDY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUSI JARA ZAIDA JESUS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUYA VERA JUAN DIEGO ALEJANDRO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DAYANA PADILLA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GALA ORTEGA MARIELA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GAMBOA JANAMPA EDGAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GARAY CACHA SOLEDAD SOFIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GERARDINI ESCOBAR SAUL ALBERTO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HORMAZA SANTILLAN PERCY MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARIA CORAHUA RIMACHI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARTINEZ CARHUAPOMA CARLOS ALBERTO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MORALES ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MOROTE SAAVEDRA DONALD AARON",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ORTEGA MINAYA JOHN PAUL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PASCUAL PERALES ANDREA MARILIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PATROCINIO RICSE ELER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE TTITO RAFAEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "REVILLA DELGADO LUIS MIGUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SISSY LISBET CACERES DE VILCHEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TEJEDA QUINCHO EVELYN MELISSA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TORPOCO NINAMANGO KATHERINE LUCERO",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-2do-c",
+      "nivel": "Primaria",
+      "grado": "2do",
+      "seccion": "C",
+      "totales": {
+        "familias": 31,
+        "al_dia": 17,
+        "parcial": 3,
+        "pendiente": 11
+      },
+      "familias": [
+        {
+          "nombre": "ALICARRA URBINA MARY CARMEN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AMARINGO HUAYCAMA JENIFER JAHAIRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BERNAL VASQUEZ MEDALI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CALI PRIETO ALEXANDER ELIAS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTILLO ARIAS MARIA DEL PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "COCHACHES NOLASCO NESTOR SILVINO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CORREA VELARDE DANIELA NATALIE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DAVILA ALVAREZ DAVID DANIEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FIGUEREDO VARGAS JEOGREIDY CAROLIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLOR BALDEON QUISPE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FRECIA VANESSA CESPEDES TAPIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GARAY CACHA SOLEDAD SOFIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GARCIA FERNANDEZ ELSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULIANA SUSANA ESPINOZA CALLUPE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MALDONADO ATALAYA CINTHYA YESENIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARILYN PONTE RUBIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MENDOZA VENTURA STEFANY MARGOT",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "NOREÑA RETIS NELLY MILAGROS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PILLACA QUISPE MARTHA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PINTADO FIESTAS JOFREY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROJAS CARBAJAL ELISA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RUIZ MAMANI ALEJANDRO SERGIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SABINO PONCE EDUARDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SALDAÑA CARHUANCHO SANDRA MARIA YSABEL / REVISION SIN TESORERIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SEMINARIO PAICO MILAGROS ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TORIBIO BAZAN YENNIFER GUADALUPE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "URQUIA GIL MARISOL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILLAVERDE MERGE VALERIA CRISTINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VIRU LUCHO JADIRA VANESSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZAMALLOA TUESTA ROCIO RITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZORAIDA MUÑOZ CRISANTO",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-2do-d",
+      "nivel": "Primaria",
+      "grado": "2do",
+      "seccion": "D",
+      "totales": {
+        "familias": 25,
+        "al_dia": 9,
+        "parcial": 2,
+        "pendiente": 14
+      },
+      "familias": [
+        {
+          "nombre": "CAPARACHIN SALCEDO MERCEDES ZORAIDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLA CHUQUIJAJAS SHEILLA ISOLINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "COJAL BOLAÑOS RUBEN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DURAND SANTIAGO ANGGIE ELIZABETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GONZALES HINOSTROZA MAGDALENA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUAMANI JUAREZ YARIFE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUARAC MEJIA MARCO ANTONIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARY CARMEN PILLACA CASTAÑEDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MELISSA CINDY ESPINOZA MAXIMILIANO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MENDOZA SIHUINCHO PEDRO ROBERTO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MEZA TORRES YECENIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MIRANDA MENDOZA NIEVES MARGARITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MUJE CARDENAS CARMEN ELVIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAYANO VILLAR CARMELA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ MIESES CARLOS JEAN PIERE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "POVIS CORONEL RAUL RICHARD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PUNTAS CHAVARRIA CORNELIO NESTOR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ ROSAS REYNALDO GERMAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROJAS ZANABRIA ESTEPHANIE MELISSA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROMERO MANANI BEATRIZ SOLEDAD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SALSAVILCA SALSAVILCA MARIA DEL PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ ALARCON GLADYS JANNET",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TATHIANA NICOL REYNA GERONIMO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TEMBLADERA GRIJALVA WILBER LUPECINO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VIDALON AGUILAR STEFANY ANALY",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-3ro-a",
+      "nivel": "Primaria",
+      "grado": "3ro",
+      "seccion": "A",
+      "totales": {
+        "familias": 29,
+        "al_dia": 6,
+        "parcial": 5,
+        "pendiente": 18
+      },
+      "familias": [
+        {
+          "nombre": "ADOLFO RENZO JURUPE SCHILDER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANTONIO SALGUEDO GISELA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARCE BRICEÑO SANTOS JULIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CABEZAS CACERES SUSAN DAYSI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTRO LUNA JHON ABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORNELIO LOZANO HAROLD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DE LA TORRE NEYRA JUAN CARLOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESPINOZA PUMACHARES ROBERTO JOSEP",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES LIZARRAGA NOEMI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GALINDO VENTURA INES",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GODINES SANCHEZ CRISTHIAN ERICK",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HERRERA CULLANCO LUIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HILARIO VERDI LUZ MARIBEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JANNY VIDALON",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MICUILLA SANCHEZ ROSA ANGELICA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MURGA PEREZ ARNOLD JONATHAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAICO VASQUEZ JHENN ISMER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PAUCA VENTURA JUAN DIEGO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "POMA ALFARO BRANDI LEONEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PUMAYALLI MENDEZ JAIME",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "QUILIANO ZAVALA JHADYRA MAYLIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE CCARI NANCY BEATRIZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIOS ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIVERA SEGURA NAZARIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RODRIGUEZ CESPEDES ALEX",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROMERO SAMANIEGO JOSE MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SULCA VARGAS EDGAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TAMANI FASABI LADIDIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TRUJILLO GORDILLO VICTOR MANUEL",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-3ro-b",
+      "nivel": "Primaria",
+      "grado": "3ro",
+      "seccion": "B",
+      "totales": {
+        "familias": 26,
+        "al_dia": 11,
+        "parcial": 9,
+        "pendiente": 6
+      },
+      "familias": [
+        {
+          "nombre": "ALTEZ SIMON FELIPE RUSTAN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AQUINO BENITES ROLYN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CAMPOS CORDOVA ALEI KARISH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CELINA LILIANA SAAVEDRA VARGAS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CHUCHON QUISPE YNES / REVISION SIN TESORERIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CYNTHIA PRADO HUAYTALLA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DE LA CRUZ LLAMOCCA OSCAR DAVID",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ESTEBAN MALLMA BEATRIZ OLGA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GEORGINA PRADO CERDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GESSELLE JUDITH SANCHEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HURTADO PEREZ HEYDI EDITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JAUREGUI HUAYHUA GLADYS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULIAN ALVAREZ CYNTIA MAGALI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARCO ANTONIO DE LA TORRE VICENTE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MELENDEZ GUZMAN LUIGUI JAIRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MENDEZ PRADO ISMAEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDOZA GOMEZ YISELA AURORA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MIKHAIL ALEXANDER CHINGA MARTINEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NAYSHA HUAMANYALLI CASTILLÓN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ORBEGOSO CLAROS LENIN FRANKLIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PATROCINIO RICSE ELER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ GUERRA KEVIN ARNOLD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANDOVAL MONTES LUIS CARLOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VALENTIN SACARI MARMOLEJO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILLENA ALANIA DENIS JUAN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ZAPATA CASTILLO YESSICA GRISELA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-3ro-c",
+      "nivel": "Primaria",
+      "grado": "3ro",
+      "seccion": "C",
+      "totales": {
+        "familias": 29,
+        "al_dia": 13,
+        "parcial": 4,
+        "pendiente": 12
+      },
+      "familias": [
+        {
+          "nombre": "AGUILAR LOPEZ JAVIER CUPERTINO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALDERETE HUAMAN ANNE BRIDGET",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALFONSO PAITAN ELMER MARCIAL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANTEZANA MONROY AMERICO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARTICA VILCAPAZA GIULIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ASTETE VILCHEZ LEONOR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AYALA VARGAS ELIDA ISABEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BAYONA BAYONA EDWIN ORLANDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CANTORAL ORE ROSA EDDITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLO MATOS MARLENE YANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHAVEZ RIVERA GEAN MARCO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUMAPA MOZOMBITE MIRELI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FALCON LAVADO CARLOS RAMIRO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FLORES DURAND ROSA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GARCIA MONTALVAN NELIDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GOMEZ MALDONADO MARCELO JUAN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARILYN PONTE RUBIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "NAVARRO MINAYA ENEDINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PINEDA ÑAÑEZ OSWALDO FRANCISCO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIVERA GABRIEL NINFA MARLENE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RUESTA DOMINGUEZ ALEXANDRA MERCEDES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SALINAS HUARACA HENRY VLADIMIR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SALSAVILCA MELCHOR MARIA CANDY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SERNAQUE ESCALERA ALEXANDER MILLER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SIHUINCHO ROJAS WILDER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SOLANO BARRETO DILMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SULMA QUICHUA RIMACHI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TORRES VALER RUT MARIVEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VARGAS UTOS PEDRO VICENTE",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-3ro-d",
+      "nivel": "Primaria",
+      "grado": "3ro",
+      "seccion": "D",
+      "totales": {
+        "familias": 25,
+        "al_dia": 10,
+        "parcial": 5,
+        "pendiente": 10
+      },
+      "familias": [
+        {
+          "nombre": "ACOSTUPA LOAYZA VICTOR RAUL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ALPAS VASQUEZ JUAN MANUEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CIERTO FIGUEROA ORLINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CORREA VELARDE VALERIA VICTORIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CUMAPA VELA KAREN DEL PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DE LA CRUZ CAMPOS LEONCIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUILLERMO BACILIO PERCI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUAMAN CARHUARICRA BLANCA LLUBITZA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUAYHUALLA ALA EDITH CONSUELO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JENINE VARGAS GALVEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JESSICA VILLALVA VELASQUEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LEGUA ESPINO JHONATAN ARTURO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OGOSI FERNANDEZ TEODORA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OSCCO PALOMINO MODESTA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PINAO VILCAYAURI CARLOS GERARDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "POLO REYES EVER JAVIER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "POMA BAGLIETTO ANGELINA CELIDETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMOS APAESTEGUI STEFANIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ROJAS DE LA CRUZ ANGEL RAFAEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RUIZ CHAVEZ JOANNE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANCHO CABRERA JENYFER JOSEFINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TELLO CHACON AVELINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TIFANY URBANO SOLIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TOBAR HUAYLLASCO CINTYA PAMELA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZONIA CARRION AGUIRRE",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-4to-a",
+      "nivel": "Primaria",
+      "grado": "4to",
+      "seccion": "A",
+      "totales": {
+        "familias": 29,
+        "al_dia": 13,
+        "parcial": 3,
+        "pendiente": 13
+      },
+      "familias": [
+        {
+          "nombre": "ALCA CONTRERAS JUAN CARLOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CARRASCO PAREDES EDITH MIRELLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTRO NICOLAS JOHANNA CELESTE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CUYA LAURA JOSE MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DE LA CRUZ SILVA ELSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DEYSI MARIANELA TELLO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DIAZ PANDURO GLADYS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESCOBAR MARTINEZ EDITH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GARCIA FERNANDEZ ELSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GEORGINA PRADO CERDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JOSELYN QUISPE MITMA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LINA MIRIAM ZAVALA BALDEON",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ TODELANO BRUCE WALTER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MELO ZARATE IVO JIMMY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDIETA QUISPE JOEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MINAYA CASTILLO ROSMELIA PAMELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MONTENEGRO SANTOS JORGE ISRAEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PARIONA SACSARA ELENA ROCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PERALTA ARIAS ROMINA LISBETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PUENTE ZAVALA AYMEN MAKOL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE AGUIRRE JULISSA ESTRELLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RICSE MATOS RUBEN OLIVEIRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIOS DAVILA HANS JEFFERSONS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RONCAL NINA ROSEMARY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SOVERO CHUMBE KAROL ZARA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TATHIANA NICOL REYNA GERONIMO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TIRADO BAZAN JUAN MIGUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "URQUIZO MUÑOZ JUANA OLGA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VARGAS DAVILA JULIANA JANET",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-4to-b",
+      "nivel": "Primaria",
+      "grado": "4to",
+      "seccion": "B",
+      "totales": {
+        "familias": 28,
+        "al_dia": 21,
+        "parcial": 3,
+        "pendiente": 4
+      },
+      "familias": [
+        {
+          "nombre": "ARHUIRE CARCASI CLIO RUTH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BARRADAS NUÑEZ SHALLIMAR CARDINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BENAVIDES FERNANDEZ SEGUNDO JUAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CANCHO ZAMORA SANTIAGO JAIME",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHARAJA CRUZ LUZ MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "COCA ROMERO JOSE ROY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUSICAHUA FERNANDEZ REBECA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DE LA CRUZ PIÑAS ANDY ADRIAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FIGUEREDO VARGAS JEOGREIDY CAROLIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HEREDIA VARGAS CARMEN ROSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "INCHE JARAMA CLAUDIA LUZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LLOCCLLA HUARANCCAY JAVIER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LLULIANA PINEDO AJON",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARTINEZ YARANGA DIDI ZICO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MEJIA CAMPOS GLADYS ADELA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MENDOZA MENDOZA JOSELYN ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MEZA QUISPE MARGOTH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "OLIVARES HERNANDEZ MIRIANYELI YOHANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAREDES GUTIERREZ ERICK JOAO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PARIA CHAUCA LIZ MERCEDES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PEREZ HERNANDEZ ROSA ESNIT",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PINO ROJAS ROGER EDWIN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "QUISPE CANTA YLUMINADA MERY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE TTITO RAFAEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMOS MANTILLA YOVANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROSALES ÑIQUE CYNTHIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SULCA VARGAS EDGAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TOLENTINO FLORES KAREN EUSEBIA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-4to-c",
+      "nivel": "Primaria",
+      "grado": "4to",
+      "seccion": "C",
+      "totales": {
+        "familias": 29,
+        "al_dia": 9,
+        "parcial": 3,
+        "pendiente": 17
+      },
+      "familias": [
+        {
+          "nombre": "ABANTO CHIU MAYRA ALEJANDRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AGUILAR CONDORI JUANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARZAPALO VERASTEGUI MIGUEL EDUARDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BERROSPI SANCHEZ RAUL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAMPOS CASTRO JACQUELINE ZULMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CANDELA CARRANZA NOEDALID",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CARHUAS FUENTES IZAMAR FIORELLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHUQUICAHUA VASQUEZ HOMERO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CONDORI NARREA LILIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JANAMPA VARGAS ROSARIO DEL PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JAYO LÓPEZ DANIEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "KEVIN MONTOYA GUERRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LAUREANO ALBA ELISA MARGOT",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LAYZA NEYRA MARIBEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LEON FARIAS MARILLIAN PAOLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LOPEZ GUARDAMINO CARLOS GUSTAVO JAVIER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PALOMINO TORRES NELSON GUSTAVO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PAYTAN TORRE MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ PORTOCARRERO CLEDY DEYSI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PUMACANCHARI GUILLEN WALTER JOSE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE ASTETE VICTOR GERMAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE CANTA ELIZABETH PAMELA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RODRIGUEZ VILLANUEVA ELIZABETH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RUBIO LOAYZA CARMEN MAGALY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SEGURA NIQUIN YONNY FERNANDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOTO OBREGON DOLI ALICIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TORRES MUENA LIZ PATRICIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YLLESCAS GONZALES DE ASENJO NERI GRACIELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZAMALLOA CORTABRAZO FIORELLA SHIRLEY",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-4to-d",
+      "nivel": "Primaria",
+      "grado": "4to",
+      "seccion": "D",
+      "totales": {
+        "familias": 31,
+        "al_dia": 19,
+        "parcial": 6,
+        "pendiente": 6
+      },
+      "familias": [
+        {
+          "nombre": "ARELLANO YAURI CELIA ROSSANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARROYO CABRERA CESAR MARIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BENDEZU RIVEROS ROSARIO LILIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CARDENAS HUAMAN MARIA DEL PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARRASCO CASAVERDE CECILIA ESTHER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CCANTO CONDORI JANET",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FERMIN VASQUEZ NUÑEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLORES DAVIRAN IDALI LESLIE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GERI CCOPE ERMELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HORMAZA INGA JOSE MANUEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUAMAN ORTIZ WILLIAMS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUAYLLANI RAMOS NELLY MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HURTADO PEREZ HEYDI EDITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "INGA QUISPE KAREN EVELYN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JAUREGUI HUAYHUA BEATRIZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JOSELYN CINTHYA YANGE POMPILLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULIANA SUSANA ESPINOZA CALLUPE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LAIME LEYVA GREGORIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LOPEZ HUACHACA CELIA SILVIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MONTALVO SALAZAR BETZABETH MARGARITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MONZON REYES CARLOS WUILLIAM",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PAREDES CHU JOSE MIGUEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PATTY SALINAS VILCA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PEREZ NAJARRO GISET ALMENDRA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ROSAS ALCANTARA JOEL RUBEN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RUESTA DOMINGUEZ ALEXANDRA MERCEDES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANDOVAL DE FREITES RHAYZA CAROLINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SHAPIAMA PALPAN ROBERTH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SILVERA NIEVES MARIA JULIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOFIA ANCAJIMA OLAYA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "YUPANQUI MAITA DAMARIS ARACELI",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-5to-a",
+      "nivel": "Primaria",
+      "grado": "5to",
+      "seccion": "A",
+      "totales": {
+        "familias": 29,
+        "al_dia": 15,
+        "parcial": 2,
+        "pendiente": 12
+      },
+      "familias": [
+        {
+          "nombre": "AGUILAR DAMIAN VILMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ANAYA MANZUAR PERCILIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAJACURI SALAZAR ASAHIN JOSHUA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CARHUAPOMA RAMOS WILMER ROLANDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CERPA QUISPE JUANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHIPANA CANCHO JUAN CARLOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CORTEZ RAMIREZ MIGUEL ANGEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ENRIQUEZ GERONIMO YOLANDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GARY RODRIGUEZ ALBERCA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUAMAN MONTERO YONEL LUIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "INDIRA ROSIO CARRASCO HUARCA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JAUREGUI HUAYHUA GLADYS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JEFFERSON CASTILLON DE LA CRUZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JHULYANA MARIA MARTINEZ PACHERRES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JIMENEZ SATALAYA YULI MARLINE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "KAREN LISETH SULCA RAMOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LESLY HERRERA ALPELINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ GAMARRA MARIELLA VERONICA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOZADA PEREZ JOMY ANTONNUETTE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LUYO GUERRERO ISRAEL AMARANTO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MANAYAY LUCERO FREDDY REYNALDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MAYTA MEZA ZENON MIGUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OLGA MARINA MORALES TORREJON",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUIROZ CASTILLA EMERSON MIGUEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS APAESTEGUI STEFANIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SULCA VARGAS EDGAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SULLON MARCELO JOSE MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VILLANUEVA SANTILLAN WILFREDO MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZARRIA TELLO ARBEY ALEJANDRO",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-5to-b",
+      "nivel": "Primaria",
+      "grado": "5to",
+      "seccion": "B",
+      "totales": {
+        "familias": 33,
+        "al_dia": 19,
+        "parcial": 4,
+        "pendiente": 10
+      },
+      "familias": [
+        {
+          "nombre": "ALEGRE SALAZAR EDWARD FREDDY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARROSPIDE USHIÑAHUA CHRISTIAN JONATHAN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AVALOS LEVANO LUCILA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AÑAZCO GALLO ALEX GENNY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BASTANTE FERNANDEZ ISRAEL HUSSEIM",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAMACHO SANTOS LUIS ARNALDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLO AGUILAR MARTHA ELISABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTRO LIZANA ANDREA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CCONAYA HUAMANÑAHUI DANIEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CHARRES ZAVALA JHONATAN WILIAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CORONEL IDROGO ADIAMIRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GAMBOA JANAMPA EDGAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUTIERREZ ANTIPORTA GLORIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JIMENEZ FLORES ESTEFANY AMELIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOURDES FABIOLA MENDEZ PAICO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MENDEZ PRADO ISMAEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "NARRO MAYTA LUIS ALBERTO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PALACIOS TAPARA FIORELLA KATHERINE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAYANO VILLAR DAVID TEODOSIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAYTAN TORRE MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ PINCHE CESAR OSWALDO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "POMA LOZANO VILMA LOURDES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUESQUEN RODRIGUEZ CHRISTHEL PAMELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUIROZ PALOMINO EDWARD MIGUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE BAUTISTA YANET KARINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RALEYSA MENDOZA AYME",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAQUEL ESTEFANI PALOMINO CARMONA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIME RAMIREZ RONALD ANTONIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ SINACAY NOEMI LIZETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SICHA PARIONA REYNALDA ODILIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOTOMAYOR CAMPOS GLADYS REBECA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SULCA LLIUYA MONICA PAULA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TIPIANI TUESTA JULIANA TATIANA",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-5to-c",
+      "nivel": "Primaria",
+      "grado": "5to",
+      "seccion": "C",
+      "totales": {
+        "familias": 28,
+        "al_dia": 10,
+        "parcial": 6,
+        "pendiente": 12
+      },
+      "familias": [
+        {
+          "nombre": "AGUILAR CONDORI JUANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALIAGA RIOS LEONOR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BAUTISTA DE LA CRUZ ROSA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARDENAS RUIZ CAROLY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLA LUJAN LISBET VANESA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLORES CCAHUANA EDISON ROGER",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "IMBERTIS NAPA MARGOT GIOVANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LIDIA BONIFACIO LAPA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MAMANI HUACARPUMA TANIA NORA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDOZA ESTEBAN FLOR DE MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MESTANZA PULCE MILENI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MEZA NINAMANGO JUDITH PATTY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MONTALVO LOPEZ MAXIMO CLAUDIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "OSORIO CARLOS ROMINA IRIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PACHECO QUISPE EUSTAQUIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PARIONA SACSARA ELENA ROCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ MIESES CARLOS JEAN PIERE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PINTO GOMEZ ZULIANITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIVERA SEGURA NAZARIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RODRIGUEZ HUAMANI AURELIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RUIZ MANOSALVA ELMA NAYELI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SCHEYLA TATIANA RIVERA FERNANDEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SISSY LISBET CACERES DE VILCHEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TIFANY URBANO SOLIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TOLENTINO VILLANUEVA ELENA NELY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "UCEDA RODRIGUEZ JUAN EDUARDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VALENCIA CALLALLIS JORGE LUIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILLAVICENCIO NAVAS ROCIO DEL CARMEN",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-5to-d",
+      "nivel": "Primaria",
+      "grado": "5to",
+      "seccion": "D",
+      "totales": {
+        "familias": 33,
+        "al_dia": 11,
+        "parcial": 3,
+        "pendiente": 19
+      },
+      "familias": [
+        {
+          "nombre": "ALVAREZ VALLE GUILLERMO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ANA KARLAY LOBO ALEJOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANCHELIA TELLO FANNY SHIRLEY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BENAVIDES FERNANDEZ MARINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CALIZAYA QUISPE NORCA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORREA RAMIREZ SEGUNDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "COTRINA FERNANDEZ RONALD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ENCISO GRANADOS JOSELINE NATHALY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES DURAND ROSA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GASPAR LLALLAHUI HELLEN JACKELINE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUERRA VILCA MONICA DIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUILLEN PAQUIYAURI EDWIN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUARANGA CARHUANCOTA JESSICA MILUSKA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JAUREGUI ARAUJO ELENA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LEON RECALDE NELLY YESENIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARCACUZCO SUICA MARITZA ESTHER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MILLA AMPARADO CARMEN ROSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MURGA PEREZ ARNOLD JONATHAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MUÑIZ HURTADO SANDRO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OGOSI FERNANDEZ TEODORA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OLIVERA LEON YANETH LUCRECIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PADILLA CHINCHAY SAUL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PANDURO ALCANTARA CARLOS EDUARDO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "POMA SANCHEZ IRMA VIRGINIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PRADO SALVATIERRA ZOSIMO RUBEN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PUMACANCHARI GUILLEN WALTER JOSE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PUNTAS CHAVARRIA CORNELIO NESTOR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE SICHA MANUEL JESUS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ DURAND JESUS MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANDOVAL LOPEZ LUZ MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOMOZA RAYMUNDO BLANCA CRISTINA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TORIBIO CASAS JHONEY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZORAIDA MUÑOZ CRISANTO",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-6to-a",
+      "nivel": "Primaria",
+      "grado": "6to",
+      "seccion": "A",
+      "totales": {
+        "familias": 30,
+        "al_dia": 10,
+        "parcial": 6,
+        "pendiente": 14
+      },
+      "familias": [
+        {
+          "nombre": "ACOSTA BERNAL YANET BEATRIZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANTONIO CALERO YANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARTEAGA ROSAS MARTHA CECILIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BAUTISTA PARRA LUIS ENRIQUE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BENDEZU LOAYZA MADELEINE ESTEFANY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAPARACHIN SALCEDO MERCEDES ZORAIDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLO MATTOS ANGIE CATHERINE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CERRON GRANADOS MARLYN KARINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHAVEZ CUSI SUSANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESPINAL TAPIA HERMELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLORES CHINGUEL MAYBET LIBERATA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GALVEZ BENITES LUCIA BRIGITTE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GUERRERO POMASUNCO MARIA REGINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUANAMBAL SANCHEZ EDWARD HERBERT",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "Jessica Romero Gallardo",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LEON FARIAS MARILLIAN PAOLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDOZA PORRAS YOJAN MARCOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MENDOZA VALVERDE RICARDO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ORTIZ MATEO JULISSA LISSET",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PAYANO VILLAR DAVID TEODOSIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PERALTA CORZO ABIGAIL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUILIANO ZAVALA JHADYRA MAYLIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUINTANA VERANO CHIANG SHIRLEY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RAMOS MENDOZA KRISS KATHERINE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ ZAMALLOA REGINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANTIAGO QUISPE YERALDIN YOVANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SOTO PEÑA PAOLA MEDALHY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TIRADO BAZAN JUAN MIGUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "YAURI QUISPE MIGUEL ANGEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZUÑIGA ARIAS MARILUZ",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-6to-b",
+      "nivel": "Primaria",
+      "grado": "6to",
+      "seccion": "B",
+      "totales": {
+        "familias": 31,
+        "al_dia": 9,
+        "parcial": 4,
+        "pendiente": 18
+      },
+      "familias": [
+        {
+          "nombre": "AQUIJE COCA DE ALCANTARA ANA PATRICIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BAQUERIZO AGUILAR LORELEI LUZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BRIONES CALLALLI SANDRA ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAJACURI ESPINOZA CRISTHIAN CESAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAMACHO SANTOS LUIS ARNALDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLO NUÑEZ KATHERINE KELLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHOQUE CCAICO SOLEDAD LILIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORI RAMOS LUZ MARIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CUMAPA MOZOMBITE MIRELI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DIAZ POZO JUAN CARLOS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DOMINGO DE LA CRUZ YESENNIA ROSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESTEBAN OSTOLAZA SANDRA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GERI CCOPE ERMELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GONZALES ALCARAZ LUCY DOMINGA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LLACSA PEÑA KETTY MELVA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MALCA VILLANUEVA ALONDRA KARINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MELGAREJO MARTEL SARITA HERMELINDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDOZA VICENTY DEYSI ANGELINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "NANCY ROJAS CALDERON",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PERALTA ARIAS ROMINA LISBETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "POVIS CORONEL RAUL RICHARD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE DIAZ MARTHA ELVIRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIVAS QUINTO ANTONI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RUIZ CANO ALVARO YSAIAS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SIRA PAEZ ROSARIO MODESTA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOSA QUINTANA SEBASTIAN ROLANDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TAMAY CESPEDES IRMA LUCILA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TELLO CHACON AVELINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TERRONES GUEVARA LUZ DEL CARMEN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VARGAS INCA NELIDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZAMUDIO SANTOS KARIN GLADYS",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-6to-c",
+      "nivel": "Primaria",
+      "grado": "6to",
+      "seccion": "C",
+      "totales": {
+        "familias": 30,
+        "al_dia": 19,
+        "parcial": 0,
+        "pendiente": 11
+      },
+      "familias": [
+        {
+          "nombre": "AYSANA SUAREZ LUIDA YONESE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARDENAS CHAMPI LUCILA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTRO LIZANA EULALIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CATHERINE GIULIANA LUNA CARDICH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHINCHAY OJEDA LUZ MARIXA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESTEBAN MALLMA BEATRIZ OLGA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUAMANI ALFARO ELIAS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JOSE RAFAEL HERNANDEZ AGUINAGA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JUAN MIGUEL GALLARDO YAHAMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LIFONCIO LANDEO AUREA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LINA MIRIAM ZAVALA BALDEON",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LUNA TORRES EUFRUSINA MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MAURICIO LOPE REBECA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MENDOZA HUAMANYALLI MARIO CAMILO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MILLONES PEREZ CESAR AUGUSTO JUNIOR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MOQUILLAZA MACHACCA TATIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MUÑOZ SERVAN OSCAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NAJARRO ALCOCER EDITH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUIROZ PAREDES YOVANA FANISTEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMIREZ LUYA RUTH KEYLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODENAS BURGA ANGEL GABRIEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SALSAVILCA GRANDA ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ JAIMES NOIMA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SIMEON GONZALO EFRAIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TERRES AGUILAR FAUSTINO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VILCA JAULIS UMINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VIRU LUCHO JADIRA VANESSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YUPANQUI HUARAICAMA VICTORIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZAMBRANO TITO SONIA HAYDEE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZONIA CARRION AGUIRRE",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "primaria-6to-d",
+      "nivel": "Primaria",
+      "grado": "6to",
+      "seccion": "D",
+      "totales": {
+        "familias": 30,
+        "al_dia": 11,
+        "parcial": 5,
+        "pendiente": 14
+      },
+      "familias": [
+        {
+          "nombre": "ALBURQUEQUE LOYOLA ANA LUCIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALICIA RUIZ HACHA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AMARINGO HUAYCAMA JENIFER JAHAIRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BAUTISTA CARRILLO YESENIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BEGAZO BEGAZO FLOR ROSARIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CHÁVEZ DAMAS ELIZABETH LIBERTAD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CRIOLLO ROJAS TEODORA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ELIAZER KELMER CORDOVA JUAREZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESCALANTE GARAMENDI ANA VILMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESPINO GOÑI ELIZABETH NELLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORIANO SANTILLAN SAVIER ALEXANDER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HERRERA PEÑA DANIEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "IJUMA AHUANARI FATIMA DEL ROSARIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULIAN ALVAREZ CYNTIA MAGALI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LICUONA PINEDO NOEMI JONI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LOPEZ RUIZ JULIA DEL SOCORRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LUZ SMIT FLORES JULIAN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MIRANDA CENTENO ANITA MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PACAYA NORIS MARIA INES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAUCAR ROJAS YESENIA MEDALIT",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEBE RIVAS ULISES AMEA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PULACHE RIVERA ROSAMARIE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ HUASHUAYO YOLANDA REYNA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TORRES VICTOR MARIA GLADIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TUPIA RAMIREZ MARIBEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "USCO MENDOZA MILAGROS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VALENTIN SACARI MARMOLEJO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZAMALLOA CORTABRAZO FIORELLA SHIRLEY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZANABRIA BERROCAL ELIZABETH MARLENE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZAPATA CASTILLO YESSICA GRISELA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-1ro-a",
+      "nivel": "Secundaria",
+      "grado": "1ro",
+      "seccion": "A",
+      "totales": {
+        "familias": 32,
+        "al_dia": 12,
+        "parcial": 7,
+        "pendiente": 13
+      },
+      "familias": [
+        {
+          "nombre": "ANA MARIA MELO JAVIER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "APAZA HUANCHI HÉCTOR/CHÁVEZ VILLAGRA ROSARIO CONSUELO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAJACURI ESPINOZA CRISTHIAN CESAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAMPOS GUEVARA ELSA YOVANI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DOMINGO MARIÑO ILIANA MARILUZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FLOR GERTTY PANAIFO YAICATE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FRANS JONATHAN ESPINOZA MAXIMILIANO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GARAY CACHA SOLEDAD SOFIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GARGATE RIVERA DIEGO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JIMENEZ PUMA DIANA CAROLINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JUDITH EMILIA QUISPE LEON",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MANRIQUE ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARIA MARIOLITA LEON VASQUEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARIA NAVARRO PINCO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARITZA MUÑOZ CCOICCA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MEZA NINAMANGO JUDITH PATTY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MORA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PALOMINO VERA CARLOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ CARITA ANTONIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PINEDO MORI LLEVERLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PRADO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMOS ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMOS ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAQUEL ESTEFANI PALOMINO CARMONA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROGELIO HUEMAN CHAVEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SABINO PONCE EDUARDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOVERO CHUMBE KAROL ZARA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VARGAS DAVILA JULIANA JANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VASQUEZ LAURENCIO CARMEN LUCINDA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "YANET ARAUJO FLORES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YOVANA JANETH ROJAS CCOÑAS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZENOBIA GUERRA CAMPOS",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-1ro-b",
+      "nivel": "Secundaria",
+      "grado": "1ro",
+      "seccion": "B",
+      "totales": {
+        "familias": 32,
+        "al_dia": 12,
+        "parcial": 11,
+        "pendiente": 9
+      },
+      "familias": [
+        {
+          "nombre": "AQUINO BENITES ROLYN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BERROCAL ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CACERES ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTRO RIVERA CYNTHYA JEANIE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CELINA LILIANA SAAVEDRA VARGAS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DIANA MELISSA QUISPE FERNADEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ELIAZER KELMER CORDOVA JUAREZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ELISA JULCA FLORES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ENGELS GARCIA PEÑA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HORMAZA INGA JOSE MANUEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUAYTALLA CISNEROS SONIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ISHUIZA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JANAMPA VARGAS ROSARIO DEL PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JASSON CAJAVILCA VERANO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JUANA MORENO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARCO ANTONIO DE LA TORRE VICENTE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARK ROBLES ALVARADO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MELISSA CINDY ESPINOZA MAXIMILIANO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MUÑOZ HUAMAN MONICA ELDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PACHECO QUISPE EUSTAQUIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PAOLA FABIOLA ELIAS GUEVARA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "POMA LOZANO VILMA LOURDES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE TTITO RAFAEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAFAEL SILVA AMANCAY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ROSA GERALDO JIMENEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROSA ROSALBINA COLACHAGUA MEZA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SALSAVILCA MELCHOR MARIA CANDY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SARELY YALI MEDINA NEYRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SUSANA MEDINA RAMIREZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SUSSY ANALI REQUENA RAMOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VERNAZZA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "YOLANDA OGOSI FERNADEZ",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-1ro-c",
+      "nivel": "Secundaria",
+      "grado": "1ro",
+      "seccion": "C",
+      "totales": {
+        "familias": 31,
+        "al_dia": 12,
+        "parcial": 6,
+        "pendiente": 13
+      },
+      "familias": [
+        {
+          "nombre": "ARROSPIDE USHIÑAHUA CHRISTIAN JONATHAN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BALCAZAR ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CALDERON ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHUCHON QUISPE YNES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HELLEN PETRONILA REYES FLORES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUACCHA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUAMANI JUAREZ YARIFE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUARANGA CARHUANCOTA JESSICA MILUSKA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JAVIER PATRICIO MAITA AGÜERO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "KAREN LISETH SULCA RAMOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LASTARRIA OJEDA MARIANELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LIDIA BONIFACIO LAPA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ RUIZ DORA NELLY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARISELLA SULLCA BARRIENTOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MORENO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OLANO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ONZUETA BENITES PLACIDO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PAIVA DELGADO OLGA CRISTEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PARIA CHAUCA LIZ MERCEDES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PATTY SALINAS VILCA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAUCAR ROJAS YESENIA MEDALIT",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PONCE SUAREZ WINDER ELIAS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUIÑONES CERRON MARILIA VIANNEY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANCHEZ CASAS BETSY JACQUELINE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TERESA ANDREINA CARABALLO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "UCEDA RODRIGUEZ JUAN EDUARDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VICTORIO VISURRAGA /ONARIA DAGA ALVINO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VIOLETA AQUINO OSORIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VIRGILIO CORDOBA GARCIA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-1ro-d",
+      "nivel": "Secundaria",
+      "grado": "1ro",
+      "seccion": "D",
+      "totales": {
+        "familias": 31,
+        "al_dia": 15,
+        "parcial": 6,
+        "pendiente": 10
+      },
+      "familias": [
+        {
+          "nombre": "ANA MARLENE CABRERA MONTERO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AZA MAYTA FLAVIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BELBER COLCHADO LOZANO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CALIXTO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CCORAHUA JAIMES HENRY GABINO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CELINA PEREZ VASQUEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHABELI HUANCA OSCCO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ENCISO GRANADOS JOSELINE NATHALY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ENGELS GARCIA PEÑA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FATIMA CRITOBAL AGUILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FERMIN VASQUEZ NUÑEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLOR TICLLA BUSTAMANTE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FRUCTUOSO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GIL LOZANO DEISY JAQUELIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JOHN CAYCHO BEJARANO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JUAN PABLO HUAMANI LUCAS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "KALLY RODRIGUEZ VENEGA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "KAREN SOTO MAGIPO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LOPE ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LUIS JAVIER RENGIFO FERNANDEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MAYLLE ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MONTENEGRO SANTOS JORGE ISRAEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NAYSHA HUAMANYALLI CASTILLÓN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PECHE ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUIROZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROCIO PUENTE ZAVALA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ROMERO SAMANIEGO JOSE MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROSA MARÍA RIVAS JUAREZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANTAMARIA FARROÑAN MARIA NELLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TABRAJ MIRANDA ANITA MILAGROS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILCA ***",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-1ro-e",
+      "nivel": "Secundaria",
+      "grado": "1ro",
+      "seccion": "E",
+      "totales": {
+        "familias": 31,
+        "al_dia": 9,
+        "parcial": 8,
+        "pendiente": 14
+      },
+      "familias": [
+        {
+          "nombre": "BERTHA JAUREGUI HUAYHUA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CABREJOS ALBUJAR ALIZON VICTORIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CACERES ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAMACHO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CCORAHUA JAIMES HENRY GABINO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CECILIA MARIANGELA YAUMIO ROCHA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FLORES ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FRED KEWIN ALDANA PALACIN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUAMANI VENTURA NANCY KARINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JANNY VIDALON",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JARA GUERREROS KAREN YULIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JESSICA VILLALVA VELASQUEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JUANA ASORZA HUATARONGO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LAYME ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LOPEZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LUIS FRANCISCO YAÑEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MAMANI PIZARRO EDITH ROSARIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARIA BELITO ARECHE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARÍA ETELVINA NÚÑEZ TORRES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MIGUE RODRIGUEZ ALVAREZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "NIVIN OROPEZA AURELIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "OBREGON ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ LEIVA CARLOS ANDRES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUIROZ CASTILLA EMERSON MIGUEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAYSA NARYMA MEJIA GARCIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RONCAL ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SALAZAR ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOTO OBREGON DOLI ALICIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TORREZ ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VIDALON ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "Yamile Torres Málaga",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-2do-a",
+      "nivel": "Secundaria",
+      "grado": "2do",
+      "seccion": "A",
+      "totales": {
+        "familias": 32,
+        "al_dia": 12,
+        "parcial": 5,
+        "pendiente": 15
+      },
+      "familias": [
+        {
+          "nombre": "ABANTO CHIA MAYRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARIAS ARIAS CARLOS ALBERTO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARIAS LUIS DAVID",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AROTOMA RUBIN CESAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BERRIOS GARCIA JESUS ENRIQUE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CARRASCO PAREDES EDITH MIRELLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHAVEZ CORNEJO OLIVER JESUS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHUCHON PALACIOS LORENZA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DAVILA INFANTES DENISE ISABEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DE LA CRUZ ALIAGA JUDITH MABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DEUDOR HUALLANCA EDUARDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESPINO GOÑI ELIZABETH NELLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESPIRITU RODRIGUEZ CARMEN FLOR",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ESTEFANI VILLALOBOS PACHECO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLORES GAMERO ANA CECILIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FRANCISCA JACKELINE TANTAHUILLCA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JANAMPA VARGAS ROSARIO DEL PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JAUREGUI HUAYHUA BEATRIZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LEON RECALDE NELLY YESENIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARTINEZ ESTEBAN LIZ ROCIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "OROZCO CRUZ PAULINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PASCUAL PERALES ANDREA MARILIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAULLO CABEZAS YANINA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PRADO CAMACHO ROGEL DOMINGO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PUCUHUAYLA GUADALUPE CARMEN MARGARITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PUMACANCHARI GUILLEN WALTER JOSE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ CUADROS MIGUEL ANGEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANCHEZ VALENCIA NORA ROCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANTANA VILLAVERDE HECTOR EFRAIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TORRES GRANADOS OSCAR JULIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VELASQUEZ VERA EVANGELINA DORIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YUDITH MOYA POMA",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-2do-b",
+      "nivel": "Secundaria",
+      "grado": "2do",
+      "seccion": "B",
+      "totales": {
+        "familias": 32,
+        "al_dia": 14,
+        "parcial": 3,
+        "pendiente": 15
+      },
+      "familias": [
+        {
+          "nombre": "ADRIANZEN TOCTO MEDALIT",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALFONSO PAITAN ELMER MARCIAL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANCHELIA TELLO FANNY SHIRLEY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARMAS JANAMPA SOLEIL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BALDERA INOÑAN ELIS JHOVANI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BELLIDO PEÑA GIULIANA BEATRIZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CACÑAHUARAY JANAMPA FREDDY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAMPOSANO SIHUINCHO LUISA DEL CARMEN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTRO RIVERA CYNTHYA JEANIE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORBETTA COICAPOSA NANCY JANETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CUADROS CORDERO MONICA LAURA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DIAZ BACA JUDITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESCALANTE GARAMENDI ANA VILMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GARCIA GUEVARA DIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GIRONDA LENCCI GERALDINE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JUNIOR ALARCON BELEN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LEON DELGADO NICOLASA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ VELA ROSILIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MALLMA LANDEO WALTER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MAMANI GUTIERREZ ZOILA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MENDOZA AYALA LUZ AYDEE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NAVEROS YATACO LUIS SANDRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ORELLANA TUPPIA CARLOS RODRIGO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PARIONA SACSARA ELENA ROCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PERALES ARONI HENRY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PUERTA HUAMAN HORMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROJAS PORTO JORGE LUIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SILVA INGA SANTOS MARTIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TOLENTINO VILLANUEVA ELENA NELY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "URETA AGUILAR MYRCIA NATALY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILA OCHOA EDGAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YAULI ARRIETA MARLENI",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-2do-c",
+      "nivel": "Secundaria",
+      "grado": "2do",
+      "seccion": "C",
+      "totales": {
+        "familias": 33,
+        "al_dia": 14,
+        "parcial": 5,
+        "pendiente": 14
+      },
+      "familias": [
+        {
+          "nombre": "ALDERETE HUAMAN ANNE BRIDGET",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALMONACID CASTILLO ADELA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALVA VIDAL FERNANDO EUGENIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALVARADO GIRON LUIS ALBERTO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARANGO PEREZ LIZ SANDRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARTEAGA ROSAS MARTHA CECILIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BEGAZO BEGAZO FLOR ROSARIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CHUCHON PARIONA FELICITAS JOCIPA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DE LA CRUZ PALACIOS GLADYS YUSMILA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "EGOAVIL SANCHEZ SUSAN KATTY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GARCIA BALLADARES NAIOMY LEONOR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GASPAR LLALLAHUI HELLEN JACKELINE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUERRA SANCHEZ ANA MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HINOSTROZA CASTRO MARY LUZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JOSE RAFAEL HERNANDEZ AGUINAGA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LEDEZMA MENDOZA ISABEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LURDES DE LA CRUZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MENDOZA VALVERDE RICARDO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MEZAHUAMAN ANCCASI CELIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MIGUEL ANGEL ANAYA SUYO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MIRANDA AGUILAR MARGOT",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MOGROVEJO FLORES SANDRO FRANCISCO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PAUCAR ARAGON JULIO CESAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PEREZ TAIPE GRICELDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUINTANA DOMINGUEZ LILLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE DIAZ MARTHA ELVIRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIVERA SANABRIA JESSICA MAGALLI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ HUAMANI AURELIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROJAS SANCHEZ LUZ MARINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RUBEN GAMBOA VILLANO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "UCHARIMA GERONIMO ELIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VASQUEZ HUAUYA ISABEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILCATOMA CAMASCA MARGHOT ELIZABET",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-2do-d",
+      "nivel": "Secundaria",
+      "grado": "2do",
+      "seccion": "D",
+      "totales": {
+        "familias": 33,
+        "al_dia": 17,
+        "parcial": 6,
+        "pendiente": 10
+      },
+      "familias": [
+        {
+          "nombre": "AGUILAR LEON JUBER JOEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALPELINA BENDEZU MARIA JUSTINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALVAREZ AREVALO KARLA NINOSKA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ASTETE VILCHEZ LEONOR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CALLE CORDOVA MARTHA YOVVANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CAMPOS CORDOVA ALEI KARISH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CATALAN BARRIENTOS SONIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHUCHON PALACIOS TOMAZA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "EGOAVIL CURASMA ALICIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLORES HUAMAN GIANNINA JESSICA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES RAMIREZ CARMEN ROSA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUANCA TORRES ROSAVEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JESENIA RAQUEL CHOQUEHUANCA CABALLERO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LAGOS CARRASCO GLORIA ROCIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LEON FARIAS MARILLIAN PAOLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LILIANA MORI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LOPEZ RUIZ JULIA DEL SOCORRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MAXIMO CARRASCO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MEJIA CARUAJULCA JORGE ANTONIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MEJIA OLIVOS DIANA PATRICIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MEZA TORRES YECENIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MORALES MONCADA LOURDES EUDULIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "NAVARRO MINAYA ENEDINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NICOLAS UGARTE TOMAS CHRISTIAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PILLACA QUISPE MARTHA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE VALER KATTY MARISELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS MANTILLA YOVANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROMERO BUENO MATILDE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SOLANO BARRETO DILMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TELLO CHACON AVELINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TUCTO HUARANGA NILZA LILI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VILLANUEVA PRADA YISELA SARY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ZAMORA HUAQUI LUZ MACARENA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-2do-e",
+      "nivel": "Secundaria",
+      "grado": "2do",
+      "seccion": "E",
+      "totales": {
+        "familias": 33,
+        "al_dia": 12,
+        "parcial": 1,
+        "pendiente": 20
+      },
+      "familias": [
+        {
+          "nombre": "AGUIRRE ALBERCO NATALI GLICELA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALEGRE ROJAS CINTIA VANESA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ANAYA ROJAS SOFIA VANESSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANCCO OCAÑA ROXANA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BALDEON QUISPE REYNA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CANO QUINTANA RONALD GUISEPPI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASIMIRO ROJAS CHRISTIAN EDWARD",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CCARHUAYPIÑA BARRIAL REYNO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHILON LOZANO JHONY KENEDE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORDOVA GARCIA YANETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DIAZ MUNDACA SOLANYE DEL MILAGRO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESPINOZA ATAUCUSI MARLENE YOVANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLOR BALDEON QUISPE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUAMANI MITMA MERCEDES",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JORGE LUIS CCOCHACHI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "KEVIN MONTOYA GUERRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MALDONADO VILLAFUERTE JOSE MARCIAL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MALLCCO HUAMAN BARTOLOME",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARTINEZ MARCAS FLOR DE MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MAYTA MEZA ZENON MIGUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MINAYA CASTILLO ROSMELIA PAMELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MONTEJO ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OSCANOA GALARZA CARMEN NATALIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAREDES CAHUASCANCO YESICA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PEREZ CARITA ANTONIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PORCEL DELGADO ROSA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE SICHA ADRIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE TORRES MAGDALENA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIOS ESPINOZA KARINA OLINDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ CISNEROS VANESSA ALEJANDRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ SINACAY NOEMI LIZETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SULLCA CHIPANA MESIAS ROLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TORPOCO NINAMANGO JESSICA JULISSA",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-2do-f",
+      "nivel": "Secundaria",
+      "grado": "2do",
+      "seccion": "F",
+      "totales": {
+        "familias": 30,
+        "al_dia": 14,
+        "parcial": 3,
+        "pendiente": 13
+      },
+      "familias": [
+        {
+          "nombre": "AGUIRRE CHAHUARA JUAN FRACISCO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARANDA CHAPARIN SULEMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AÑORGA MORI CARMEN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BARAK PASTOR TANIA CONSUELO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BELLIDO MUÑOZ GLADYS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARRILLO DE LA CRUZ YANET SOFIA DEL PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLO ARIAS MARIA DEL PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHACON PALOMINO FLOR AMPARO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHUMACERO SALCEDO LUZ BERLITA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CUNO CASTILLO LILIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DE LA CRUZ NIETO BETTY ROSSMERY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DE LA CRUZ PALACIOS MELVIN RAUL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESCALANTE GARAMENDI YOLANDA PATRICIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GARCIA RIVERA MAGALY DEL SOCORRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JANAMPA MONTES ROXANA PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JEFFERSON CASTILLON DE LA CRUZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MALDONADO VILLAFUERTE JULIA JANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDEZ CALERO ROBERTA MARIA DEL PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MILLA AMPARADO CARMEN ROSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MITMA ALANYA CAROLINA BEATRIZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "NAVARRO RAMIREZ JONATHAN ARNOLD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PALACIOS BAEZ ALESANDRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "POMA BAGLIETTO ANGELINA CELIDETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PUMAYALLI MENDEZ JAIME",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "QUESQUEN RODRIGUEZ CHRISTHEL PAMELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROSA RODRIGUEZ GARRIDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SAAVEDRA VARGAS NELLY DANITZA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TOLENTINO HEREDIA MARYLINA GUILIANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VEGA CASTAÑEDA ELVIRA HERMELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILCAPOMA VILCAPOMA HERNAN",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-3ro-a",
+      "nivel": "Secundaria",
+      "grado": "3ro",
+      "seccion": "A",
+      "totales": {
+        "familias": 31,
+        "al_dia": 14,
+        "parcial": 9,
+        "pendiente": 8
+      },
+      "familias": [
+        {
+          "nombre": "ADOLFO RENZO JURUPE SCHILDER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALVARADO BRINGAS GREYCI ROSSANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANTONIO CALERO AQUILINO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ARTURO TRINIDAD GARCIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BAQUERIZO MONTES MARY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CAMPOS GUEVARA ELSA YOVANI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CELINA LILIANA SAAVEDRA VARGAS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ESPINAL TAPIA HERMELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESTRADA GARCIA GABRIELA RUTH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES DIAZ MARITZA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUERRERO ZEVALLOS GLADIS ALEJANDRINA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUANUCO LAZO ERICKA GEOVANNA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUAYLLANI RAMOS NELLY MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "INGA PAUCAR REGINA MARISABEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULON TAFUR ADELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "KOLOTVINA MARFA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARTINEZ BERROCAL SATURNINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDOZA QUISPE CARMEN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "NUÑEZ ZAVALA MAGALY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PAIVA DELGADO OLGA CRISTEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PAYTAN VELASQUEZ INES SUSANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE PALOMINO MIGUEL ANGEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS APAESTEGUI STEFANIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RAMOS CALERO ESTHER ADA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RODRIGUEZ VALERA WENDY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ROJAS CARRERA CELINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SALSAVILCA MELCHOR MARIA CANDY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SCHEYLA TATIANA RIVERA FERNANDEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "TERRONES GUEVARA LUZ DEL CARMEN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VENTURO TOLENTINO SONIA GLADYS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VILCA ROJAS NINFA",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-3ro-b",
+      "nivel": "Secundaria",
+      "grado": "3ro",
+      "seccion": "B",
+      "totales": {
+        "familias": 32,
+        "al_dia": 19,
+        "parcial": 5,
+        "pendiente": 8
+      },
+      "familias": [
+        {
+          "nombre": "ALTAMIRANO CCARHUAS EFRAIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANTEZANA JURADO ROLANDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BAUTISTA PIZARRO SISI LEILA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARBAJAL HUZCO YOLANDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARRASCO HUSCO MANUEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLO LEON JACQUELINE JUDITH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CCONAYA HUAMANÑAHUI DANIEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "COJAL CARAHUATAY NORA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CORONEL PALOMINO MARIA ANGELICA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORREA ORTIZ LILIANA MARLENE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CRUZADO RIVAS SOFIA KATHERINE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUMAPA VELA KAREN DEL PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DAVILA INFANTES DENISE ISABEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FLORES HUAMAN NELLY VANEZZA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FRECIA VANESSA CESPEDES TAPIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUERRERO LUNA DIANA CAROLINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "IDME LIGUE LUCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LOPEZ RUIZ DORA NELLY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARTEL FERNANDEZ CARLOS ALEJANDRO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARY CARMEN PILLACA CASTAÑEDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MEDINA FERNANDEZ BEATRIZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "OCHOA JANAMPA FRANCISCO SULPICIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PINEDO MORI LLEVERLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PULTAY UCHUPE MARTIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE HUAYHUA LILIANA ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUIÑONES CERRON MARILIA VIANNEY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS CORONACION VILMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SAAVEDRA CALDAS LUZ ARACELLI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SALVATIERRA CARPIO REBECA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SOPLOPUCO LIAU ROSSY SILVANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VALENZUELA QUIJANDRIA WILLIAM PABLO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VERGARA HERRERA DE REA CAROL ROSA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-3ro-c",
+      "nivel": "Secundaria",
+      "grado": "3ro",
+      "seccion": "C",
+      "totales": {
+        "familias": 35,
+        "al_dia": 13,
+        "parcial": 8,
+        "pendiente": 14
+      },
+      "familias": [
+        {
+          "nombre": "ALMERCO USURIAGA MARIVEL JUANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AÑAZCO GALLO ALEX GENNY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CAMPOS YNSAPILLO JOSE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CATALAN PALOMINO SONALY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CCORAHUA JAIMES HENRY GABINO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHALCO QUILCA YOVANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CORDOVA CORDOVA NANCI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES DELGADO JENIFER EVELIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES MALDONADO MARIBEL SONIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GONZALES TAYPE FABIOLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "IZQUIERDO PADILLA ROBERT",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LOZANO ROJAS EDITA JHONALI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LUIS JAVIER RENGIFO FERNANDEZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MOYA AGUILAR YENY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NUÑEZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PERALTA ARIAS KATHERINE DAGMA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PEREZ PINCHE CESAR OSWALDO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PEREZ ROJAS MARIA NATIVIDAD",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE CANTA YLUMINADA MERY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMIREZ SANCHEZ GEORGINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMOS CENTENO CESAR",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RENTERIA CARHUAPOMA ANA VERONICA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "REQUEJO VASQUEZ MERCY GIULIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIVERA SEGURA NAZARIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RODRIGUEZ VELASQUEZ CLAUDIA VIRGINIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROMERO HUAROTO JACQUELINE ROSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROMERO RODRIGUEZ MILAGROS ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SACSARA GAMARRA MARIBEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ PAMPA DORIS EDITH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SIAS SHUÑA LEYSI KAROLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TICLIAHUANCA CHOQUEHUANCA ELVY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TORRES VERASTEGUI LEVY ROMAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VASSALLO GASTULO PAOLO CARLO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VERGARAY CHARRA DIGNA NATIVIDAD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "YAÑE MELCHOR LUCIA REINA",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-3ro-d",
+      "nivel": "Secundaria",
+      "grado": "3ro",
+      "seccion": "D",
+      "totales": {
+        "familias": 32,
+        "al_dia": 15,
+        "parcial": 8,
+        "pendiente": 9
+      },
+      "familias": [
+        {
+          "nombre": "ALFONSO PAITAN ELMER MARCIAL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BUSTAMANTE CABANILLAS JOSE ALBERTO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CABRERA POMA EDITH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CCOICCA LAURA MARLENY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHIPANA CANCHO JUAN CARLOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CONDORI CHANCAHUAÑA VILMA ELENA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CONOPUMA VASQUEZ ROCIO YANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "EGUAVIL SOLLER MARCELINA IRMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESTEBAN OSTOLAZA SANDRA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FERNANDEZ ALARCON PAMELA GABY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GUTIERREZ ANTIPORTA GLORIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JAVIER MONTENEGRO TORRES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JULIAN JAVIER JOSE LUIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LLACSA PEÑA LIZ LILIANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LLAMOCCA CANCHARI EUGENIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MAMANI PIZARRO EDITH ROSARIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MAURICIO ORIHUELA CESAR GERMAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MEJIA CAMPOS GLADYS ADELA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MENDEZ ASPAJO DE TEJADA CORITA CLEIDER",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MENDOZA YANCE MARISOL NORA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MUÑOZ HUAMAN MONICA ELDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NIVIN OROPEZA AURELIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NOVILLO ALBERCA OMAR GLADIMIR",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PALOMINO VILLACORTA ZOIKA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PEREZ TAIPE GRICELDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMIREZ COLORADO JORGE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS CHAVEZ OLGA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIVERA VILLUGAS ADELAIDA VIVIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROGGER MISAEL MUÑANTE LLANCARI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TABRAJ MIRANDA ANITA MILAGROS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TEJADA CHANAME WILLIAM ALEXANDER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TERESA ANDREINA CARABALLO",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-3ro-e",
+      "nivel": "Secundaria",
+      "grado": "3ro",
+      "seccion": "E",
+      "totales": {
+        "familias": 33,
+        "al_dia": 11,
+        "parcial": 10,
+        "pendiente": 12
+      },
+      "familias": [
+        {
+          "nombre": "ANA MARLENE CABRERA MONTERO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARCE BRICEÑO SANTOS JULIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARRONIS QUISPE BRILLIT ALEXANDRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AÑORGA MORI CARMEN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CATHERINE TAPIA HERBOZO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CHACON DE LA CRUZ ZULEMA JHELLI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUCHO HERRERA LENA EDELMIRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DAVILA AQUINO MARIBEL ROCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ENRIQUE ADOLFO VALERIANO RIOS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ESPIRITU RIVERA HUMBERTA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESTELLA ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GONZALES BEJAR MARIA TERESA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GRABIEL MONTALVO LILIANA ELIZABETH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GUERRA VILCA MONICA DIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HILARIO BARZOLA RONALD RAFAEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "INGA QUISPE KAREN EVELYN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "IVAN CHUCOS ROMAN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JUAN PABLO HUAMANI LUCAS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LEIVA MUÑOZ MARCO ANTONIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARCACUZCO SUICA MARITZA ESTHER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "OJEDA SANSUR FARIDE YAMILY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ ASPAJO PERCI HERNAN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAFAEL SILVA AMANCAY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RAMIREZ GARCIA MARTHA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS COLMENARES ROSA MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMOS FIGUEROA NATALY TERESA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROJAS TAYPE SILVIA PAMELA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RONCEROS MAYON DORIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SALSAVILCA GRANDA ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SEPULVEDA CHIRINOS DELVIA CORINA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VILCHEZ AYALA KARINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YANET CHURA MACHACA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YUDITH MOYA POMA",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-3ro-f",
+      "nivel": "Secundaria",
+      "grado": "3ro",
+      "seccion": "F",
+      "totales": {
+        "familias": 32,
+        "al_dia": 13,
+        "parcial": 6,
+        "pendiente": 13
+      },
+      "familias": [
+        {
+          "nombre": "AGUILAR CONDORI JUANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALCARRAZ ALCARRAZ NESTOR JAVIER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALICIA RUIZ HACHA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AQUINO BASILIO WENDY MARILU",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BARRETO VILCHEZ MILAGROS EVELYN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BENDEZU RIVEROS ROSARIO LILIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CALIZAYA QUISPE NORCA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CERRUTI GONZALES KAREN HELEN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "COLOS ***",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CONDORI NARREA LILIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CYNTHIA PRADO HUAYTALLA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FAJARDO PAREDES JUANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GONZALES DEL AGUILA JOHANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GUADALUPE CHAMORRO PRIMITIVA MARGARITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUERRERO ALVARADO ROGELIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HEREDIA CARREAZO MABEL ELINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HILARIO SANCHEZ CARMEN CELIDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULON HUAMAN VERONICA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "LESCANO GRADOS FLAVIO YANPOOL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MANOSALVA BODA LUZ ESTRELLA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MAYTA RAMIREZ LUZMILA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MELENDRES CAPCHA HUBER",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MIRIAN ARIAS MORENO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ORTIZ MATEO JULISSA LISSET",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PUMA MALDONADO JUANA GUILLERMINA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "QUINTO CASANI VERONICA MARTHA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RONDONIL MENDOZA PAMELA CINTHYA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SALSAVILCA SALSAVILCA MARIA DEL PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TINEO CARPIO LAZARO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TOLENTINO FLORES KAREN EUSEBIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TORRES CASTRO MERCEDES DEL ROCIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILLANO GAMBOA TERESA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-4to-a",
+      "nivel": "Secundaria",
+      "grado": "4to",
+      "seccion": "A",
+      "totales": {
+        "familias": 35,
+        "al_dia": 17,
+        "parcial": 9,
+        "pendiente": 9
+      },
+      "familias": [
+        {
+          "nombre": "AGUIRRE GUTIERREZ SONIA SILVIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BLANCO PEREYRA ELOY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CABREJOS ALBUJAR ALIZON VICTORIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAJAS TOLENTINO LUCINDA NITZA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CCOICCA LAURA MARLENY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHARAJA CRUZ LUZ MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHUQUILLANQUI DOMINGO NOEMI BACILIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CORI RAMOS LUZ MARIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DAGNER DARWEN ROQUE MAXIMILIANO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DOMINGO MARIÑO ILIANA MARILUZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "FERNANDEZ ALARCON PAMELA GABY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES AGUILAR NILDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES CHOQUE JUANA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FLORES GAMERO ANA CECILIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GARGATE RIVERA DIEGO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUAYTALLA CISNEROS SONIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LIMAYLLA ZAPATA KATERINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ ROMAN EMERITA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MEDINA CAMACHO ROSARIO DEL PILAR",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PAISIG MEDINA DUBERLITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAUCAR ZAJACO CARMEN OLIVIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "REMON OCHOA HILDA AZUCENA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIVERA BARRIOS ERIK FRANCIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RODRIGUEZ PANCORBO MARIA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ VIVAS ROBERTO MAXIMO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RUDAS LOBATO LUZ YOHANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SAAVEDRA CUICAPUSA JESSICA SARITA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SALAZAR VIDALON ROSA SOFIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SHAPIAMA TUANAMA FLORITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SONIA SILVIA AGUIRRE GUTIERREZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SULCA QUISPE ANA VILMA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "URBINA RIOS MONICA ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VASQUEZ RIMARACHIN FERNANDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VENTURA FIGUEROA AQUILO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZACARIAS QUISPE JANETT CRISTINA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-4to-b",
+      "nivel": "Secundaria",
+      "grado": "4to",
+      "seccion": "B",
+      "totales": {
+        "familias": 32,
+        "al_dia": 16,
+        "parcial": 5,
+        "pendiente": 11
+      },
+      "familias": [
+        {
+          "nombre": "ALATA PRETEL NARDA LORENA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALVINO ADVINCULA PETER FELIX",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARENAS TRUJILLO ROSA LINDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARIAS ROJAS ALBERTINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARTETA ALANIA FREDA LUZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BEGAZO BEGAZO FLOR ROSARIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CASTILLA CHUQUIJAJAS SHEILLA ISOLINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CERVANTES CHICLLA CHRISTIAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUYUTUPA MANTURANO LIZBETH MILAGROS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LAGOS NUÑEZ ROBERTO CARLOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MANTURANO LOPEZ LUZ MARINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARIELA MENDOZA HUILCA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MONTORO PICHILINGUE GERSON NELSON",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MUÑOZ ROCHA VICTOR LUIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "NAVARRETE MANRIQUE ANALBINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OCHANTE AURIS WILVER OSVALDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "OCHANTE VALDEZ ANA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PALIAN INGA JEANETTE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PALOMINO NUÑEZ INOCENCIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PALOMINO VERA CARLOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ NAJARRO GISET ALMENDRA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PINEDA CERRON ADA MARTHA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE ALCANTARA CELIA BEATRIZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RODRIGUEZ MONTERO JIMMY CARLOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROJAS CARBAJAL ELISA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "RONCAL NINA ROSEMARY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROSAS ALCANTARA ELIZABETH CECILIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VASQUEZ LAURENCIO CARMEN LUCINDA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VELASQUEZ VERA EVANGELINA DORIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VILLALOBOS PACHECO LYNE DANAI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "VITOR VEGA MARTIN RODOLFO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "YACTAYO NOELIA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-4to-c",
+      "nivel": "Secundaria",
+      "grado": "4to",
+      "seccion": "C",
+      "totales": {
+        "familias": 32,
+        "al_dia": 14,
+        "parcial": 1,
+        "pendiente": 17
+      },
+      "familias": [
+        {
+          "nombre": "ALVINO ADVINCULA RICHARD",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARANGO PEREZ LIZ SANDRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARHUIRE CARCASI CLIO RUTH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARTEAGA ROSAS MARTHA CECILIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BALDEON QUISPE REYNA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BARZOLA POVEZ MIRIAM FLORA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CALDERON CASTRO SONIA YAQUELIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAMPOS CASTRO JACQUELINE ZULMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAPILLO POMA VALENTIN DIONICIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTILLO DINKLANG JUAN CARLOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTILLO POTENCIANO GABRIEL CHRISTIAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CORONACION VICENTE ROSARIO YUDIHT",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "EGOAVIL SANCHEZ SUSAN KATTY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESPINO GOÑI ELIZABETH NELLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FABIAN RAMIREZ TEODORO SILBERTO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GUERRERO POMASUNCO MARIA REGINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUAMANI VENTURA NANCY KARINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "INGA PAUCAR REGINA MARISABEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JULIO CESAR DIAZ SOLIS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ MAGUIÑA NORMA ELIZABETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MARTINEZ MORENO MAXIMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MIO MENDIVIL DE CALLE DIANA MAGDALENA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ CCASIHUE CARMEN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "POLO REYES EVER JAVIER",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "POMALIA ANCHELIA YUSTON",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PONCE SUAREZ WINDER ELIAS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUINTANA LEON GISSELA CARLINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUIQUINLLA MONDALGO TEODORA ELENA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RODRIGUEZ UPIACHIHUA DIANA LUZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANCHEZ FARJE CARMENDINA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SULLON MARCELO JOSE MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VALDIVIA BUENO ROSA AMPARITO",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-4to-d",
+      "nivel": "Secundaria",
+      "grado": "4to",
+      "seccion": "D",
+      "totales": {
+        "familias": 33,
+        "al_dia": 17,
+        "parcial": 4,
+        "pendiente": 12
+      },
+      "familias": [
+        {
+          "nombre": "AGUILAR GALINDO DEXSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARCE BRICEÑO SANTOS JULIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BELBER COLCHADO LOZANO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARDENAS PEDRAZA MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHUMBIRIZA SACCACO LIZ DAYANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CONTRERAS BELITO CANDELARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DUQUE PINEDO DORIS LORENA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUAMAN MONTES DORIS ISABEL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HUANAMBAL SANCHEZ EDWARD HERBERT",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HURTADO PEREZ HEYDI EDITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "Irma Westreycher Masg",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LUIS PAREDES EVA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MACEDO CARDENAS PABLO ROBERTO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MARTINEZ ALARCON ORLANDO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MOGROVEJO FLORES SANDRO FRANCISCO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MONROY SAYRA NANCY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MUÑOZ BERROSPI JULIA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NAYSHA HUAMANYALLI CASTILLÓN",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "OLAZABAL ROLDAN ANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PACHECO AVILA MILUSKA MARLIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PALOMINO ASTOQUILCA CANDY MILAGROS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PERALES ARONI HENRY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PILLACA QUISPE MARTHA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUESQUEN RODRIGUEZ CHRISTHEL PAMELA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "REYES COLOMBINO ANALI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "REYES OSORIO MARIA EUSEBIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIVAS FALCON ERNESTO LITO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SAAVEDRA CALDAS LUZ ARACELLI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANCHEZ SINACAY NOEMI LIZETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANGAMA PINCHI JHOANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANTAMARIA FARROÑAN MARIA NELLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SULCA SERVA ROXANA YOLANDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TENORIO HUAMANI RINA LUCINDA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-4to-e",
+      "nivel": "Secundaria",
+      "grado": "4to",
+      "seccion": "E",
+      "totales": {
+        "familias": 30,
+        "al_dia": 16,
+        "parcial": 3,
+        "pendiente": 11
+      },
+      "familias": [
+        {
+          "nombre": "ALMONACID SULCA EDITH ANGELICA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALVA VIDAL FERNANDO EUGENIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AZA MAYTA FLAVIA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BALDERA SIESQUEN MIRIAN ELIZABETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BAUTISTA PRADO NELLY MONICA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BRAVO CERNA MIGUEL JESUS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CARDENAS CHAMPI LUCILA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTILLA LUJAN LISBET VANESA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CASTILLO HUAYNATE LIDIA MARGOTH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUENTAS HUAYANAY INGRID DANAE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ESPINOZA NAVARRO BRENDA ALEXANDRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLORES QUINTO MERY EDITH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JACOME CAJAHUAMAN AURORA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MALLQUI CACERES BETZABETH NELLY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDOZA AYALA LUZ AYDEE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MONTEZA DIAZ CONSUELO ROSA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ORTEGA VEGA DAVID RAUL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PINTO ESTEBAN PAUL GIANFRANCO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "QUISPE NOA MARIA LUISA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE QUISPE HERNAN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RIVERA FLORES NANCY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIVERA ULLOA ROSA PATRICIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROJAS ESPINOZA BEATRIZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SALDAÑA CARHUANCHO SANDRA MARIA YSABEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANTANA LAURENTE MONICA CINTHIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SEMINARIO PAICO MILAGROS ELIZABETH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SOLANO BARRETO DILMA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SOTO VALENCIA JAQUELIN MONICA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "URBINO MARTINEZ FRANKLIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZUMAETA RIVERA EDWIN",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-4to-f",
+      "nivel": "Secundaria",
+      "grado": "4to",
+      "seccion": "F",
+      "totales": {
+        "familias": 31,
+        "al_dia": 15,
+        "parcial": 5,
+        "pendiente": 11
+      },
+      "familias": [
+        {
+          "nombre": "ANAHY SEGUNDO UGARTE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "Antonia Cordova Zarate",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ARAMBURU CCORA FELIPE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BETETA SOTO SHANNON XIBELLI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BUELOT MARENA LEONCIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CABRERA REYES MARIBEL ERNESTINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARDENAS PEDRAZA MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CASTRO NICOLAS JOHANNA CELESTE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CURILLA LAZO LUCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CUSI JURADO JAQUELINE NATIVIDAD",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DE LA CRUZ CORTEZ JESSICA SANDRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GARAY ALFARO CARMEN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GARCIA HUAMANI KARINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HERRERA PASTOR RUTH ELCIRA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUANCA OSCCO LINA MICHEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUESA HUAMAN JANETH MARITZA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MAYTA MEZA ZENON MIGUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MENDOZA MENDEZ SINTHIA YANET",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NAJARRO TINEO EDWIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "OSTOS GUTIERREZ LUCILA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PANDURO CARHUARICRA MARISOL ELIZABETH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PARIA CHAUCA LIZ MERCEDES",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PEREZ ESPINAL WILIAM RAFAEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE CANTA ELIZABETH PAMELA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "QUISPE SICHA MANUEL JESUS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMON TELLO ELVIRA MARLENI",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS CHAVEZ OLGA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIVERA NINA ANA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROJAS VELA GIOVANNA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TRUJILLO HUAYANAY SEYDA DIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "YANCCE CORAS MARIA JULIA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-5to-a",
+      "nivel": "Secundaria",
+      "grado": "5to",
+      "seccion": "A",
+      "totales": {
+        "familias": 31,
+        "al_dia": 14,
+        "parcial": 6,
+        "pendiente": 11
+      },
+      "familias": [
+        {
+          "nombre": "ALPAS VASQUEZ JUAN MANUEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AVILES ARELLANO ERIKA MILAGROS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BENDEZU ROJAS HEBER SANTOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CANTARO PALOMINO JUANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CAYRA LLAMOCA SANDRA PAULINA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CHAVEZ AGUERO LUZMILA JULIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CUSICAHUA FERNANDEZ REBECA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DE LA CRUZ TACURI SHEILLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DE LA TORRE VICENTE GISELLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DELGADO PALMA MIRYAM",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DIAZ RODRIGUEZ NANCY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "FUENTES CUETO ANA ROSARIO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "GARAY CACHA SOLEDAD SOFIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GUTIERREZ FLORES CARLOTA ZELENY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "HERNANDEZ GUILLEN DORIS LILIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "JESSICA VILLALVA VELASQUEZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JULIAN JAVIER JOSE LUIS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LANEGRA VERGARA FANNY CAROLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LEON RAMIREZ JUANA ELENA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MEZA QUISPE MARGOTH",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MOYA AGUILAR YENY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ORTEGA MINAYA JOHN PAUL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PALOMINO MEZA HILDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "PAREJA HINOSTROZA JOVITA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "POMPILLA OCHOA JOSE JULIAN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RUTH FLORES TAPIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SANCHEZ CASAS BETSY JACQUELINE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "SULCA SERVA PATRICIA ANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TUCTO HUARANGA NILZA LILI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "WILSON TITO CARHUACUSMA MESCUA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "YUPANQUI TICLLACURI MARGOT",
+          "estado": "parcial"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-5to-b",
+      "nivel": "Secundaria",
+      "grado": "5to",
+      "seccion": "B",
+      "totales": {
+        "familias": 32,
+        "al_dia": 7,
+        "parcial": 4,
+        "pendiente": 21
+      },
+      "familias": [
+        {
+          "nombre": "BENDEZU CHAUCA RAFAEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CABEZAS TELLO YERALDIN MISSHEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CALDERON BORDA NANCY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CARHUAS ARELLANO EDITH",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CASTRO LUNA JHON ABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "COLQUE SENCIA DAVID",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CRUZ LEON HERMELINDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESPINAL TAPIA HERMELINDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESTRADA CHINCHAY ANA MARIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ESTRELLA RICALDI OMAR MELECIO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FELICIANO ARIAS LINDA YSABEL",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FERNANDEZ ENCALADA CARMEN ROSA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GARCIA MONTALVAN JANNINA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GOMEZ BERROCAL LOURDES MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HORMAZA SANTILLAN PERCY MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "HUAMAN ZELADA DORIS JANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JAULIS CANCHO PILAR",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JIMENEZ PUMA DIANA CAROLINA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LIFONCIO LANDEO AUREA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LOPEZ ARIAS REYNA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LUCY BAUTISTA CABEZAS",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MERCADO ARCE ROSA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MICUILLA SANCHEZ ROSA ANGELICA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MONTEZA PEREZ KATHERIN PAOLA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MOYA COCA ANGELA PATRICIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ORDINOLA VIERA MILAGROS DEL PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PUMA GUIZADO MIRIAM PILAR",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUISPE TTITO RAFAEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMOS ROA NORA HAYDE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIVERA SANABRIA JESSICA MAGALLI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SERNA ALARCON MARIA ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "TINCO MITMA ELICIA",
+          "estado": "al_dia"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-5to-c",
+      "nivel": "Secundaria",
+      "grado": "5to",
+      "seccion": "C",
+      "totales": {
+        "familias": 30,
+        "al_dia": 13,
+        "parcial": 6,
+        "pendiente": 11
+      },
+      "familias": [
+        {
+          "nombre": ". . . / REVISION SIN TESORERIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ACOSTA BERNAL YANET BEATRIZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALCANTARA NEIRA JULISSA KARIN",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALICARRA URBINA MARY CARMEN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ALVAREZ MARTEL WALDER",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ANAYA LOPEZ LISSETTE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ARTIAGA MAMANI JENNY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BAUTISTA DE LA CRUZ ROSA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BERNAL VASQUEZ MEDALI",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CALDERON GOMEZ OLGA BRIGIDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CONDOR GUEVARA EDMA LUZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ELALUF ISUIZA SANY PRISCILA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ESTEBAN MALLMA BEATRIZ OLGA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "GAVANCHO HERRERA FREDDY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "HUAYHUALLA ALA EDITH CONSUELO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LAGUA OROPEZA LUIS MARCOS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LLIUYACC JACOME SULLMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ CHURA YENNY MARTHA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LURDES DE LA CRUZ",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARILYN GRISEL YGUIA MANDUJANO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MENDOZA PORRAS YOJAN MARCOS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RAMOS GARCIA MAGALI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROMERO BUENO MATILDE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ROSA MARÍA RIVAS JUAREZ",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SAAVEDRA VARGAS NELLY DANITZA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TORRES ALCANTARA ROSA GLADYS",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VALLEJOS CASTILLO WENDY MELISSA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VELIZ DE PACHECO MARIA LOURDES",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "WILSON TITO CARHUACUSMA MESCUA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "ZARATE MICHUE ELIZABETH MARTHA",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-5to-d",
+      "nivel": "Secundaria",
+      "grado": "5to",
+      "seccion": "D",
+      "totales": {
+        "familias": 33,
+        "al_dia": 11,
+        "parcial": 5,
+        "pendiente": 17
+      },
+      "familias": [
+        {
+          "nombre": "ABARCA SICHA MELISSA DIANA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "BLAZ ORTIZ ROGER AVELINO",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "CACEDA CORDOVA CELIA AMELIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CARRANZA ROJAS ANA MARIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CHUCHON PALACIOS LORENZA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CLARIANA ESPINOZA LUCIA JOHANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DAGNER DARWEN ROQUE MAXIMILIANO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DE LA CRUZ NIETO BETTY ROSSMERY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "DURAND ASCURRA GLADIS WILMA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "FLORES ROJAS WILIAM ALFREDO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GALVEZ HUAMANI DELIA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "JULCARIMA LEGUA LOURDES ISABEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "LAUREANO ALBA ELISA MARGOT",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ RAMIREZ NESTOR MARTIN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MALDONADO VILLAFUERTE JULIA JANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "MAMANI MORALES VIDAL",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MARIA ISABEL ROJAS YUIYALE",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "MAXIMO CARRASCO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MUÑOZ HUAMAN MONICA ELDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "NUÑEZ MEDINA JHONY MANUEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "PEREZ TENORIO MARLENY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "POMARI CHOQUEHUANCA MARIA ELENA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUISPE CCARI NANCY BEATRIZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RODRIGUEZ UPIACHIHUA DIANA LUZ",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ROJAS TINOCO EDITH MARIBEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RUIZ CHAVEZ JOANNE",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SANDOVAL ESPINOZA MARIA LILIANA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "SIMON VALENCIA VICTORIA ELIZABETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "SUAREZ CABALLERO JORGE ISAAC",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VARGAS RAMOS STEFHNAY ODAIL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VARGAS SALAS RONALD",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VENEGAS CARRION ELIZABETH DIANA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VITOR MALDONADO KATHERIN LIZET",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "slug": "secundaria-5to-e",
+      "nivel": "Secundaria",
+      "grado": "5to",
+      "seccion": "E",
+      "totales": {
+        "familias": 33,
+        "al_dia": 16,
+        "parcial": 4,
+        "pendiente": 13
+      },
+      "familias": [
+        {
+          "nombre": "AGUILAR GOMEZ IVETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "AGUILAR GOMEZ LEISLI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "ALVAREZ AREVALO KARLA NINOSKA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ANAYA BORDA MARIA TERESA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "AYALA ENRIQUEZ CARMEN",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "BAUTISTA ALVAREZ CARITO LISBETH",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "BELEN ARIAS LIZBETH VICTORIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CATALAN BARRIENTOS SONIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "CONDOR CORDOVA ROSANA LUCY",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CORONEL IDROGO ADIAMIRA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "CUSI JARA ZAIDA JESUS",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DAVILA ZAVALETA ALDO HONEY",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "DE LA CRUZ CAMPOS LEONCIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DONGO LOAIZA CIRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "DURAN AMES JONAS JOEL",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "GOMEZ HUAYLLAS HERLINDA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "JIMENEZ LOPEZ PEFANNY",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "LOPEZ RUIZ JULIA DEL SOCORRO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "MAMANI APAZA LUISA",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "PORTUGUEZ EGUSQUIZA CARLOS ENRIQUE",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "QUINTO CASANI MERCEDES SOLEDAD",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "QUIROZ HUARACA GUMERCINDA",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RAMIREZ GAMBOA BENEDI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "RIOS VIENA PILAR",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RUBEN GAMBOA VILLANO",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "RUIZ CCAULLA EDA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TOLENTINO FLORES KAREN EUSEBIA",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "TORRES SEGURA JOSE WILMER",
+          "estado": "parcial"
+        },
+        {
+          "nombre": "VALENCIA HUARACA SARA NOEMI",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VARGAS DAVILA JULIANA JANET",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VASQUEZ CHACON SANTOS INOSENCIO",
+          "estado": "pendiente"
+        },
+        {
+          "nombre": "VEINTIMILLA GUTIERREZ JOVANY DE LOS ANGELES",
+          "estado": "al_dia"
+        },
+        {
+          "nombre": "ZAVALA TUPAC MIRKO YERSON",
+          "estado": "pendiente"
+        }
+      ]
+    }
+  ],
+  "fingerprint": "3132bf5502592f24bc1811e244dde7372bdf8638b0fb22a7af8f4afb14e7b2ac"
+}
